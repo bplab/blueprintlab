@@ -1,8 +1,8 @@
-# Dimension - Jekyll Theme
+# Spectral - Jekyll Theme
 
-A Jekyll version of the "Dimension" theme by [HTML5 UP](https://html5up.net/).
+A Jekyll version of the "Spectral" theme by [HTML5 UP](https://html5up.net/).
 
-![Dimension Theme](assets/images/screenshot.jpg "Dimension Theme")
+![Spectral Theme](screenshot.jpg "Spectral Theme")
 
 # How to Use
 
@@ -10,37 +10,20 @@ For those unfamiliar with how Jekyll works, check out [https://jekyllrb.com/](ht
 or read up on just the basics of [front matter](https://jekyllrb.com/docs/frontmatter/), [writing posts](https://jekyllrb.com/docs/posts/),
 and [creating pages](https://jekyllrb.com/docs/pages/).
 
-- **GitLab**: Simply fork this repository and start editing the `_config.yml` file!
-- **GitHub**: Fork this reposity and create a branch named `gh-pages`, then start editing the `_config.yml` file.
+- **GitLab**: Simply fork this repository and start editing the `_config.yml` file!  
+- **GitHub**: Fork this reposity and create a branch named `gh-pages`, then start editing the `_config.yml` file! The `.gitlab-ci.yml` file is only needed for GitLab Pages, so feel free to delete this if you are using GitHub instead.
 
 # Added Features
 
-* Add your **social profiles** easily in `_config.yml`.
-
-# Configuration
-
-You can use the following custom parameters in `_config.yml`.
-
-## Site Icon
-- `icon` sets the class for your site's [Font Awesome](http://fontawesome.io/icons/) icon.
-
-## Social settings
-- `500px_url`
-- `facebook_url`
-- `github_url`
-- `gitlab_url`
-- `googleplus_url`
-- `instagram_url`
-- `linkedin_url`
-- `pinterest_url`
-- `slack_url`
-- `twitter_url`
+* Add your **social profiles** easily in `_config.yml`. Only social profiles buttons you enter in `config.yml` show up on the site footer!
+* **Coming soon**: Set **featured images** in front matter.
+* **Coming soon**: Front page sections automatically pull from posts.
 
 # Issues
 
-If you would like to report a bug, ask a question, request a feature, feel free to do so on [the GitLab repository](https://gitlab.com/andrewbanchich/dimension-jekyll-theme) and I will be more than happy to help!
+If you would like to report a bug, ask a question, request a feature, feel free to do so on [the GitLab repository](https://gitlab.com/andrewbanchich/spectral-jekyll-theme) and I will be more than happy to help!
 
-Alternatively, you can open an issue via email by emailing [incoming+andrewbanchich/dimension-jekyll-theme@incoming.gitlab.com](mailto:incoming+andrewbanchich/dimension-jekyll-theme@incoming.gitlab.com).
+Alternatively, you can open an issue via email by emailing [incoming+andrewbanchich/spectral-jekyll-theme@incoming.gitlab.com](mailto:incoming+andrewbanchich/spectral-jekyll-theme@incoming.gitlab.com).
 
 The GitHub repository is simply a mirror of the GitLab repository.
 
@@ -49,15 +32,33 @@ The GitHub repository is simply a mirror of the GitLab repository.
 Original README from HTML5 UP:
 
 ```
-Dimension by HTML5 UP
+Spectral by HTML5 UP
 html5up.net | @ajlkn
 Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 
 
-This is Dimension, a fun little one-pager with modal-ized (is that a word?) "pages"
-and a cool depth effect (click on a menu item to see what I mean). Simple, fully
-responsive, and kitted out with all the usual pre-styled elements you'd expect.
-Hope you dig it :)
+A big, modern, blocky affair with a mobile-style menu, fully responsive styling,
+and an assortment of pre-styled elements. So, pretty much what you were expecting
+-- except, of course, for how it's put together, specifically:
+
+- It's built on Skel 3*, a leaner, more modular rewrite of my responsive framework.
+
+  (* = still in development as of this writing)
+
+- It uses flexbox*, which eliminates all kinds of terrible hacks and clunky layout
+  stopgaps (like CSS grid systems).
+
+  (* = not supported on IE8/9, but non-flexbox fallbacks are included)
+
+- It uses Sass* a lot more intelligently, thanks in part to several new mixins
+  and functions I've been working on (as well as a few by @HugoGiraudel).
+
+  (* = still entirely optional if you prefer vanilla CSS :)
+
+- A ton of other stuff.
+
+In short, Spectral's the culmination of several new things I'm working on/trying out,
+so please, let me know what you think :)
 
 Demo images* courtesy of Unsplash, a radtastic collection of CC0 (public domain) images
 you can use for pretty much whatever.
@@ -78,8 +79,12 @@ Credits:
 
 	Other:
 		jQuery (jquery.com)
+		html5shiv.js (@afarkas @jdalton @jon_neal @rem)
+		background-size polyfill (github.com/louisremi)
 		Misc. Sass functions (@HugoGiraudel)
+		Respond.js (j.mp/respondjs)
 		Skel (skel.io)
+
 ```
 
 Repository [Jekyll logo](https://github.com/jekyll/brand) icon licensed under a [Creative Commons Attribution 4.0 International License](http://choosealicense.com/licenses/cc-by-4.0/).

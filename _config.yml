@@ -14,15 +14,13 @@ email: marketer@blueprint-lab.com
 description: Jekyll test site for BluePrintLAB
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "bplmarketer.github.io" # the base hostname & protocol for your site
-author:
-street_address: 1234 Somewhere Road
-city: Nashville
-state: TN
-zip_code: 55555
-country: United States of America
-phone: (716) 555-5555
 
-icon: fa-bold # Font Awesome class for your site's icon
+# Homepage tiles
+tiles-source: posts # accepts "posts" or "pages"
+tiles-count: 3
+
+# Misc settings
+featured-image-source:
 
 # Social settings
 facebook_url: https://www.facebook.com/blueprintlab4u/
@@ -32,7 +30,7 @@ googleplus_url:
 instagram_url: https://www.instagram.com/blueprintlab3d/
 linkedin_url: https://www.linkedin.com/company/14509122
 pinterest_url:
-slack_url:
+slack_url: https://blueprintlab.slack.com
 twitter_url: 
 
 # Build settings
