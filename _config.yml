@@ -21,6 +21,7 @@ tiles-count: 3
 
 # Misc settings
 featured-image-source:
+future: true
 
 # Social settings
 facebook_url: https://www.facebook.com/blueprintlab4u/
