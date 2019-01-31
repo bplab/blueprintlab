@@ -9,9 +9,9 @@
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: BluePrintLAB Test Site
+title: BluePrintLAB Inc.
 email: marketer@blueprint-lab.com
-description: Jekyll test site for BluePrintLAB
+description: BluePrintLAB Inc. homepage
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://bplmarketer.github.io" # the base hostname & protocol for your site
 
