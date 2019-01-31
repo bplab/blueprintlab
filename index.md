@@ -1,5 +1,5 @@
 ---
 layout: default
-title: Home
+title: BluePrintLAB Inc.
 description: BluePrintLAB Test Site
 ---
