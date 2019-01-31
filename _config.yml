@@ -22,7 +22,7 @@ tiles-count: 3
 # Misc settings
 featured-image-source:
 future: true
-timezone: GMT+9
+timezone: KR
 
 # Social settings
 facebook_url: https://www.facebook.com/blueprintlab4u/
