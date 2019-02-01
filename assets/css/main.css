@@ -1396,7 +1396,7 @@
 	}
 
 	body {
-		background: #2e3842;
+		background: #094161;
 	}
 
 		body.is-loading *, body.is-loading *:before, body.is-loading *:after {
@@ -1804,7 +1804,7 @@
 
 		input[type="checkbox"]:checked + label:before,
 		input[type="radio"]:checked + label:before {
-			background: #2e3842;
+			background: #094161;
 			color: #fff;
 			content: '\f00c';
 		}
@@ -2642,7 +2642,7 @@
 
 		.wrapper.style1 {
 			background-color: #1f8dcc;
-			color: #c7ebe8;
+			color: #ccdbec;
 		}
 
 			.wrapper.style1 strong, .wrapper.style1 b {
@@ -2674,7 +2674,7 @@
 			}
 
 			.wrapper.style1 header.major p {
-				color: #c7ebe8;
+				color: #ccdbec;
 			}
 
 			.wrapper.style1 label {
@@ -2695,7 +2695,7 @@
 
 			.wrapper.style1 input[type="checkbox"] + label,
 			.wrapper.style1 input[type="radio"] + label {
-				color: #c7ebe8;
+				color: #ccdbec;
 			}
 
 				.wrapper.style1 input[type="checkbox"] + label:before,
@@ -2795,12 +2795,12 @@
 			}
 
 		.wrapper.style2 {
-			background-color: #2e3842;
+			background-color: #094161;
 		}
 
 		.wrapper.style3 {
-			background-color: #235977;
-			color: #d3d4e4;
+			background-color: #115c87;
+			color: #ccdbec;
 		}
 
 			.wrapper.style3 strong, .wrapper.style3 b {
@@ -2832,7 +2832,7 @@
 			}
 
 			.wrapper.style3 header.major p {
-				color: #d3d4e4;
+				color: #ccdbec;
 			}
 
 			.wrapper.style3 label {
@@ -2853,7 +2853,7 @@
 
 			.wrapper.style3 input[type="checkbox"] + label,
 			.wrapper.style3 input[type="radio"] + label {
-				color: #d3d4e4;
+				color: #ccdbec;
 			}
 
 				.wrapper.style3 input[type="checkbox"] + label:before,
@@ -2962,11 +2962,11 @@
 		}
 
 			.wrapper.style5 strong, .wrapper.style5 b {
-				color: #2E3842;
+				color: #094161;
 			}
 
 			.wrapper.style5 h2, .wrapper.style5 h3, .wrapper.style5 h4, .wrapper.style5 h5, .wrapper.style5 h6 {
-				color: #2E3842;
+				color: #094161;
 			}
 
 			.wrapper.style5 hr {
@@ -2994,7 +2994,7 @@
 			}
 
 			.wrapper.style5 label {
-				color: #2E3842;
+				color: #094161;
 			}
 
 			.wrapper.style5 input[type="text"],
@@ -3021,7 +3021,7 @@
 
 			.wrapper.style5 input[type="checkbox"]:checked + label:before,
 			.wrapper.style5 input[type="radio"]:checked + label:before {
-				background: #2E3842;
+				background: #094161;
 				color: #ffffff;
 			}
 
@@ -3062,7 +3062,7 @@
 				}
 
 			.wrapper.style5 table th {
-				color: #2E3842;
+				color: #094161;
 			}
 
 			.wrapper.style5 table thead {
@@ -3083,7 +3083,7 @@
 			.wrapper.style5 button,
 			.wrapper.style5 .button {
 				box-shadow: inset 0 0 0 2px #dfdfdf;
-				color: #2E3842;
+				color: #094161;
 			}
 
 				.wrapper.style5 input[type="submit"]:hover,
@@ -3254,7 +3254,7 @@
 		-webkit-transition: background-color 0.2s ease;
 		-ms-transition: background-color 0.2s ease;
 		transition: background-color 0.2s ease;
-		background: #2e3842;
+		background: #094161;
 		height: 3em;
 		left: 0;
 		line-height: 3em;
@@ -3509,7 +3509,7 @@
 			-ms-transition-delay: 1.25s;
 			transition-delay: 1.25s;
 			content: '';
-			background: #2e3842;
+			background: #094161;
 			display: block;
 			width: 100%;
 			height: 100%;
