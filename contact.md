@@ -5,7 +5,7 @@ description: BluePrintLAB Contact Form
 ---
 
 <section>
-	<form method="post" action="send_mail.php">
+	<form method="post" action="https://getsimpleform.com/messages?form_api_token=2bb36f58581ca191bfa93ac88eda5090">
 		<div class="row uniform">
 			<div class="6u 12u$(xsmall)">
 				<input type="text" name="name" id="body" value="" placeholder="Name" />
