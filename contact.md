@@ -11,7 +11,7 @@ description: BluePrintLAB Contact Form
 				<input type="text" name="name" id="body" value="" placeholder="Name" />
 			</div>
 			<div class="6u$ 12u$(xsmall)">
-				<input type="text" name="email" id="body" value="" placeholder="Email" />
+				<input type="email" name="email" id="body" value="" placeholder="Email" />
 			</div>
 			<div class="12u$">
 				<div class="select-wrapper">
