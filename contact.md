@@ -1,30 +1,30 @@
 ---
 layout: page
 title: contact us
-description: 
+description: BluePrintLAB Contact Form
 ---
 
 <section>
-	<form method="post" action="#">
+	<form method="post" action="send_mail.php">
 		<div class="row uniform">
 			<div class="6u 12u$(xsmall)">
-				<input type="text" name="name" id="name" value="" placeholder="Name" />
+				<input type="text" name="name" id="body" value="" placeholder="Name" />
 			</div>
 			<div class="6u$ 12u$(xsmall)">
-				<input type="email" name="email" id="email" value="" placeholder="Email" />
+				<input type="text" name="email" id="body" value="" placeholder="Email" />
 			</div>
 			<div class="12u$">
 				<div class="select-wrapper">
-					<select name="Subject" id="subject">
+					<select name="subject" id="subject">
 						<option value="">- Subject -</option>
-						<option value="1">Business Inquiry</option>
-						<option value="1">Media Inquiry</option>
-						<option value="1">Employment Inquiry</option>
+						<option value="Contact Form - Business Inquiry">Business Inquiry</option>
+						<option value="Contact Form - Media Inquiry">Media Inquiry</option>
+						<option value="Contact Form - Employment">Employment Inquiry</option>
 					</select>
 				</div>
 			</div>
 			<div class="12u$">
-				<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+				<textarea name="body" id="body" placeholder="Enter your message" rows="6"></textarea>
 			</div>
 			<div class="6u$ 12u$(small)">
 				<input type="checkbox" id="human" name="human">

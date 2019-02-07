@@ -238,7 +238,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 <section>
 	<h4>Form</h4>
-	<form method="post" action="#">
+	<form method="post" action="mailto:help@blueprint-lab.com">
 		<div class="row uniform">
 			<div class="6u 12u$(xsmall)">
 				<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
