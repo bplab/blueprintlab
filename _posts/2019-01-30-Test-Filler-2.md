@@ -1,7 +1,7 @@
 ---
 layout: post
 title: V2 Virtual Try On
-description: Place holder text
+description: Our V2 Virtual Try On uses 3D face measurements to accurately fit eyewear on the users face in the accurate size ratio in real-time.
 image: pic02.jpg
 ---
 
