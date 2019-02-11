@@ -2,7 +2,7 @@
 layout: post
 title: BluePrintLAB and L’AMY Partner to Create New Shopping Experience for Bespoke McLaren Eyewear with New iPad Pro App (name of app)
 description: BluePrintLAB uses its expertise in 3D scanning, 3D rendering, and artificial intelligence (AI) algorithms with the new iPad Pro’s 3D camera to design an app that delivers a quick and easy buying experience for eyewear that fits you.
-image: pic01.jpg
+image: mclaren.jpg
 ---
 
 **SEOUL, February 23, 2019** - Software developer BluePrintLAB, design studio JAW-Studio, and eyewear manufacturer L’AMY announced today a partnership to develop (name of app), an app that allows consumers to create a bespoke pair of [award-winning](https://en.silmoparis.com/Silmo-d-Or-Awards/2018-SILMO-d-Or-Laureates) McLaren Ultimate Vision eyewear with the new iPad Pro. Customers can visit a McLaren eyewear dealer to easily select, customize, try on, and order eyewear in less than 5 minutes using an iPad, taking the hassle out of the buying process and increasing customer satisfaction. The app is expected to roll out to select opticians in late March 2019.
