@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Filler Test
+title: Newest Announcement
 description: Place holder text
 image: pic01.jpg
 ---

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Filler Test
+title: V2 Virtual Try On
 description: Place holder text
 image: pic02.jpg
 ---

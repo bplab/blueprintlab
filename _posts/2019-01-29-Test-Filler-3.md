@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Filler Test
+title: 3D Printing Store
 description: Place holder text
 image: pic03.jpg
 ---
