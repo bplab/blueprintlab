@@ -21,7 +21,7 @@ tiles-count: 3
 
 # Misc settings
 featured-image-source:
-future: true
+future: false
 timezone: Asia/Seoul
 
 # Social settings
