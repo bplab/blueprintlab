@@ -19,7 +19,7 @@ The process is user-friendly and offers instant gratification. First, customers 
 
 True to the McLaren brand, this pioneering experience is centered around high-performance customer enjoyment and takes the hassle out of the eyewear buying process to save time and money while increasing customer satisfaction. Consumers no longer have to try on pre-fit models that need to be adjusted. Instead, they get a fast and fun experience that results in eyewear that fits. Furthermore, retailers no longer have to carry a large inventory of colors and sizes or invest thousands of dollars in large and expensive 3D scanning equipment. What used to take expensive and bulky professional equipment can now be done with a few taps and swipes thanks to BluePrintLAB by combining its 3D rendering, AI algorithms, and AR software with the TrueDepth 3D camera on the iPad Pro.
 
-*(Quote about technology and working with BluePrintLAB) ex: We chose to work with BluePrintLAB because they front-runners in face scanning and AR which matches the McLaren pioneering spirit.*
+*(Quote about technology and working with BluePrintLAB) ex: We chose to work with BluePrintLAB because they are front-runners in face scanning and AR which matches the McLaren pioneering spirit.*
 
 L’AMY will be demonstrating an early version of (name of app) at the 2019 MIDO Eyewear Show in Milan February 23-25, 2019. Roll out of the app to select opticians will begin in late March of 2019.
 
