@@ -1,15 +1,15 @@
 ---
 layout: post
-title: BluePrintLAB and L’AMY Partner to Create New Shopping Experience for Bespoke McLaren Eyewear with New iPad Pro App (name of app)
+title: BluePrintLAB and L’AMY Partner to Create New Shopping Experience for Bespoke McLaren Eyewear with New iPad Pro App McLaren Eyewear
 description: BluePrintLAB uses its expertise in 3D scanning, 3D rendering, and artificial intelligence (AI) algorithms with the new iPad Pro’s 3D camera to design an app that delivers a quick and easy buying experience for eyewear that fits you.
 image: mclaren.jpg
 ---
 
-**SEOUL, February 23, 2019** - Software developer BluePrintLAB, design studio JAW-Studio, and eyewear manufacturer L’AMY announced today a partnership to develop (name of app), an app that allows consumers to create a bespoke pair of [award-winning](https://en.silmoparis.com/Silmo-d-Or-Awards/2018-SILMO-d-Or-Laureates) McLaren Ultimate Vision eyewear with the new iPad Pro. Customers can visit a McLaren eyewear dealer to easily select, customize, try on, and order eyewear in less than 5 minutes using an iPad, taking the hassle out of the buying process and increasing customer satisfaction. The app is expected to roll out to select opticians in late March 2019.
+**SEOUL, February 23, 2019** - Software developer BluePrintLAB, design studio JAW-Studio, and eyewear manufacturer L’AMY announced today a partnership to develop McLaren Eyewear, an app that allows consumers to create a bespoke pair of [award-winning](https://en.silmoparis.com/Silmo-d-Or-Awards/2018-SILMO-d-Or-Laureates) McLaren Ultimate Vision eyewear with the new iPad Pro. Customers can visit a McLaren eyewear dealer to easily select, customize, try on, and order eyewear in less than 5 minutes using an iPad, taking the hassle out of the buying process and increasing customer satisfaction. The app is expected to roll out to select opticians in late March 2019.
 
 *(Screenshot)*
 
-The eyewear and (name of app) app are designed to coincide with the brand image of McLaren, a pioneering supercar company that uses revolutionary technology that puts drivers at the center of the action. Similarly, the app utilizes 3D scanning with less than 2 percent margin of error and AI algorithms adjust the frame’s shapes and angles to fit the customer. The accuracy is necessary to 3D print the advanced titanium frame tailored to face and style of its owner. Realistic, real-time 3D rendering allows the user to instantly customize and virtually try on their bespoke eyewear.
+The eyewear and McLaren Eyewear app are designed to coincide with the brand image of McLaren, a pioneering supercar company that uses revolutionary technology that puts drivers at the center of the action. Similarly, the app utilizes 3D scanning with less than 2 percent margin of error and AI algorithms adjust the frame’s shapes and angles to fit the customer. The accuracy is necessary to 3D print the advanced titanium frame tailored to face and style of its owner. Realistic, real-time 3D rendering allows the user to instantly customize and virtually try on their bespoke eyewear.
 
 *(Try-on experience photo)*
 
@@ -21,7 +21,7 @@ True to the McLaren brand, this pioneering experience is centered around high-pe
 
 *(Quote about technology and working with BluePrintLAB) ex: We chose to work with BluePrintLAB because they are front-runners in face scanning and AR which matches the McLaren pioneering spirit.*
 
-L’AMY will be demonstrating an early version of (name of app) at the 2019 MIDO Eyewear Show in Milan February 23-25, 2019. Roll out of the app to select opticians will begin in late March of 2019.
+L’AMY will be demonstrating an early version of McLaren Eyewear at the 2019 MIDO Eyewear Show in Milan February 23-25, 2019. Roll out of the app to select opticians will begin in late March of 2019.
 
 *(Hyperlinks - homepage, product page, etc.)*
 
