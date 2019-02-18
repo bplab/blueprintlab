@@ -10,7 +10,7 @@
 
 # Site settings
 title: BluePrintLAB Inc.
-email: marketer@blueprint-lab.com
+email: help@blueprint-lab.com
 description: BluePrintLAB Inc. homepage
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://bplmarketer.github.io" # the base hostname & protocol for your site
