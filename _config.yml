@@ -12,8 +12,8 @@
 title: BluePrintLAB Inc.
 email: help@blueprint-lab.com
 description: BluePrintLAB Inc. homepage
-baseurl: "/" # the subpath of your site, e.g. /blog
-url: "https://bplmarketer.github.io" # the base hostname & protocol for your site
+baseurl: "/home" # the subpath of your site, e.g. /blog
+url: "https://bplab.github.io" # the base hostname & protocol for your site
 
 # Homepage tiles
 tiles-source: posts # accepts "posts" or "pages"
