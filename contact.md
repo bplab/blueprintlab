@@ -34,7 +34,7 @@ description: BluePrintLAB Contact Form
 			<div class="12u$">
 				<ul class="actions">
 					<li><input type="submit" value="Send Message" class="special" /></li>
-					<input type="hidden" name='redirect_to' value="https://bplmarketer.github.io/thanks"/> 
+					<input type="hidden" name='redirect_to' value="https://bplab.github.io/home/thanks"/> 
 				</ul>
 			</div>
 		</div>
