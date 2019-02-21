@@ -12,7 +12,7 @@
 title: BluePrintLAB Inc.
 email: help@blueprint-lab.com
 description: BluePrintLAB Inc. homepage
-baseurl: "/home" # the subpath of your site, e.g. /blog
+baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://bplab.github.io" # the base hostname & protocol for your site
 
 # Homepage tiles
