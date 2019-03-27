@@ -11,8 +11,8 @@
 # Site settings
 title: BluePrintLAB Inc. (주)블루프린트랩
 email: help@blueprint-lab.com
-description: BluePrintLAB Inc. Homepage
-baseurl: "/" # the subpath of your site, e.g. /blog
+description: BluePrintLAB specializes in designing software solutions that utilize 3D scanning, 3D printing, and artificial intelligence (AI).
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.blueprint-lab.com" # the base hostname & protocol for your site
 
 # Homepage tiles
