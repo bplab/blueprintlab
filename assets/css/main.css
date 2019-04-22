@@ -1471,7 +1471,7 @@
 		letter-spacing: 0.225em;
 		line-height: 1em;
 		margin: 0 0 1em 0;
-		text-transform: uppercase;
+		text-transform: capitalize;
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -3436,7 +3436,7 @@
 
 		#banner p {
 			letter-spacing: 0.225em;
-			text-transform: uppercase;
+			text-transform: capitalize;
 		}
 
 			#banner p a {
@@ -3642,7 +3642,7 @@
 		#main > header p {
 			color: inherit;
 			letter-spacing: 0.225em;
-			text-transform: uppercase;
+			text-transform: capitalize;
 			top: 0;
 		}
 
@@ -3717,7 +3717,7 @@
 			letter-spacing: 0.225em;
 			list-style: none;
 			padding: 0;
-			text-transform: uppercase;
+			text-transform: capitalize;
 		}
 
 			#footer .copyright li {
