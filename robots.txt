@@ -1,3 +1,2 @@
 User-agent: *
-Disallow: /assets/
 Sitemap: https://www.blueprint-lab.com/sitemap.xml
