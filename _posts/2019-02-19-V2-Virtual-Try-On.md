@@ -18,6 +18,6 @@ AI algorithms also match and recommend eyewear that fits the user’s face shame
 <br>
 V2 is not just a virtual try on experience, it enhances the full eyewear buying process. Pupillary distance is measured during the face scan process for prescription lenses. Parts and colors of the frame can be customized. It is also possible to create a fully bespoke 3D printed frame only for the user’s face. The only thing it does not do is give an eye exam.
 <div class="resp-container">
-	<iframe class="resp-iframe" src="https://www.youtube.com/embed/6fnyAcf4UcI?start=185" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	<iframe title="President Moon trying V2 video" class="resp-iframe" src="https://www.youtube.com/embed/6fnyAcf4UcI?start=185" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 Watch President Moon trying out an early version of V2.
