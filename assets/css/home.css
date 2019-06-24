@@ -310,3 +310,7 @@
 		.wrapper.style3 {
 			background-color: transparent;
 		}
+
+			.wrapper.style3 section {
+				background-color: #094161;
+			}
