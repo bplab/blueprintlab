@@ -8,10 +8,10 @@ description: BluePrintLAB Contact Form
 	<form method="post" action="https://getsimpleform.com/messages?form_api_token=af201f2a2487815fb1d745822af038bc">
 		<div class="row uniform">
 			<div class="6u 12u$(xsmall)">
-				<input type="text" name="name" id="body" value="" placeholder="Name" />
+				<input type="text" name="name" id="body" value="" placeholder="Name" required/>
 			</div>
 			<div class="6u$ 12u$(xsmall)">
-				<input type="email" name="email" id="body" value="" placeholder="Email" />
+				<input type="email" name="email" id="body" value="" placeholder="Email" required/>
 			</div>
 			<div class="12u$">
 				<div class="select-wrapper">
@@ -28,7 +28,7 @@ description: BluePrintLAB Contact Form
 			</div>
 			<div class="6u$ 12u$(small)">
 				<input type="hidden" name="human" value="no">
-				<input type="checkbox" id="human" name="human" value="yes">
+				<input type="checkbox" id="human" name="human" value="yes" required/>
 				<label for="human">I am not a robot</label>
 			</div>
 			<div class="12u$">
