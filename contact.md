@@ -28,7 +28,7 @@ description: BluePrintLAB Contact Form
 			</div>
 			<div class="6u$ 12u$(small)">
 				<input type="hidden" name="human" value="no" />
-				<input type="checkbox" id="human" name="human" value="yes" required/>
+				<input type="checkbox" id="human" name="human" value="yes" />
 				<label for="human">I am not a robot</label>
 			</div>
 			<div class="12u$">
