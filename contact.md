@@ -4,8 +4,9 @@ title: contact us
 description: BluePrintLAB Contact Form
 ---
 
+<link rel="stylesheet" href="{{ "/assets/css/sent.css" | relative_url }}" />
 <section>
-	<form method="post" action="https://getsimpleform.com/messages?form_api_token=af201f2a2487815fb1d745822af038bc">
+	<form method="post" action="https://getsimpleform.com/messages?form_api_token=af201f2a2487815fb1d745822af038bc" onsubmit="return myFunction(sent)">
 		<div class="row uniform">
 			<div class="6u 12u$(xsmall)">
 				<input type="text" name="name" id="body" value="" placeholder="Name" required />
@@ -33,10 +34,11 @@ description: BluePrintLAB Contact Form
 			</div>
 			<div class="12u$">
 				<ul class="actions">
-					<li><input type="submit" value="Send Message" class="special" /></li>
-					<input type="hidden" name='redirect_to' value="https://www.blueprint-lab.com/thanks" /> 
+					<li><input type="submit" value="Send" class="special" /></li>
+					<div id="sent">Message sent! Thank you.</div>
 				</ul>
 			</div>
 		</div>
 	</form>
 </section>
+<script src="/assets/js/sent.js"></script>
