@@ -2494,6 +2494,10 @@
 		margin-top:10px;
 	}
 
+		.spotlight:hover {
+			transform: scale(1.02);
+		}
+
 		.spotlight .image {
 			-moz-order: 1;
 			-webkit-order: 1;
