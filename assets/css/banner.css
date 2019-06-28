@@ -110,13 +110,12 @@
 				background-position: center;
 				background-repeat: no-repeat;
 				background-size: contain;
-				bottom: 4em;
+				bottom: 4;
 				content: '';
 				display: block;
-				height: 1.5em;
-				left: 50%;
-				margin: 0 0 0 -0.75em;
-				position: absolute;
+				height: 3.5em;
+				left: 49%;
+				position: relative;
 				width: 1.5em;
 			}
 
