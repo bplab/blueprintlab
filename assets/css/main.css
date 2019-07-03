@@ -2842,10 +2842,10 @@
 		-webkit-transform: translateX(20em);
 		-ms-transform: translateX(20em);
 		transform: translateX(20em);
-		-moz-transition: -moz-transform 0.5s ease;
-		-webkit-transition: -webkit-transform 0.5s ease;
-		-ms-transition: -ms-transform 0.5s ease;
-		transition: transform 0.5s ease;
+		-moz-transition: -moz-transform 0.2s ease;
+		-webkit-transition: -webkit-transform 0.2s ease;
+		-ms-transition: -ms-transform 0.2s ease;
+		transition: transform 0.25s ease;
 		-webkit-overflow-scrolling: touch;
 		background: #1f8dcc;
 		color: #ffffff;
