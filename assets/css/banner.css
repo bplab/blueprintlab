@@ -128,10 +128,10 @@
 			-webkit-transition: opacity 0.5s ease-in-out;
 			-ms-transition: opacity 0.5s ease-in-out;
 			transition: opacity 0.5s ease-in-out;
-			-moz-transition-delay: 0.75s;
-			-webkit-transition-delay: 0.75s;
-			-ms-transition-delay: 0.75s;
-			transition-delay: 0.75s;
+			-moz-transition-delay: 0.1s;
+			-webkit-transition-delay: 0.1s;
+			-ms-transition-delay: 0.1s;
+			transition-delay: 0.1s;
 			content: '';
 			background: #094161;
 			display: block;
