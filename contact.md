@@ -2,6 +2,7 @@
 layout: page
 title: contact us
 description: BluePrintLAB Contact Form
+order: 2
 ---
 
 <link rel="stylesheet" href="{{ "/assets/css/sent.css" | relative_url }}" />

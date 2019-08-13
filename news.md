@@ -2,6 +2,7 @@
 layout: page
 title: news
 description: Collection of BluePrintLAB news
+order: 1
 ---
 
 <section id="five">

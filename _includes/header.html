@@ -11,8 +11,10 @@
 						<ul>
 							{% for page in site.pages %} {% if page.layout == "default" %}
 							<li><a href="{{ page.url | absolute_url }}">{{ page.title }}</a></li>
-							{% endif %} {% endfor %} {% for page in site.pages %} {% if page.layout == "page" %}
-							<li><a href="{{ page.url | absolute_url }}">{{ page.title }}</a></li>
+							{% endif %} {% endfor %}
+							{% assign sorted_pages = site.pages | sort:"order" %}
+							{% for node in sorted_pages %} {% if node.layout == "page" %}
+							<li><a href="{{ node.url | absolute_url }}">{{ node.title }}</a></li>
 							{% endif %} {% endfor %}
 						</ul>
 					</div>

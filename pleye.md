@@ -3,6 +3,7 @@ layout: page
 title: Pleye
 description: Easily customized app for independent eyecare professionals (IECP)
 image: pleye.jpg
+order: 3
 ---
 
 We know many IECPs are struggling with losing sales in their optical business to online competitors, like Warby Parker, and big retailers like Costco and LensCrafters.
