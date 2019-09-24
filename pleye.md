@@ -35,6 +35,6 @@ Pleye is now available on the Apple App Store for iPhone.
 <a class="button special small" href="/qrcode" title="Pleye Application Link" target="_blank">Apply for Pleye</a>
 <a style="text-decoration: none; border-bottom-color: transparent;" href="https://apps.apple.com/us/app/pleye-optical-practices-app/id1465682596" title="Pleye App Store Link" target="_blank"><img style="height: 50px" src="/assets/images/app_store_badge.svg" alt="App Store Badge"></a>
 
-We need your knowledge and experience to help us deliver a great product for your business. Help us improve Pleye by giving us a few minutes to fill out an anonymous survey. If you write-in your email, you will receive early access to new feature demos like our virtual try on and lens experience.
+We need your knowledge and experience to help us deliver a great product for your business. Help us improve Pleye by giving us a few minutes to fill out an anonymous survey. If you write-in your email, you will receive early access to new feature demos like our AR lens experience, virtual try on, and easy appointment scheduling.
 
 <a class="button special small" href="https://forms.gle/XkbuT4VsBCnZdheP7" title="Go to survey" target="_blank">Go to survey</a>
