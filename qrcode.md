@@ -13,7 +13,7 @@ If you don't have everything now, you can still begin registration and come back
 
 Here's some things you will need to upload:
 1. Logo - 1024w x 1024h pixels in PNG format with transparent background (Optional)
-2. Store front photo - 308w x 274h pixels in JPG format
+2. Store front photo - 412w x 365h pixels in JPG format
 3. Staff photos - 175w x 149h pixels in JPG format (at least 1)
 
 Click the button below to begin your application.
