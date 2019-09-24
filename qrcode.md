@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Pleye QR code registration
+title: Pleye QR code application
 description:
 order: 4
 ---
@@ -12,10 +12,12 @@ To create your custom app, we need you to answer some questions about your pract
 If you don't have everything now, you can still begin registration and come back later to finish it.
 
 Here's some things you will need to upload:
-1. Logo - 1024h x 1024w pixels in PNG format with transparent background (Optional)
-2. Store front photo - #h x #w pixels in JPG format
-3. Staff photos - 175h x 149w pixels in JPG format (at least 1)
+1. Logo - 1024w x 1024h pixels in PNG format with transparent background (Optional)
+2. Store front photo - 308w x 274h pixels in JPG format
+3. Staff photos - 175w x 149h pixels in JPG format (at least 1)
 
-Click the button below to begin your registration.
+Click the button below to begin your application.
 
-<a class="button special small" href="https://docs.google.com/forms/d/e/1FAIpQLSeKARu5LZawGfK3tD8YWsYFudzM-s4LPmn9Ca74GTlfpWTPLg/viewform?usp=sf_link" title="Register button" target="_blank">Register</a>
+<a class="button special small" href="https://docs.google.com/forms/d/e/1FAIpQLSeKARu5LZawGfK3tD8YWsYFudzM-s4LPmn9Ca74GTlfpWTPLg/viewform?usp=sf_link" title="Pleye application button" target="_blank">Apply for Pleye</a>
+
+Once approved, we will send you your custom QR code by email.
