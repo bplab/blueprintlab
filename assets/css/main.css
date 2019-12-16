@@ -3213,6 +3213,10 @@
 
 		#footer .icons {
 			font-size: 1.25em;
+			display: flex;
+			justify-content: space-around;
+			margin: auto auto 2em auto;
+			max-width: 1000px;
 		}
 
 			#footer .icons a {
