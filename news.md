@@ -6,6 +6,7 @@ order: 1
 ---
 
 <section id="five">
+<link rel="stylesheet" href="{{ "/assets/css/spotlight.css" | relative_url }}" />
 
 	{% for post in site.posts limit:10 %}{% if site.tiles-source == 'posts' %}
 
