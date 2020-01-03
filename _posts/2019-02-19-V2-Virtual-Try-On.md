@@ -3,6 +3,7 @@ layout: post
 title: V2 Virtual Try On
 description: Our V2 Virtual Try On uses 3D face measurements to accurately fit eyewear on the user’s face in real-time with the accurate size ratio.
 image: V2VTO.jpg
+webp: V2VTO.webp
 ---
 
 Unlike current virtual try on offerings, V2 Virtual Try On offers the most realistic try on experience. Rather than using hastily 3D scanned models with basic color pallets, our designers create individual renderings for each eyewear model and color selection to create realistic 3D models.<br />
