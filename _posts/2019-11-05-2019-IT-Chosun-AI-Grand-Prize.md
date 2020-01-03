@@ -3,6 +3,7 @@ layout: post
 title: 2019 IT Chosun AI Grand Prize
 description: BluePrintLAB was selected as the winner of the 2019 IT Chosun AI Grand Prize of Korea
 image: 2019itchosun.jpg
+webp: 2019itchosun.webp
 ---
 
 BluePrintLAB was recognized as one of the top AI startups of 2019 in Korea. On November 5th, 2019 at the Westin Chosun Hotel in Seoul, [BluePrintLAB was awarded the 2019 AI Grand Prize of Korea](http://it.chosun.com/site/data/html_dir/2019/11/05/2019110503036.html) by [IT Chosun](http://it.chosun.com).
