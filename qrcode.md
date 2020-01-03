@@ -2,6 +2,7 @@
 layout: page
 title: Pleye QR code application
 description:
+image: pleye.jpg
 order: 4
 ---
 
