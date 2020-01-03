@@ -12,8 +12,8 @@
 title: BluePrintLAB Inc. (주)블루프린트랩 | 3D, AI, AR Software Solutions Developer
 email: help@blueprint-lab.com
 description: BluePrintLAB specializes in designing software solutions that utilize 3D scanning, 3D printing, and artificial intelligence (AI).
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://www.blueprint-lab.com" # the base hostname & protocol for your site
+baseurl: "/blueprintlab" # the subpath of your site, e.g. /blog
+url: "https://bplmarketer.github.io" # the base hostname & protocol for your site
 
 # Homepage tiles
 tiles-source: posts # accepts "posts" or "pages"
