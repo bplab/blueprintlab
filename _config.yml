@@ -1,0 +1,57 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: BluePrintLAB Inc. (주)블루프린트랩 | 3D, AI, AR Software Solutions Developer
+email: help@blueprint-lab.com
+description: BluePrintLAB specializes in designing software solutions that utilize 3D scanning, 3D printing, and artificial intelligence (AI).
+baseurl: "/blueprintlab" # the subpath of your site, e.g. /blog
+url: "https://bplmarketer.github.io" # the base hostname & protocol for your site
+
+# Homepage tiles
+tiles-source: posts # accepts "posts" or "pages"
+tiles-count: 3
+
+# Misc settings
+featured-image-source:
+future: false
+timezone: Asia/Seoul
+
+# Social settings
+facebook_url: https://www.facebook.com/blueprintlab4u/
+github_url:
+gitlab_url: 
+instagram_url: https://www.instagram.com/blueprintlab3d/
+linkedin_url: https://www.linkedin.com/company/14509122
+pinterest_url:
+slack_url: https://blueprintlab.slack.com
+twitter_url: 
+
+# Build settings
+markdown: kramdown
+
+sass:
+style: compressed
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
