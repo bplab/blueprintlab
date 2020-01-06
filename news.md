@@ -14,7 +14,7 @@ order: 1
 				<picture>
 					<source data-srcset="{{ "" | absolute_url }}/assets/images/{{ post.webp }}" type="image/webp">
 					<source data-srcset="{{ "" | absolute_url }}/assets/images/{{ post.image }}" type="image/jpeg">
-					<img data-src="{{ "" | absolute_url }}/assets/images/{{ post.image }}" class="lazyload">
+					<img data-src="{{ "" | absolute_url }}/assets/images/{{ post.image }}" class="lazyload" alt="{{ post.title }}">
 				</picture>
 			</a>{% endif %}
 		</div>
@@ -30,7 +30,7 @@ order: 1
 			{% if page.image %}<a href="{{ post.url | relative_url }}" class="link">
 					<source data-srcset="{{ "" | absolute_url }}/assets/images/{{ post.webp }}" type="image/webp">
 					<source data-srcset="{{ "" | absolute_url }}/assets/images/{{ post.image }}" type="image/jpeg">
-					<img data-src="{{ "" | absolute_url }}/assets/images/{{ post.image }}" class="lazyload">
+					<img data-src="{{ "" | absolute_url }}/assets/images/{{ post.image }}" class="lazyload" alt="{{ post.title }}">
 			</a>{% endif %}
 		</div>
 		<div class="content">
