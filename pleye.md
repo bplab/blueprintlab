@@ -69,7 +69,7 @@ Pleye is now available on the Apple App Store for iPhone.
 1. First, apply for your own custom QR code.
 2. Once we send you your QR code, you can have your patients download Pleye and scan your QR code for your custom app.
 
-<a class="button special small" href="/qrcode" title="Pleye Application Link" target="_blank">Apply for Pleye</a>
+<a class="button special small" href="./qrcode" title="Pleye Application Link" target="_blank">Apply for Pleye</a>
 <a style="text-decoration: none; border-bottom-color: transparent;" href="https://apps.apple.com/us/app/pleye-optical-practices-app/id1465682596" title="Pleye App Store Link" target="_blank">
     <img style="height: 50px" data-src="./assets/images/app_store_badge.svg" alt="App Store Badge" class="lazyload">
 </a>
