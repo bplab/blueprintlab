@@ -44,4 +44,4 @@ order: 2
 		</div>
 	</form>
 </section>
-<script src="/assets/js/sent.js"></script>
+<script src="{{ "/assets/js/sent.js" | relative_url }}"></script>
