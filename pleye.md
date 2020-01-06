@@ -13,9 +13,9 @@ We know many IECPs are struggling with losing sales in their optical business to
 We created an app called Pleye. Pleye helps eye care professionals have their own app to boost customer engagement and increase return visits.
 
 <picture>
-    <source data-srcset="/assets/images/pleye_intro.webp" type="image/webp">
-    <source data-srcset="/assets/images/pleye_intro.jpg" type="image/jpeg">
-    <img style="max-width: 100%" data-src="/assets/images/pleye_intro.jpg" alt="Pleye intro image" class="lazyload">
+    <source data-srcset="./assets/images/pleye_intro.webp" type="image/webp">
+    <source data-srcset="./assets/images/pleye_intro.jpg" type="image/jpeg">
+    <img style="max-width: 100%" data-src="./assets/images/pleye_intro.jpg" alt="Pleye intro image" class="lazyload">
 </picture>
 <br />
 
@@ -23,14 +23,14 @@ We created an app called Pleye. Pleye helps eye care professionals have their ow
 [Apply](https://www.blueprint-lab.com/qrcode) for a QR code that patients scan to change Pleye into your practice's custom app featuring your logo and colors.
 
 <picture>
-    <source data-srcset="/assets/images/pleye_qr.webp" type="image/webp">
-    <source data-srcset="/assets/images/pleye_qr.jpg" type="image/jpeg">
-    <img style="max-width: 100%" data-src="/assets/images/pleye_qr.jpg" alt="Pleye QR scan image" class="lazyload">
+    <source data-srcset="./assets/images/pleye_qr.webp" type="image/webp">
+    <source data-srcset="./assets/images/pleye_qr.jpg" type="image/jpeg">
+    <img style="max-width: 100%" data-src="./assets/images/pleye_qr.jpg" alt="Pleye QR scan image" class="lazyload">
 </picture>
 <picture>
-    <source data-srcset="/assets/images/pleye_custom.webp" type="image/webp">
-    <source data-srcset="/assets/images/pleye_custom.jpg" type="image/jpeg">
-    <img style="max-width: 100%" data-src="/assets/images/pleye_custom.jpg" alt="Pleye customized image" class="lazyload">
+    <source data-srcset="./assets/images/pleye_custom.webp" type="image/webp">
+    <source data-srcset="./assets/images/pleye_custom.jpg" type="image/jpeg">
+    <img style="max-width: 100%" data-src="./assets/images/pleye_custom.jpg" alt="Pleye customized image" class="lazyload">
 </picture>
 <br />
 
@@ -38,14 +38,14 @@ We created an app called Pleye. Pleye helps eye care professionals have their ow
 Customers can easily call your office or look up your office hours and location. Let your patients know more about you and your staff by sharing your profiles.
 
 <picture>
-    <source data-srcset="/assets/images/pleye_office.webp" type="image/webp">
-    <source data-srcset="/assets/images/pleye_office.jpg" type="image/jpeg">
-    <img style="max-width: 100%" data-src="/assets/images/pleye_office.jpg" alt="Pleye office image" class="lazyload">
+    <source data-srcset="./assets/images/pleye_office.webp" type="image/webp">
+    <source data-srcset="./assets/images/pleye_office.jpg" type="image/jpeg">
+    <img style="max-width: 100%" data-src="./assets/images/pleye_office.jpg" alt="Pleye office image" class="lazyload">
 </picture>
 <picture>
-    <source data-srcset="/assets/images/pleye_staff.webp" type="image/webp">
-    <source data-srcset="/assets/images/pleye_staff.jpg" type="image/jpeg">
-    <img style="max-width: 100%" data-src="/assets/images/pleye_staff.jpg" alt="Pleye staff image" class="lazyload">
+    <source data-srcset="./assets/images/pleye_staff.webp" type="image/webp">
+    <source data-srcset="./assets/images/pleye_staff.jpg" type="image/jpeg">
+    <img style="max-width: 100%" data-src="./assets/images/pleye_staff.jpg" alt="Pleye staff image" class="lazyload">
 </picture>
 <br />
 
@@ -53,14 +53,14 @@ Customers can easily call your office or look up your office hours and location.
 In the future, we will offer new modules such as virtual try on, easy appointment scheduling, and push notifications. Your patients can try new frames and sunglasses at home, then schedule an appointment to buy and fit them at your office. We'll send them notifications about upcoming appointments, events, and more.
 
 <picture>
-    <source data-srcset="/assets/images/pleye_experience.webp" type="image/webp">
-    <source data-srcset="/assets/images/pleye_experience.jpg" type="image/jpeg">
-    <img style="max-width: 100%" data-src="/assets/images/pleye_experience.jpg" alt="Pleye experiences" class="lazyload">
+    <source data-srcset="./assets/images/pleye_experience.webp" type="image/webp">
+    <source data-srcset="./assets/images/pleye_experience.jpg" type="image/jpeg">
+    <img style="max-width: 100%" data-src="./assets/images/pleye_experience.jpg" alt="Pleye experiences" class="lazyload">
 </picture>
 <picture>
-    <source data-srcset="/assets/images/pleye_appointment.webp" type="image/webp">
-    <source data-srcset="/assets/images/pleye_appointment.jpg" type="image/jpeg">
-    <img style="max-width: 100%" data-src="/assets/images/pleye_appointment.jpg" alt="Pleye appointments" class="lazyload">
+    <source data-srcset="./assets/images/pleye_appointment.webp" type="image/webp">
+    <source data-srcset="./assets/images/pleye_appointment.jpg" type="image/jpeg">
+    <img style="max-width: 100%" data-src="./assets/images/pleye_appointment.jpg" alt="Pleye appointments" class="lazyload">
 </picture>
 <br />
 
@@ -71,7 +71,7 @@ Pleye is now available on the Apple App Store for iPhone.
 
 <a class="button special small" href="/qrcode" title="Pleye Application Link" target="_blank">Apply for Pleye</a>
 <a style="text-decoration: none; border-bottom-color: transparent;" href="https://apps.apple.com/us/app/pleye-optical-practices-app/id1465682596" title="Pleye App Store Link" target="_blank">
-    <img style="height: 50px" data-src="/assets/images/app_store_badge.svg" alt="App Store Badge" class="lazyload">
+    <img style="height: 50px" data-src="./assets/images/app_store_badge.svg" alt="App Store Badge" class="lazyload">
 </a>
 
 ## Get early access
