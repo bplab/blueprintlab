@@ -1096,6 +1096,7 @@
 						letter-spacing: 0.225em;
 						padding: 0 1.5em;
 						text-transform: uppercase;
+						font-weight: bold;
 					}
 
 						#header nav > ul > li > a.menuToggle {
@@ -1140,6 +1141,7 @@
 
 		#header.alt {
 			background: transparent;
+			color: #000
 		}
 
 			#header.alt h1 {
@@ -1148,6 +1150,14 @@
 				-ms-pointer-events: none;
 				pointer-events: none;
 				opacity: 0;
+			}
+			
+			#header.alt nav > ul > li > a {
+				color: #000;
+			}
+
+			#header.alt nav > ul > li > a.menuToggle:after {
+				background-image: url("images/blackbars.svg");
 			}
 
 /* Main */
