@@ -54,7 +54,7 @@
 	}
 
 	body {
-		background: #094161;
+		background: #fff;
 	}
 
 		body.is-loading *, body.is-loading *:before, body.is-loading *:after {
