@@ -1,6 +1,17 @@
 /* Wrapper 1,2,3 */
+		.no-webp .wrapper.style1 {
+			background-image: -moz-linear-gradient(top, rgba(31, 141, 204,1), rgba(31, 141, 204,0.75)), url("../../assets/images/banner.jpg");
+			background-image: -webkit-linear-gradient(top, rgba(31, 141, 204,1), rgba(31, 141, 204,0.75)), url("../../assets/images/banner.jpg");
+			background-image: -ms-linear-gradient(top, rgba(31, 141, 204,1), rgba(31, 141, 204,0.75)), url("../../assets/images/banner.jpg");
+			background-image: linear-gradient(top, rgba(31, 141, 204,1), rgba(31, 141, 204,0.75)), url("../../assets/images/banner.jpg");
+			color: #ccdbec;
+		}		
+
 		.wrapper.style1 {
-			background-color: #1f8dcc;
+			background-image: -moz-linear-gradient(top, rgba(31, 141, 204,1), rgba(31, 141, 204,0.75)), url("../../assets/images/banner.webp");
+			background-image: -webkit-linear-gradient(top, rgba(31, 141, 204,1), rgba(31, 141, 204,0.75)), url("../../assets/images/banner.webp");
+			background-image: -ms-linear-gradient(top, rgba(31, 141, 204,1), rgba(31, 141, 204,0.75)), url("../../assets/images/banner.webp");
+			background-image: linear-gradient(top, rgba(31, 141, 204,1), rgba(31, 141, 204,0.75)), url("../../assets/images/banner.webp");
 			color: #ccdbec;
 		}
 
@@ -153,8 +164,19 @@
 
 			}
 
+		.no-webp .wrapper.style2 {
+			background-image: -moz-linear-gradient(top, rgba(17, 92, 135,1), rgba(17, 92, 135,0.75)), url("../../assets/images/banner.jpg");
+			background-image: -webkit-linear-gradient(top, rgba(17, 92, 135,1), rgba(17, 92, 135,0.75)), url("../../assets/images/banner.jpg");
+			background-image: -ms-linear-gradient(top, rgba(17, 92, 135,1), rgba(17, 92, 135,0.75)), url("../../assets/images/banner.jpg");
+			background-image: linear-gradient(top, rgba(17, 92, 135,1), rgba(17, 92, 135,0.75)), url("../../assets/images/banner.jpg");
+			color: #ccdbec;
+		}
+			
 		.wrapper.style2 {
-			background-color: #115c87;
+			background-image: -moz-linear-gradient(top, rgba(17, 92, 135,1), rgba(17, 92, 135,0.75)), url("../../assets/images/banner.webp");
+			background-image: -webkit-linear-gradient(top, rgba(17, 92, 135,1), rgba(17, 92, 135,0.75)), url("../../assets/images/banner.webp");
+			background-image: -ms-linear-gradient(top, rgba(17, 92, 135,1), rgba(17, 92, 135,0.75)), url("../../assets/images/banner.webp");
+			background-image: linear-gradient(top, rgba(17, 92, 135,1), rgba(17, 92, 135,0.75)), url("../../assets/images/banner.webp");
 			color: #ccdbec;
 		}
 
@@ -307,6 +329,15 @@
 
 			}
 
+		.no-webp .wrapper.style3 {
+			background-image: -moz-linear-gradient(top, rgba(9, 65, 97,1), rgba(9, 65, 97, 0.75)), url("../../assets/images/banner.jpg");
+			background-image: -webkit-linear-gradient(top, rgba(9, 65, 97,1), rgba(9, 65, 97, 0.75)), url("../../assets/images/banner.jpg");
+			background-image: -ms-linear-gradient(top, rgba(9, 65, 97,1), rgba(9, 65, 97, 0.75)), url("../../assets/images/banner.jpg");
+			background-image: linear-gradient(top, rgba(9, 65, 97,1), rgba(9, 65, 97, 0.75)), url("../../assets/images/banner.jpg");
+		}
 		.wrapper.style3 {
-			background-color: #094161;
+			background-image: -moz-linear-gradient(top, rgba(9, 65, 97,1), rgba(9, 65, 97, 0.75)), url("../../assets/images/banner.webp");
+			background-image: -webkit-linear-gradient(top, rgba(9, 65, 97,1), rgba(9, 65, 97, 0.75)), url("../../assets/images/banner.webp");
+			background-image: -ms-linear-gradient(top, rgba(9, 65, 97,1), rgba(9, 65, 97, 0.75)), url("../../assets/images/banner.webp");
+			background-image: linear-gradient(top, rgba(9, 65, 97,1), rgba(9, 65, 97, 0.75)), url("../../assets/images/banner.webp");
 		}

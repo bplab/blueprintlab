@@ -1096,6 +1096,7 @@
 						letter-spacing: 0.225em;
 						padding: 0 1.5em;
 						text-transform: uppercase;
+						font-weight: bold;
 					}
 
 						#header nav > ul > li > a.menuToggle {
@@ -1140,6 +1141,7 @@
 
 		#header.alt {
 			background: transparent;
+			color: #000
 		}
 
 			#header.alt h1 {
@@ -1148,6 +1150,14 @@
 				-ms-pointer-events: none;
 				pointer-events: none;
 				opacity: 0;
+			}
+			
+			#header.alt nav > ul > li > a {
+				color: #000;
+			}
+
+			#header.alt nav > ul > li > a.menuToggle:after {
+				background-image: url("images/blackbars.svg");
 			}
 
 /* Main */
@@ -1236,9 +1246,21 @@
 
 /* Footer */
 
+	.no-webp #footer {
+		padding: 6em 0 4em 0 ;
+		background-image: -moz-linear-gradient(top, rgba(29, 36, 42, 1), rgba(29, 36, 42, 0.75)), url("../../assets/images/banner.jpg");
+		background-image: -webkit-linear-gradient(top, rgba(29, 36, 42, 1), rgba(29, 36, 42, 0.75)), url("../../assets/images/banner.jpg");
+		background-image: -mos-linear-gradient(top, rgba(29, 36, 42, 1), rgba(29, 36, 42, 0.75)), url("../../assets/images/banner.jpg");
+		background-image: linear-gradient(top, rgba(29, 36, 42, 1), rgba(29, 36, 42, 0.75)), url("../../assets/images/banner.jpg");
+		text-align: center;
+	}
+
 	#footer {
 		padding: 6em 0 4em 0 ;
-		background-color: #1d242a;
+		background-image: -moz-linear-gradient(top, rgba(29, 36, 42, 1), rgba(29, 36, 42, 0.75)), url("../../assets/images/banner.webp");
+		background-image: -webkit-linear-gradient(top, rgba(29, 36, 42, 1), rgba(29, 36, 42, 0.75)), url("../../assets/images/banner.webp");
+		background-image: -mos-linear-gradient(top, rgba(29, 36, 42, 1), rgba(29, 36, 42, 0.75)), url("../../assets/images/banner.webp");
+		background-image: linear-gradient(top, rgba(29, 36, 42, 1), rgba(29, 36, 42, 0.75)), url("../../assets/images/banner.webp");
 		text-align: center;
 	}
 

@@ -36,6 +36,7 @@
 			padding: 0.35em 1em;
 			position: relative;
 			z-index: 1;
+			color: #1f8dcc;
 		}
 
 			#banner h2:before, #banner h2:after {
@@ -47,7 +48,7 @@
 				-webkit-transition-delay: 0.25s;
 				-ms-transition-delay: 0.25s;
 				transition-delay: 0.25s;
-				background: #fff;
+				background: #1f8dcc;
 				content: '';
 				display: block;
 				height: 2px;
@@ -68,6 +69,7 @@
 		#banner p {
 			letter-spacing: 0.225em;
 			text-transform: capitalize;
+			color: #000;
 		}
 
 			#banner p a {
