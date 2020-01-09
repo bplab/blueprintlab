@@ -75,7 +75,7 @@
 		@media screen and (max-width: 736px) {
 
 			#banner {
-				padding: 3em 3em 5em 3em ;
+				padding: 3em 3em 14vh 3em ;
 				height: auto;
 				min-height: 0;
 			}
