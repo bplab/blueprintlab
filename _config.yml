@@ -9,7 +9,7 @@
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: BluePrintLAB Inc. (주)블루프린트랩 | 3D, AI, AR Software Solutions Developer
+title: BluePrintLAB Inc. | Eyewear Virtual Try On Solutions
 email: help@blueprint-lab.com
 description: BluePrintLAB specializes in designing software solutions that utilize 3D scanning, augmented reality (AR), and artificial intelligence (AI).
 baseurl: "/blueprintlab" # the subpath of your site, e.g. /blog
