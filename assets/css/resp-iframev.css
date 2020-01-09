@@ -1,12 +1,12 @@
 /* Responsive iFrame Vertical*/
 
-	.resp-containerV {
+	.resp-containerv {
 		position: relative;
 		overflow: hidden;
 		padding-top: 55vh;
 	}
 	
-	.resp-iframeV {
+	.resp-iframev {
 		position: absolute;
 		top: 50%;
 		left: 50%;
