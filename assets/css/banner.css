@@ -72,83 +72,10 @@
 			color: #000;
 		}
 
-			#banner p a {
-				color: inherit;
-			}
-
-		#banner .more {
-			-moz-transition: -moz-transform 0.15s ease, opacity 0.75s ease;
-			-webkit-transition: -webkit-transform 0.15s ease, opacity 0.75s ease;
-			-ms-transition: -ms-transform 0.15s ease, opacity 0.75s ease;
-			transition: transform 0.15s ease, opacity 0.15s ease;
-			-moz-transition-delay: 1s;
-			-webkit-transition-delay: 1s;
-			-ms-transition-delay: 1s;
-			transition-delay: 1s;
-			-moz-transform: translateY(0);
-			-webkit-transform: translateY(0);
-			-ms-transform: translateY(0);
-			transform: translateY(0);
-			border: none;
-			bottom: 0;
-			color: inherit;
-			font-size: 0.8em;
-			height: 6em;
-			left: 50%;
-			letter-spacing: 0.225em;
-			margin-left: -8.5em;
-			opacity: 1;
-			outline: 0;
-			padding-left: 0.225em;
-			position: absolute;
-			text-align: center;
-			text-transform: uppercase;
-			width: 16em;
-			z-index: 1;
-		}
-
-			#banner .more:after {
-				background-image: url("images/arrow.svg");
-				background-position: center;
-				background-repeat: no-repeat;
-				background-size: contain;
-				bottom: 3%;
-				content: '';
-				display: block;
-				height: 3.5em;
-				left: 48%;
-				position: relative;
-				width: 1.5em;
-			}
-
-		#banner:after {
-			-moz-pointer-events: none;
-			-webkit-pointer-events: none;
-			-ms-pointer-events: none;
-			pointer-events: none;
-			-moz-transition: opacity 0.5s ease-in-out;
-			-webkit-transition: opacity 0.5s ease-in-out;
-			-ms-transition: opacity 0.5s ease-in-out;
-			transition: opacity 0.5s ease-in-out;
-			-moz-transition-delay: 0.1s;
-			-webkit-transition-delay: 0.1s;
-			-ms-transition-delay: 0.1s;
-			transition-delay: 0.1s;
-			content: '';
-			background: #094161;
-			display: block;
-			width: 100%;
-			height: 100%;
-			position: absolute;
-			left: 0;
-			top: 0;
-			opacity: 0;
-		}
-
 		@media screen and (max-width: 736px) {
 
 			#banner {
-				padding: 7em 3em 5em 3em ;
+				padding: 3em 3em 5em 3em ;
 				height: auto;
 				min-height: 0;
 			}
@@ -158,10 +85,6 @@
 				}
 
 				#banner br {
-					display: none;
-				}
-
-				#banner .more {
 					display: none;
 				}
 
@@ -178,14 +101,6 @@
 		body.is-loading #banner h2:before, body.is-loading #banner h2:after {
 			width: 0;
 		}
-
-	body.is-loading #banner .more {
-		-moz-transform: translateY(8.5em);
-		-webkit-transform: translateY(8.5em);
-		-ms-transform: translateY(8.5em);
-		transform: translateY(8.5em);
-		opacity: 0;
-	}
 
 	body.is-loading #banner:after {
 		opacity: 1;

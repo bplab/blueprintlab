@@ -7,6 +7,7 @@
 		font-size: 100%;
 		font: inherit;
 		vertical-align: baseline;
+		scroll-behavior: smooth
 	}
 
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
@@ -118,7 +119,7 @@
 
 	strong, b {
 		color: #fff;
-		font-weight: 600;
+		font-weight: 800;
 	}
 
 	em, i {
@@ -607,11 +608,11 @@
 		-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-		background-color: transparent;
+		background-color: #fff;
 		border-radius: 3px;
 		border: 0;
-		box-shadow: inset 0 0 0 2px #fff;
-		color: #fff;
+		box-shadow: inset 0 0 0 2px #1f8dcc;
+		color: #1f8dcc;
 		cursor: pointer;
 		display: inline-block;
 		font-size: 0.8em;
@@ -1273,7 +1274,7 @@
 		}
 
 			#footer .icons a {
-				color: rgba(255, 255, 255, 0.5);
+				color: rgba(255, 255, 255, 1);
 			}
 
 				#footer .icons a:hover {
@@ -1281,7 +1282,7 @@
 				}
 
 		#footer .copyright {
-			color: rgba(255, 255, 255, 0.5);
+			color: rgba(255, 255, 255, 1);
 			font-size: 0.8em;
 			letter-spacing: 0.225em;
 			list-style: none;
