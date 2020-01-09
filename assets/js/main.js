@@ -49,13 +49,6 @@
 				);
 			});
 
-		// Scrolly.
-			$('.scrolly')
-				.scrolly({
-					speed: 250,
-					offset: $header.outerHeight()
-				});
-
 		// Menu.
 			$('#menu')
 				.append('<a href="#menu" class="close"></a>')
