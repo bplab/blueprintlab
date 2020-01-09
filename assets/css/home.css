@@ -4,7 +4,7 @@
 			background-image: -webkit-linear-gradient(top, rgba(31, 141, 204,1), rgba(31, 141, 204,0.75)), url("../../assets/images/banner.jpg");
 			background-image: -ms-linear-gradient(top, rgba(31, 141, 204,1), rgba(31, 141, 204,0.75)), url("../../assets/images/banner.jpg");
 			background-image: linear-gradient(top, rgba(31, 141, 204,1), rgba(31, 141, 204,0.75)), url("../../assets/images/banner.jpg");
-			color: #ccdbec;
+			color: #fff;
 		}		
 
 		.wrapper.style1 {
@@ -12,7 +12,7 @@
 			background-image: -webkit-linear-gradient(top, rgba(31, 141, 204,1), rgba(31, 141, 204,0.75)), url("../../assets/images/banner.webp");
 			background-image: -ms-linear-gradient(top, rgba(31, 141, 204,1), rgba(31, 141, 204,0.75)), url("../../assets/images/banner.webp");
 			background-image: linear-gradient(top, rgba(31, 141, 204,1), rgba(31, 141, 204,0.75)), url("../../assets/images/banner.webp");
-			color: #ccdbec;
+			color: #fff;
 		}
 
 			.wrapper.style1 strong, .wrapper.style1 b {
@@ -44,7 +44,7 @@
 			}
 
 			.wrapper.style1 header.major p {
-				color: #ccdbec;
+				color: #ffffff;
 			}
 
 			.wrapper.style1 label {
@@ -169,7 +169,7 @@
 			background-image: -webkit-linear-gradient(top, rgba(17, 92, 135,1), rgba(17, 92, 135,0.75)), url("../../assets/images/banner.jpg");
 			background-image: -ms-linear-gradient(top, rgba(17, 92, 135,1), rgba(17, 92, 135,0.75)), url("../../assets/images/banner.jpg");
 			background-image: linear-gradient(top, rgba(17, 92, 135,1), rgba(17, 92, 135,0.75)), url("../../assets/images/banner.jpg");
-			color: #ccdbec;
+			color: #ffffff;
 		}
 			
 		.wrapper.style2 {
@@ -177,7 +177,7 @@
 			background-image: -webkit-linear-gradient(top, rgba(17, 92, 135,1), rgba(17, 92, 135,0.75)), url("../../assets/images/banner.webp");
 			background-image: -ms-linear-gradient(top, rgba(17, 92, 135,1), rgba(17, 92, 135,0.75)), url("../../assets/images/banner.webp");
 			background-image: linear-gradient(top, rgba(17, 92, 135,1), rgba(17, 92, 135,0.75)), url("../../assets/images/banner.webp");
-			color: #ccdbec;
+			color: #ffffff;
 		}
 
 			.wrapper.style2 strong, .wrapper.style2 b {
