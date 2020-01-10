@@ -7,10 +7,8 @@ webp: V2VTO.webp
 ---
 
 Unlike current virtual try on offerings, V2 Virtual Try On offers the most realistic try on experience. Rather than using hastily 3D scanned models with basic color pallets, our designers create individual renderings for each eyewear model and color selection to create realistic 3D models.<br />
-<link rel="stylesheet" href="{{ "/assets/css/resp-iframe.css" | relative_url }}" />
-<link rel="stylesheet" href="{{ "/assets/css/resp-iframev.css" | relative_url }}" />
-<div class="resp-containerV">
-	<iframe class="resp-iframeV" title="V2 Demo" src="{{ "./demo.html" | relative_url }}" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="resp-containerv">
+	<iframe class="resp-iframev" title="V2 Demo" src="{{ "./demo.html" | relative_url }}" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 <br />
 Other than design and color, accurate size is key to a realistic experience. By utilizing Apple’s TrueDepth 3D camera, V2 measures the user’s face and renders the eyewear at the correct size.<br />

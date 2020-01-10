@@ -5,9 +5,6 @@ description: BluePrintLAB Contact Form
 order: 2
 ---
 
-<link rel="stylesheet" href="{{ "/assets/css/grid.css" | relative_url }}" />
-<link rel="stylesheet" href="{{ "/assets/css/form.css" | relative_url }}" />
-<link rel="stylesheet" href="{{ "/assets/css/sent.css" | relative_url }}" />
 <section>
 	<form method="post" action="https://getsimpleform.com/messages?form_api_token=af201f2a2487815fb1d745822af038bc" onsubmit="return myFunction(sent)">
 		<div class="row uniform">

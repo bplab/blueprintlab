@@ -1,6 +1,4 @@
 <!-- Three -->
-<link rel="preload" href="{{ "/assets/css/spotlight.css" | relative_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-<noscript><link rel="stylesheet" href="{{ "/assets/css/spotlight.css" | relative_url }}" /></noscript>
 <section id="three" class="wrapper alt style3">
 	{% for post in site.posts limit:site.tiles-count %}{% if site.tiles-source == 'posts' %}<section class="spotlight">
 		<div class="image">
