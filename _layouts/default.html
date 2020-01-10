@@ -2,6 +2,14 @@
 <html lang="en">
     <head>
         {% include head.html %}
+        <link rel="preload" href="{{ "/assets/css/main.css" | relative_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+        <noscript><link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}" /></noscript>
+        <link rel="preload" href="{{ "/assets/css/fonts.css" | relative_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+        <noscript><link rel="stylesheet" href="{{ "/assets/css/fonts.css" | relative_url }}" /></noscript>
+        <link rel="preload" href="{{ "/assets/css/font-awesome.min.css" | relative_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+        <noscript><link rel="stylesheet" href="{{ "/assets/css/font-awesome.min.css" | relative_url }}" /></noscript>
+        <link rel="preload" href="{{ "/assets/css/grid.css" | relative_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+        <noscript><link rel="stylesheet" href="{{ "/assets/css/grid.css" | relative_url }}" /></noscript>
         <link rel="preload" href="{{ "/assets/css/home.css" | relative_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'" />
         <noscript><link rel="stylesheet" href="{{ "/assets/css/home.css" | relative_url }}" /></noscript>
         <link rel="preload" href="{{ "/assets/css/landing.css" | relative_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'" />
