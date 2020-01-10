@@ -60,17 +60,3 @@ body.is-mobile.landing .wrapper.style4 {
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-
-.no-webp body.is-mobile.landing #footer {
-	background-image: -moz-linear-gradient(top, rgba(29, 36, 42, 1), rgba(29, 36, 42, 0.75)), url("../../assets/images/banner.jpg");
-	background-image: -webkit-linear-gradient(top, rgba(29, 36, 42, 1), rgba(29, 36, 42, 0.75)), url("../../assets/images/banner.jpg");
-	background-image: -mos-linear-gradient(top, rgba(29, 36, 42, 1), rgba(29, 36, 42, 0.75)), url("../../assets/images/banner.jpg");
-	background-image: linear-gradient(top, rgba(29, 36, 42, 1), rgba(29, 36, 42, 0.75)), url("../../assets/images/banner.jpg");
-}
-
-body.is-mobile.landing #footer {
-	background-image: -moz-linear-gradient(top, rgba(29, 36, 42, 1), rgba(29, 36, 42, 0.75)), url("../../assets/images/banner.webp");
-	background-image: -webkit-linear-gradient(top, rgba(29, 36, 42, 1), rgba(29, 36, 42, 0.75)), url("../../assets/images/banner.webp");
-	background-image: -mos-linear-gradient(top, rgba(29, 36, 42, 1), rgba(29, 36, 42, 0.75)), url("../../assets/images/banner.webp");
-	background-image: linear-gradient(top, rgba(29, 36, 42, 1), rgba(29, 36, 42, 0.75)), url("../../assets/images/banner.webp");
-}
