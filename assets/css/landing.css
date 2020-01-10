@@ -1,6 +1,10 @@
 /* Landing */
 
-.no-webp body.landing #page-wrapper {
+body.landing #page-wrapper {
+	background: none;
+}
+
+.no-webp body.landing #banner {
 	background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)), url("../../assets/images/banner.jpg");
 	background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)), url("../../assets/images/banner.jpg");
 	background-image: -mos-linear-gradient(top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)), url("../../assets/images/banner.jpg");
@@ -12,7 +16,7 @@
 	padding-top: 0;
 }
 
-body.landing #page-wrapper {
+body.landing #banner {
 	background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)), url("../../assets/images/banner.webp");
 	background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)), url("../../assets/images/banner.webp");
 	background-image: -mos-linear-gradient(top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)), url("../../assets/images/banner.webp");
