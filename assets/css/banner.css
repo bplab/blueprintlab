@@ -70,6 +70,7 @@
 			letter-spacing: 0.225em;
 			text-transform: capitalize;
 			color: #000;
+			font-weight: bold;
 		}
 
 		@media screen and (max-width: 736px) {
