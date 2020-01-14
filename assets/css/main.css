@@ -26,7 +26,7 @@
 		quotes: none;
 	}
 
-	blockquote:before, blockquote:after, q:before, q:after {
+	blockquote::before, blockquote::after, q::before, q::after {
 		content: '';
 		content: none;
 	}
@@ -42,7 +42,7 @@
 
 /* Box Model */
 
-	*, *:before, *:after {
+	*, *::before, *::after {
 		-moz-box-sizing: border-box;
 		-webkit-box-sizing: border-box;
 		box-sizing: border-box;
@@ -58,7 +58,7 @@
 		background: #fff;
 	}
 
-		body.is-loading *, body.is-loading *:before, body.is-loading *:after {
+		body.is-loading *, body.is-loading *::before, body.is-loading *::after {
 			-moz-animation: none !important;
 			-webkit-animation: none !important;
 			-ms-animation: none !important;
@@ -285,7 +285,7 @@
 			position: relative;
 		}
 
-			header.major h2:after, header.major h3:after, header.major h4:after, header.major h5:after, header.major h6:after {
+			header.major h2::after, header.major h3::after, header.major h4::after, header.major h5::after, header.major h6::after {
 				content: '';
 				display: block;
 				height: 1px;
@@ -320,7 +320,7 @@
 		position: relative;
 	}
 
-		.icon:before {
+		.icon::before {
 			-moz-osx-font-smoothing: grayscale;
 			-webkit-font-smoothing: antialiased;
 			font-family: FontAwesome;
@@ -348,7 +348,7 @@
 			width: calc(3em + 2px);
 		}
 
-			.icon.major:before {
+			.icon.major::before {
 				-moz-transform: rotate(45deg);
 				-webkit-transform: rotate(45deg);
 				-ms-transform: rotate(45deg);
@@ -575,7 +575,7 @@
 						width: 100%;
 					}
 
-						ul.actions li > *.icon:before {
+						ul.actions li > *.icon::before {
 							margin-left: -1em;
 						}
 
@@ -645,11 +645,11 @@
 			background-color: rgba(144, 144, 144, 0.5);
 		}
 
-		input[type="submit"].icon:before,
-		input[type="reset"].icon:before,
-		input[type="button"].icon:before,
-		button.icon:before,
-		.button.icon:before {
+		input[type="submit"].icon::before,
+		input[type="reset"].icon::before,
+		input[type="button"].icon::before,
+		button.icon::before,
+		.button.icon::before {
 			margin-right: 0.5em;
 		}
 
@@ -802,7 +802,7 @@
 				background-color: rgba(0, 0, 0, 0.35);
 			}
 
-			.features li:before {
+			.features li::before {
 				display: block;
 				color: #ffffff;
 				position: absolute;
@@ -834,7 +834,7 @@
 					text-align: center;
 				}
 
-					.features li:before {
+					.features li::before {
 						left: 0;
 						margin: 0 0 1em 0;
 						position: relative;
@@ -916,7 +916,7 @@
 		padding-top: 3em;
 	}
 
-		#page-wrapper:before {
+		#page-wrapper::before {
 			background: transparent;
 			content: '';
 			display: block;
@@ -1014,7 +1014,7 @@
 		opacity: 0.35;
 	}
 
-		body.is-menu-visible #page-wrapper:before {
+		body.is-menu-visible #page-wrapper::before {
 			display: block;
 		}
 
@@ -1076,7 +1076,7 @@
 		background: rgba(0, 0, 0, 0.0375);
 	}
 
-	.wrapper.style4 .select-wrapper:before {
+	.wrapper.style4 .select-wrapper::before {
 		color: #dfdfdf;
 	}
 
@@ -1085,13 +1085,13 @@
 		color: #094161;
 	}
 
-		.wrapper.style4 input[type="checkbox"] + label:before,
-		.wrapper.style4 input[type="radio"] + label:before {
+		.wrapper.style4 input[type="checkbox"] + label::before,
+		.wrapper.style4 input[type="radio"] + label::before {
 			background: rgba(0, 0, 0, 0.0375);
 		}
 
-	.wrapper.style4 input[type="checkbox"]:checked + label:before,
-	.wrapper.style4 input[type="radio"]:checked + label:before {
+	.wrapper.style4 input[type="checkbox"]:checked + label::before,
+	.wrapper.style4 input[type="radio"]:checked + label::before {
 		background: #094161;
 		color: #ffffff;
 	}
@@ -1261,7 +1261,7 @@
 							position: relative;
 						}
 
-							#header nav > ul > li > a.menuToggle:after {
+							#header nav > ul > li > a.menuToggle::after {
 								background-image: url("images/bars.svg");
 								background-position: right center;
 								background-repeat: no-repeat;
@@ -1313,17 +1313,17 @@
 				color: #000;
 			}
 
-			#header.alt nav > ul > li > a.menuToggle:after {
+			#header.alt nav > ul > li > a.menuToggle::after {
 				background-image: url("images/blackbars.svg");
 			}
 
 /* Main */
 
 	.no-webp #main > header {
-		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../assets/images/banner.jpg");
-		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../assets/images/banner.jpg");
-		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../assets/images/banner.jpg");
-		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../assets/images/banner.jpg");
+		background-image: -moz-linear-gradient(top, rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("../../assets/images/banner.jpg");
+		background-image: -webkit-linear-gradient(top, rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("../../assets/images/banner.jpg");
+		background-image: -ms-linear-gradient(top, rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("../../assets/images/banner.jpg");
+		background-image: linear-gradient(top, rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("../../assets/images/banner.jpg");
 		background-attachment: fixed;
 		background-position: center center;
 		background-repeat: no-repeat;
@@ -1333,10 +1333,10 @@
 
 	#main > header {
 		padding: 12em 0 10em 0 ;
-		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../assets/images/banner.webp");
-		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../assets/images/banner.webp");
-		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../assets/images/banner.webp");
-		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../assets/images/banner.webp");
+		background-image: -moz-linear-gradient(top, rgba(255,255,255,0.5), rgba(255,255,2555,0.5)), url("../../assets/images/banner.webp");
+		background-image: -webkit-linear-gradient(top, rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("../../assets/images/banner.webp");
+		background-image: -ms-linear-gradient(top, rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("../../assets/images/banner.webp");
+		background-image: linear-gradient(top, rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("../../assets/images/banner.webp");
 		background-attachment: fixed;
 		background-position: center center;
 		background-repeat: no-repeat;
@@ -1347,13 +1347,18 @@
 		#main > header h2 {
 			font-size: 1.75em;
 			margin: 0 0 0.5em 0;
+			color: #000;
+			text-shadow: 1px 1px 1px white;
 		}
 
 		#main > header p {
-			color: inherit;
+			color: #000;
+			font-weight: bold;
 			letter-spacing: 0.225em;
 			text-transform: capitalize;
 			top: 0;
+			margin: 0em 1em;
+			text-shadow: 1px 1px 1px white;
 		}
 
 			#main > header p a {

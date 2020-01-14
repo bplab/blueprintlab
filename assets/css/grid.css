@@ -40,7 +40,7 @@
 		box-sizing: border-box;
 	}
 
-	.row:after, .row:before {
+	.row::after, .row::before {
 		content: '';
 		display: block;
 		clear: both;
