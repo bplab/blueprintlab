@@ -59,7 +59,7 @@
 				background: rgba(255, 255, 255, 0.075);
 			}
 
-			.wrapper.style1 .select-wrapper:before {
+			.wrapper.style1 .select-wrapper::before {
 				color: rgba(0, 0, 0, 0.125);
 			}
 
@@ -68,13 +68,13 @@
 				color: #ccdbec;
 			}
 
-				.wrapper.style1 input[type="checkbox"] + label:before,
-				.wrapper.style1 input[type="radio"] + label:before {
+				.wrapper.style1 input[type="checkbox"] + label::before,
+				.wrapper.style1 input[type="radio"] + label::before {
 					background: rgba(255, 255, 255, 0.075);
 				}
 
-			.wrapper.style1 input[type="checkbox"]:checked + label:before,
-			.wrapper.style1 input[type="radio"]:checked + label:before {
+			.wrapper.style1 input[type="checkbox"]:checked + label::before,
+			.wrapper.style1 input[type="radio"]:checked + label::before {
 				background: #ffffff;
 				color: #1f8dcc;
 			}
@@ -224,7 +224,7 @@
 				background: rgba(255, 255, 255, 0.075);
 			}
 
-			.wrapper.style2 .select-wrapper:before {
+			.wrapper.style2 .select-wrapper::before {
 				color: rgba(0, 0, 0, 0.125);
 			}
 
@@ -233,13 +233,13 @@
 				color: #ccdbec;
 			}
 
-				.wrapper.style2 input[type="checkbox"] + label:before,
-				.wrapper.style2 input[type="radio"] + label:before {
+				.wrapper.style2 input[type="checkbox"] + label::before,
+				.wrapper.style2 input[type="radio"] + label::before {
 					background: rgba(255, 255, 255, 0.075);
 				}
 
-			.wrapper.style2 input[type="checkbox"]:checked + label:before,
-			.wrapper.style2 input[type="radio"]:checked + label:before {
+			.wrapper.style2 input[type="checkbox"]:checked + label::before,
+			.wrapper.style2 input[type="radio"]:checked + label::before {
 				background: #ffffff;
 				color: #505393;
 			}
