@@ -1320,10 +1320,10 @@
 /* Main */
 
 	.no-webp #main > header {
-		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../assets/images/banner.jpg");
-		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../assets/images/banner.jpg");
-		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../assets/images/banner.jpg");
-		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../assets/images/banner.jpg");
+		background-image: -moz-linear-gradient(top, rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("../../assets/images/banner.jpg");
+		background-image: -webkit-linear-gradient(top, rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("../../assets/images/banner.jpg");
+		background-image: -ms-linear-gradient(top, rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("../../assets/images/banner.jpg");
+		background-image: linear-gradient(top, rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("../../assets/images/banner.jpg");
 		background-attachment: fixed;
 		background-position: center center;
 		background-repeat: no-repeat;
@@ -1333,10 +1333,10 @@
 
 	#main > header {
 		padding: 12em 0 10em 0 ;
-		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../assets/images/banner.webp");
-		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../assets/images/banner.webp");
-		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../assets/images/banner.webp");
-		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../assets/images/banner.webp");
+		background-image: -moz-linear-gradient(top, rgba(255,255,255,0.5), rgba(255,255,2555,0.5)), url("../../assets/images/banner.webp");
+		background-image: -webkit-linear-gradient(top, rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("../../assets/images/banner.webp");
+		background-image: -ms-linear-gradient(top, rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("../../assets/images/banner.webp");
+		background-image: linear-gradient(top, rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("../../assets/images/banner.webp");
 		background-attachment: fixed;
 		background-position: center center;
 		background-repeat: no-repeat;
@@ -1347,13 +1347,18 @@
 		#main > header h2 {
 			font-size: 1.75em;
 			margin: 0 0 0.5em 0;
+			color: #000;
+			text-shadow: 1px 1px 1px white;
 		}
 
 		#main > header p {
-			color: inherit;
+			color: #000;
+			font-weight: bold;
 			letter-spacing: 0.225em;
 			text-transform: capitalize;
 			top: 0;
+			margin: 0em 1em;
+			text-shadow: 1px 1px 1px white;
 		}
 
 			#main > header p a {
