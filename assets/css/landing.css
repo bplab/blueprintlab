@@ -22,7 +22,3 @@ body.landing #footer {
 	background-image: -mos-linear-gradient(top, rgba(29, 36, 42, 1), rgba(29, 36, 42, 0.75));
 	background-image: linear-gradient(top, rgba(29, 36, 42, 1), rgba(29, 36, 42, 0.75));
 }
-
-body.is-mobile.landing #page-wrapper {
-	background: none;
-}
