@@ -54,7 +54,7 @@
 		width: device-width;
 	}
 
-	.no-webp body {
+	body .no-webp {
 		background-image: url("../../assets/images/banner.jpg");
 		background-attachment: fixed;
 		background-position: center center;

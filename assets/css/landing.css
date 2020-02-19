@@ -26,11 +26,3 @@ body.landing #footer {
 body.is-mobile.landing #page-wrapper {
 	background: none;
 }
-
-.no-webp body.is-mobile.landing #banner,
-body.is-mobile.landing .wrapper.style4 {
-	background-image: url("../../assets/images/banner.jpg");
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
