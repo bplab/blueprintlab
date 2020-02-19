@@ -1,20 +1,9 @@
 /* Wrapper 1,2,3 */
-		.no-webp .wrapper.style1 {
-			background-image: -moz-linear-gradient(top, rgba(31, 141, 204,1), rgba(31, 141, 204,0.75)), url("../../assets/images/banner.jpg");
-			background-image: -webkit-linear-gradient(top, rgba(31, 141, 204,1), rgba(31, 141, 204,0.75)), url("../../assets/images/banner.jpg");
-			background-image: -ms-linear-gradient(top, rgba(31, 141, 204,1), rgba(31, 141, 204,0.75)), url("../../assets/images/banner.jpg");
-			background-image: linear-gradient(top, rgba(31, 141, 204,1), rgba(31, 141, 204,0.75)), url("../../assets/images/banner.jpg");
-			background-position: bottom;
-			background-repeat: no-repeat;
-			background-size: 100% auto;
-			color: #fff;
-		}		
-
 		.wrapper.style1 {
-			background-image: -moz-linear-gradient(top, rgba(31, 141, 204,1), rgba(31, 141, 204,0.75)), url("../../assets/images/banner.webp");
-			background-image: -webkit-linear-gradient(top, rgba(31, 141, 204,1), rgba(31, 141, 204,0.75)), url("../../assets/images/banner.webp");
-			background-image: -ms-linear-gradient(top, rgba(31, 141, 204,1), rgba(31, 141, 204,0.75)), url("../../assets/images/banner.webp");
-			background-image: linear-gradient(top, rgba(31, 141, 204,1), rgba(31, 141, 204,0.75)), url("../../assets/images/banner.webp");
+			background-image: -moz-linear-gradient(top, rgba(31, 141, 204,1), rgba(31, 141, 204,0.75));
+			background-image: -webkit-linear-gradient(top, rgba(31, 141, 204,1), rgba(31, 141, 204,0.75));
+			background-image: -ms-linear-gradient(top, rgba(31, 141, 204,1), rgba(31, 141, 204,0.75));
+			background-image: linear-gradient(top, rgba(31, 141, 204,1), rgba(31, 141, 204,0.75));
 			background-position: bottom;
 			background-repeat: no-repeat;
 			background-size: 100% auto;
@@ -169,23 +158,12 @@
 				}
 
 			}
-
-		.no-webp .wrapper.style2 {
-			background-image: -moz-linear-gradient(top, rgba(17, 92, 135,1), rgba(17, 92, 135,0.75)), url("../../assets/images/banner.jpg");
-			background-image: -webkit-linear-gradient(top, rgba(17, 92, 135,1), rgba(17, 92, 135,0.75)), url("../../assets/images/banner.jpg");
-			background-image: -ms-linear-gradient(top, rgba(17, 92, 135,1), rgba(17, 92, 135,0.75)), url("../../assets/images/banner.jpg");
-			background-image: linear-gradient(top, rgba(17, 92, 135,1), rgba(17, 92, 135,0.75)), url("../../assets/images/banner.jpg");
-			background-position: bottom;
-			background-repeat: no-repeat;
-			background-size: 100% auto;
-			color: #ffffff;
-		}
 			
 		.wrapper.style2 {
-			background-image: -moz-linear-gradient(top, rgba(17, 92, 135,1), rgba(17, 92, 135,0.75)), url("../../assets/images/banner.webp");
-			background-image: -webkit-linear-gradient(top, rgba(17, 92, 135,1), rgba(17, 92, 135,0.75)), url("../../assets/images/banner.webp");
-			background-image: -ms-linear-gradient(top, rgba(17, 92, 135,1), rgba(17, 92, 135,0.75)), url("../../assets/images/banner.webp");
-			background-image: linear-gradient(top, rgba(17, 92, 135,1), rgba(17, 92, 135,0.75)), url("../../assets/images/banner.webp");
+			background-image: -moz-linear-gradient(top, rgba(17, 92, 135,1), rgba(17, 92, 135,0.75));
+			background-image: -webkit-linear-gradient(top, rgba(17, 92, 135,1), rgba(17, 92, 135,0.75));
+			background-image: -ms-linear-gradient(top, rgba(17, 92, 135,1), rgba(17, 92, 135,0.75));
+			background-image: linear-gradient(top, rgba(17, 92, 135,1), rgba(17, 92, 135,0.75));
 			background-position: bottom;
 			background-repeat: no-repeat;
 			background-size: 100% auto;
@@ -341,20 +319,11 @@
 
 			}
 
-		.no-webp .wrapper.style3 {
-			background-image: -moz-linear-gradient(top, rgba(9, 65, 97,1), rgba(9, 65, 97, 0.75)), url("../../assets/images/banner.jpg");
-			background-image: -webkit-linear-gradient(top, rgba(9, 65, 97,1), rgba(9, 65, 97, 0.75)), url("../../assets/images/banner.jpg");
-			background-image: -ms-linear-gradient(top, rgba(9, 65, 97,1), rgba(9, 65, 97, 0.75)), url("../../assets/images/banner.jpg");
-			background-image: linear-gradient(top, rgba(9, 65, 97,1), rgba(9, 65, 97, 0.75)), url("../../assets/images/banner.jpg");
-			background-position: bottom;
-			background-repeat: no-repeat;
-			background-size: 100% auto;
-		}
 		.wrapper.style3 {
-			background-image: -moz-linear-gradient(top, rgba(9, 65, 97,1), rgba(9, 65, 97, 0.75)), url("../../assets/images/banner.webp");
-			background-image: -webkit-linear-gradient(top, rgba(9, 65, 97,1), rgba(9, 65, 97, 0.75)), url("../../assets/images/banner.webp");
-			background-image: -ms-linear-gradient(top, rgba(9, 65, 97,1), rgba(9, 65, 97, 0.75)), url("../../assets/images/banner.webp");
-			background-image: linear-gradient(top, rgba(9, 65, 97,1), rgba(9, 65, 97, 0.75)), url("../../assets/images/banner.webp");
+			background-image: -moz-linear-gradient(top, rgba(9, 65, 97,1), rgba(9, 65, 97, 0.75));
+			background-image: -webkit-linear-gradient(top, rgba(9, 65, 97,1), rgba(9, 65, 97, 0.75));
+			background-image: -ms-linear-gradient(top, rgba(9, 65, 97,1), rgba(9, 65, 97, 0.75));
+			background-image: linear-gradient(top, rgba(9, 65, 97,1), rgba(9, 65, 97, 0.75));
 			background-position: bottom;
 			background-repeat: no-repeat;
 			background-size: 100% auto;

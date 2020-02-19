@@ -54,8 +54,20 @@
 		width: device-width;
 	}
 
+	.no-webp body {
+		background-image: url("../../assets/images/banner.jpg");
+		background-attachment: fixed;
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
 	body {
-		background: #fff;
+		background-image: url("../../assets/images/banner.webp");
+		background-attachment: fixed;
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
 	}
 
 		body.is-loading *, body.is-loading *::before, body.is-loading *::after {
@@ -1028,7 +1040,7 @@
 /* Wrapper 4 */
 
 .wrapper.style4 {
-	background-color: #ffffff;
+	background-color: rgba(255, 255, 255, 0.5);
 	color: #094161;
 }
 
@@ -1297,7 +1309,7 @@
 					}
 
 		#header.alt {
-			background: transparent;
+			background: white;
 			color: #000
 		}
 
@@ -1319,24 +1331,12 @@
 
 /* Main */
 
-	.no-webp #main > header {
-		background-image: -moz-linear-gradient(top, rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("../../assets/images/banner.jpg");
-		background-image: -webkit-linear-gradient(top, rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("../../assets/images/banner.jpg");
-		background-image: -ms-linear-gradient(top, rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("../../assets/images/banner.jpg");
-		background-image: linear-gradient(top, rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("../../assets/images/banner.jpg");
-		background-attachment: fixed;
-		background-position: center center;
-		background-repeat: no-repeat;
-		background-size: cover;
-		text-align: center;
-	}
-
 	#main > header {
 		padding: 12em 0 10em 0 ;
-		background-image: -moz-linear-gradient(top, rgba(255,255,255,0.5), rgba(255,255,2555,0.5)), url("../../assets/images/banner.webp");
-		background-image: -webkit-linear-gradient(top, rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("../../assets/images/banner.webp");
-		background-image: -ms-linear-gradient(top, rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("../../assets/images/banner.webp");
-		background-image: linear-gradient(top, rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("../../assets/images/banner.webp");
+		background-image: -moz-linear-gradient(top, rgba(255,255,255,0.5), rgba(255,255,2555,0.5));
+		background-image: -webkit-linear-gradient(top, rgba(255,255,255,0.5), rgba(255,255,255,0.5));
+		background-image: -ms-linear-gradient(top, rgba(255,255,255,0.5), rgba(255,255,255,0.5));
+		background-image: linear-gradient(top, rgba(255,255,255,0.5), rgba(255,255,255,0.5));
 		background-attachment: fixed;
 		background-position: center center;
 		background-repeat: no-repeat;
@@ -1408,21 +1408,12 @@
 
 /* Footer */
 
-	.no-webp #footer {
-		padding: 6em 0 4em 0 ;
-		background-image: -moz-linear-gradient(top, rgba(29, 36, 42, 1), rgba(29, 36, 42, 0.75)), url("../../assets/images/banner.jpg");
-		background-image: -webkit-linear-gradient(top, rgba(29, 36, 42, 1), rgba(29, 36, 42, 0.75)), url("../../assets/images/banner.jpg");
-		background-image: -mos-linear-gradient(top, rgba(29, 36, 42, 1), rgba(29, 36, 42, 0.75)), url("../../assets/images/banner.jpg");
-		background-image: linear-gradient(top, rgba(29, 36, 42, 1), rgba(29, 36, 42, 0.75)), url("../../assets/images/banner.jpg");
-		text-align: center;
-	}
-
 	#footer {
 		padding: 6em 0 4em 0 ;
-		background-image: -moz-linear-gradient(top, rgba(29, 36, 42, 1), rgba(29, 36, 42, 0.75)), url("../../assets/images/banner.webp");
-		background-image: -webkit-linear-gradient(top, rgba(29, 36, 42, 1), rgba(29, 36, 42, 0.75)), url("../../assets/images/banner.webp");
-		background-image: -mos-linear-gradient(top, rgba(29, 36, 42, 1), rgba(29, 36, 42, 0.75)), url("../../assets/images/banner.webp");
-		background-image: linear-gradient(top, rgba(29, 36, 42, 1), rgba(29, 36, 42, 0.75)), url("../../assets/images/banner.webp");
+		background-image: -moz-linear-gradient(top, rgba(29, 36, 42, 1), rgba(29, 36, 42, 0.75));
+		background-image: -webkit-linear-gradient(top, rgba(29, 36, 42, 1), rgba(29, 36, 42, 0.75));
+		background-image: -mos-linear-gradient(top, rgba(29, 36, 42, 1), rgba(29, 36, 42, 0.75));
+		background-image: linear-gradient(top, rgba(29, 36, 42, 1), rgba(29, 36, 42, 0.75));
 		text-align: center;
 	}
 
