@@ -4,7 +4,7 @@ title: Pleye QR code application
 description:
 image: pleye.jpg
 webp: pleye.webp
-order: 4
+order: 0
 ---
 
 ## Welcome to Pleye!
