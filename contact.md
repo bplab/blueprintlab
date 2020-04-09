@@ -7,7 +7,7 @@ order: 2
 
 <section>
 	<form method="post" action="https://getsimpleform.com/messages?form_api_token=af201f2a2487815fb1d745822af038bc" onsubmit="return myFunction(sent)">
-		<div class="row uniform">
+		<div class="row uniform" style="font-weight: bold">
 			<div class="6u 12u$(xsmall)">
 				Name: <br />
 				<input type="text" name="name" id="body" value="" placeholder="Name" required />
@@ -34,7 +34,7 @@ order: 2
 			<div class="6u$ 12u$(small)">
 				<input type="hidden" name="human" value="no" />
 				<input type="checkbox" id="human" name="human" value="yes" />
-				<label for="human">I am not a robot</label>
+				<label for="human" style="font-weight: bold">I am not a robot</label>
 			</div>
 			<div class="12u$">
 				<ul class="actions">
