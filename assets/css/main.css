@@ -1016,7 +1016,10 @@
 			input[type="button"].special:hover,
 			button.special:hover,
 			.button.special:hover {
-				background-color: #ef5e4a !important;
+				color: white !important;
+				background-color: #1fcc6d !important;
+				transition: background-color 500ms;
+				transition-timing-function: linear;
 			}
 
 			input[type="submit"].special:active,
@@ -1024,7 +1027,8 @@
 			input[type="button"].special:active,
 			button.special:active,
 			.button.special:active {
-				background-color: #eb341c !important;
+				color: #1f8dcc !important;
+				background-color: #1fcc6d !important;
 			}
 
 		input[type="submit"].disabled, input[type="submit"]:disabled,
