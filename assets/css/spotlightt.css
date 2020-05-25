@@ -1,14 +1,23 @@
 /* Spotlight */
 
+	.title { grid-area: title; }
+	.content { grid-area: content; }
+	.image { grid-area: image; margin: auto; }
+	.caption { grid-area: caption; }
+
 	.spotlight {
 		-moz-align-items: center;
 		-webkit-align-items: center;
 		-ms-align-items: center;
 		align-items: center;
-		display: -moz-flex;
-		display: -webkit-flex;
-		display: -ms-flex;
-		display: flex;
+		display: grid;
+		grid-template-areas:
+    		'title title title'
+    		'content content content'
+			'image image image'
+			'caption caption caption';
+		grid-gap: 10px;
+		padding: 10px;
 		box-shadow: 0 1px 2px black, 0 1px 2px black;
 		margin-bottom:10px;
 		margin-left:30px;
@@ -20,70 +29,15 @@
 			transform: scale(1.02);
 		}
 
-		.spotlight .content {
-			padding: 2em 4em 0.1em 4em ;
-			-moz-order: 1;
-			-webkit-order: 1;
-			-ms-order: 1;
-			order: 1;
-			max-width: 48em;
-			width: 60%;
+		.spotlight > div {
+			text-align: center;
 		}
 
-		.spotlight .image {
-			-moz-order: 2;
-			-webkit-order: 2;
-			-ms-order: 2;
-			order: 2;
+		.spotlight .image img {
 			border-radius: 0;
-			width: 40%;
+			width: 100%;
 		}
-
-			.spotlight .image img {
-				border-radius: 0;
-				width: 100%;
-			}
-
-		.spotlight:nth-child(1) {
-			background-color: rgba(0, 0, 0, 0.075);
-		}
-
-		.spotlight:nth-child(2) {
-			background-color: rgba(0, 0, 0, 0.15);
-		}
-
-		.spotlight:nth-child(3) {
-			background-color: rgba(0, 0, 0, 0.225);
-		}
-
-		.spotlight:nth-child(4) {
-			background-color: rgba(0, 0, 0, 0.3);
-		}
-
-		.spotlight:nth-child(5) {
-			background-color: rgba(0, 0, 0, 0.375);
-		}
-
-		.spotlight:nth-child(6) {
-			background-color: rgba(0, 0, 0, 0.45);
-		}
-
-		.spotlight:nth-child(7) {
-			background-color: rgba(0, 0, 0, 0.525);
-		}
-
-		.spotlight:nth-child(8) {
-			background-color: rgba(0, 0, 0, 0.6);
-		}
-
-		.spotlight:nth-child(9) {
-			background-color: rgba(0, 0, 0, 0.675);
-		}
-
-		.spotlight:nth-child(10) {
-			background-color: rgba(0, 0, 0, 0.75);
-		}
-
+		
 		@media screen and (max-width: 1280px) {
 
 			.spotlight .image {
