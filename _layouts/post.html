@@ -2,6 +2,8 @@
 <html lang="en">
     <head>
         {% include head.html %}
+        <link rel="preload" href="{{ "/assets/css/page-post.css" | relative_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+        <noscript><link rel="stylesheet" href="{{ "/assets/css/page-post.css" | relative_url }}" /></noscript>
     </head>
     <body>
         {% include header.html %}
@@ -11,7 +13,7 @@
                 <h2>{{ page.title }}</h2>
                 <p>{{ page.description }}</p>
             </header>
-            <section class="wrapper style4">
+            <section class="wrapper page-post">
                 <div class="inner">
                     {{ content }}
                 </div>
