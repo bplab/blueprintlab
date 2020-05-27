@@ -1,0 +1,64 @@
+$bpl-blue: #1f8dcc
+$header-color: $bpl-blue
+$before-after-color: $bpl-blue
+$main-text-color: #000000
+    
+/* Banner
+
+#banner
+  display: -moz-flex
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+  -moz-flex-direction: column
+  -webkit-flex-direction: column
+  -ms-flex-direction: column
+  flex-direction: column
+  -moz-justify-content: center
+  -webkit-justify-content: center
+  -ms-justify-content: center
+  justify-content: center
+  cursor: default
+  height: 100vh
+  min-height: 35em
+  position: relative
+  text-align: center
+
+.banner-grid
+  display: grid
+  grid-template-areas: 'logo video' 'text video' 'actions video'
+  grid-template-columns: 60% 40%
+  grid-gap: 10px
+  padding: 0 10%
+
+  .logo
+    max-width: 40%
+
+  p
+    letter-spacing: 0.225em
+    text-transform: capitalize
+    color: $main-text-color
+    font-weight: bold
+    font-size: 5vh
+    grid-area: text
+
+  .resp-containerv
+    grid-area: video
+
+  .actions
+    grid-area: actions
+
+@media screen and (max-width: 736px)
+  #banner
+    height: auto
+    min-height: 0
+    padding: 0 3em 14vh 3em
+
+    .banner-grid
+        display: block
+
+    br
+      display: none
+
+    p
+      font-size: 4vw

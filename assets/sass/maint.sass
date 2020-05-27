@@ -10,6 +10,8 @@ $button-active-color: rgba(144, 144, 144, 0.5)
 $button-special-hover-color: #1fcc6d
 $button-special-active-color: #1fcc6d
 $nav-hover-color: #000000
+$nav-alt-color: #000000
+$nav-alt-hover-color: $bpl-blue
 $footer-hover-color: #ffffff
 
 /* Reset
@@ -1206,7 +1208,7 @@ body.is-menu-visible
 
   &.alt
     background: white
-    color: #000
+    color: $nav-alt-color
 
     h1
       -moz-pointer-events: none
@@ -1216,12 +1218,12 @@ body.is-menu-visible
       opacity: 0
 
     nav > ul > li > a
-      color: #000
+      color: $nav-alt-color
 
       &.navLinks
       
         &:hover
-          color: $bpl-blue
+          color: $nav-alt-hover-color
 
       &.menuToggle::after
         background-image: url("images/blackbars.svg")
