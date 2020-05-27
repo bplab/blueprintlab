@@ -9,6 +9,7 @@ $button-hover-color: rgba(144, 144, 144, 0.25)
 $button-active-color: rgba(144, 144, 144, 0.5)
 $button-special-hover-color: #1fcc6d
 $button-special-active-color: #1fcc6d
+$nav-hover-color: #000000
 $footer-hover-color: #ffffff
 
 /* Reset
@@ -1175,6 +1176,17 @@ body.is-menu-visible
           text-transform: uppercase
           font-weight: bold
 
+          &.navLinks
+            
+            &:active
+              text-decoration: underline
+
+            &:focus
+              text-decoration: underline
+
+            &:hover
+              color: $nav-hover-color
+
           &.menuToggle
             outline: 0
             position: relative
@@ -1206,23 +1218,31 @@ body.is-menu-visible
     nav > ul > li > a
       color: #000
 
+      &.navLinks
+      
+        &:hover
+          color: $bpl-blue
+
       &.menuToggle::after
         background-image: url("images/blackbars.svg")
+
+@media screen and (min-width: 737px)
+  #header nav > ul > li > a.menuToggle
+    display: none
 
 @media screen and (max-width: 736px)
   #header h1 a
     font-size: 0.8em
 
 @media screen and (max-width: 736px)
-  #header nav > ul > li > a.menuToggle
-    padding: 0 1.5em
-
-    span
-      display: none
+  #header nav > ul > li > a.navLinks
+    display: none
 
 @media screen and (max-width: 736px)
-  #header nav > ul > li > a
-    padding: 0 0 0 1.5em
+  #header nav > ul > li > a.menuToggle
+    padding: 0 1.5em
+    display: block
+
 
 /* Main
 
