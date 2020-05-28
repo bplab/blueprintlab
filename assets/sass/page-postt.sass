@@ -1,93 +1,121 @@
 $bpl-blue: #1f8dcc
+$main-background-color: rgba(255, 255, 255, 0.5)
+$main-text-color: #094161
+$horizontal-line-color: #dfdfdf
+$code-background-color: rgba(0, 0, 0, 0.0375)
+$header-text-color: #8E8892
+$header-major-header-text-color: #dfdfdf
+$header-major-text-color: #094161
+$label-text-color: #094161
+$input-background-color: rgba(144, 144, 144, 0.25)
+$input-select-before-color: #dfdfdf
+$input-text-color: #000000
+$input-checked-before-background-color: $bpl-blue
+$input-checked-before-text-color: #ffffff
+$input-box-shadow-color: #dfdfdf
+$input-button-text-color: #094161
+$input-hover-background-color: rgba(0, 0, 0, 0.0375)
+$input-active-background-color: rgba(0, 0, 0, 0.1)
+$placeholder-text-color: $bpl-blue
+$icon-list-border-color: #dfdfdf
+$table-border-color: #dfdfdf
+$table-2nd-background-color: rgba(0, 0, 0, 0.0375)
+$table-header-text-color: #094161
+$table-alt-border-color: #dfdfdf
+$button-box-shadow-color: #dfdfdf
+$button-text-color: #094161
+$button-hover-background-color: rgba(0, 0, 0, 0.0375)
+$button-active-background-color: rgba(0, 0, 0, 0.1)
+
 /* Wrapper Pages and Posts
 
 .wrapper.page-post
-  background-color: rgba(255, 255, 255, 0.5)
-  color: #094161
+  background-color: $main-background-color
+  color: $main-text-color
 
   strong, b, h2, h3, h4, h5, h6
-    color: #094161
+    color: $main-text-color
 
   hr, blockquote
-    border-color: #dfdfdf
+    border-color: $horizontal-line-color
 
   code
-    background: rgba(0, 0, 0, 0.0375)
+    background: $code-background-color
 
   header
     p
-      color: #8E8892
+      color: $header-text-color
 
     &.major
       h2, h3, h4, h5, h6
-        border-color: #dfdfdf
+        border-color: $header-major-header-text-color
 
       p
-        color: #094161
+        color: $header-major-text-color
 
   label
-    color: #094161
+    color: $label-text-color
 
   input
     &[type="text"], &[type="password"], &[type="email"]
-      background: rgba(144, 144, 144, 0.25)
+      background: $input-background-color
 
   select, textarea
-    background: rgba(144, 144, 144, 0.25)
+    background: $input-background-color
 
   .select-wrapper::before
-    color: #dfdfdf
+    color: $input-select-before-color
 
   input
     &[type="checkbox"] + label, &[type="radio"] + label
-      color: #000000
+      color: $input-text-color
 
     &[type="checkbox"] + label::before, &[type="radio"] + label::before
-      background: rgba(144, 144, 144, 0.25)
+      background: $input-background-color
 
     &[type="checkbox"]:checked + label::before, &[type="radio"]:checked + label::before
-      background: $bpl-blue
-      color: #ffffff
+      background: $input-checked-before-background-color
+      color: $input-checked-before-text-color
 
   \::-webkit-input-placeholder, :-moz-placeholder, ::-moz-placeholder, :-ms-input-placeholder, .formerize-placeholder
-    color: $bpl-blue !important
+    color: $placeholder-text-color !important
     font-weight: bold
 
   .icon.major, ul.alt li
-    border-color: #dfdfdf
+    border-color: $icon-list-border-color
 
   table
     tbody tr
-      border-color: #dfdfdf
+      border-color: $table-border-color
 
       &:nth-child(2n + 1)
-        background-color: rgba(0, 0, 0, 0.0375)
+        background-color: $table-2nd-background-color
 
     th
-      color: #094161
+      color: $table-header-text-color
 
     thead, tfoot, &.alt tbody tr td
-      border-color: #dfdfdf
+      border-color: $table-alt-border-color
 
   input
     &[type="submit"], &[type="reset"], &[type="button"]
-      box-shadow: inset 0 0 0 2px #dfdfdf
-      color: #094161
+      box-shadow: inset 0 0 0 2px $input-box-shadow-color
+      color: $input-button-text-color
 
   button, .button
-    box-shadow: inset 0 0 0 2px #dfdfdf
-    color: #094161
+    box-shadow: inset 0 0 0 2px $button-box-shadow-color
+    color: $button-text-color
 
   input
     &[type="submit"]:hover, &[type="reset"]:hover, &[type="button"]:hover
-      background-color: rgba(0, 0, 0, 0.0375)
+      background-color: $input-hover-background-color
 
   button:hover, .button:hover
-    background-color: rgba(0, 0, 0, 0.0375)
+    background-color: $button-hover-background-color
 
   input
     &[type="submit"]:active, &[type="reset"]:active, &[type="button"]:active
-      background-color: rgba(0, 0, 0, 0.1)
+      background-color: $input-active-background-color
 
   button:active, .button:active
-    background-color: rgba(0, 0, 0, 0.1)
+    background-color: $button-active-background-color
