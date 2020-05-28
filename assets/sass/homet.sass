@@ -2,20 +2,34 @@ $bpl-blue: #1f8dcc
 $bpl-blue-dark: #115c87
 $bpl-blue-darker: #094161
 $main-text-color: #ffffff
-$light-text-color: rgba(255, 255, 255, 0.075)
+$light-text-color: rgba($main-text-color, 0.075)
 $text-color-2: #ccdbec
 $placeholder-color: #000000
 $border-color: rgba(0, 0, 0, 0.125)
+$background-color: $bpl-blue
+$background2-color: $bpl-blue-dark
+$background3-color: $bpl-blue-darker
+$checkbox-label-color: $text-color-2
+$checkbox-label-background-color: $light-text-color
+$checkbox-check-color: $bpl-blue
+$checkbox-check-background-color: $main-text-color
+$button-color: $light-text-color
+$button-text-color: $bpl-blue
 $active-button-color: rgba(255, 255, 255, 0.2)
+$hover-button-color: $button-color
+$hover-button-text-color: $main-text-color
+$button2-text-color: $main-text-color
+$active-button2-color: $active-button-color
+$hover-button2-color: $light-text-color
 
 /* Wrapper 1,2,3 */
 
 .wrapper
   &.style1
-    background-image: -moz-linear-gradient(top, rgba($bpl-blue, 1), rgba($bpl-blue, 0.75))
-    background-image: -webkit-linear-gradient(top, rgba($bpl-blue, 1), rgba($bpl-blue, 0.75))
-    background-image: -ms-linear-gradient(top, rgba($bpl-blue, 1), rgba($bpl-blue, 0.75))
-    background-image: linear-gradient(top, rgba($bpl-blue, 1), rgba($bpl-blue, 0.75))
+    background-image: -moz-linear-gradient(top, rgba($background-color, 1), rgba($background-color, 0.75))
+    background-image: -webkit-linear-gradient(top, rgba($background-color, 1), rgba($background-color, 0.75))
+    background-image: -ms-linear-gradient(top, rgba($background-color, 1), rgba($background-color, 0.75))
+    background-image: linear-gradient(top, rgba($background-color, 1), rgba($background-color, 0.75))
     background-position: bottom
     background-repeat: no-repeat
     background-size: 100% auto
@@ -59,14 +73,14 @@ $active-button-color: rgba(255, 255, 255, 0.2)
     
     input
       &[type="checkbox"] + label, &[type="radio"] + label
-        color: $text-color-2
+        color: $checkbox-label-color
       
       &[type="checkbox"] + label::before, &[type="radio"] + label::before
-        background: $light-text-color
+        background: $checkbox-label-background-color
       
       &[type="checkbox"]:checked + label::before, &[type="radio"]:checked + label::before
-        background: $main-text-color
-        color: $bpl-blue
+        background: $checkbox-check-background-color
+        color: $checkbox-check-color
     
     ::-webkit-input-placeholder, :-moz-placeholder, ::-moz-placeholder, :-ms-input-placeholder, .formerize-placeholder
       color: $placeholder-color !important
@@ -94,15 +108,15 @@ $active-button-color: rgba(255, 255, 255, 0.2)
       
     button, .button
       box-shadow: inset 0 0 0 2px $border-color
-      color: $bpl-blue
+      color: $button-text-color
     
     input
       &[type="submit"]:hover, &[type="reset"]:hover, &[type="button"]:hover
-        background-color: $light-text-color
+        background-color: $button-color
     
     button:hover, .button:hover
-      color: $main-text-color
-      background-color: $bpl-blue
+      color: $hover-button-text-color
+      background-color: $hover-button-color
     
     input
       &[type="submit"]:active, &[type="reset"]:active, &[type="button"]:active
@@ -112,10 +126,10 @@ $active-button-color: rgba(255, 255, 255, 0.2)
       background-color: $active-button-color
   
   &.style2
-    background-image: -moz-linear-gradient(top, rgba($bpl-blue-dark, 1), rgba($bpl-blue-dark, 0.75))
-    background-image: -webkit-linear-gradient(top, rgba($bpl-blue-dark, 1), rgba($bpl-blue-dark, 0.75))
-    background-image: -ms-linear-gradient(top, rgba($bpl-blue-dark, 1), rgba($bpl-blue-dark, 0.75))
-    background-image: linear-gradient(top, rgba($bpl-blue-dark, 1), rgba($bpl-blue-dark, 0.75))
+    background-image: -moz-linear-gradient(top, rgba($background2-color, 1), rgba($background2-color, 0.75))
+    background-image: -webkit-linear-gradient(top, rgba($background2-color, 1), rgba($background2-color, 0.75))
+    background-image: -ms-linear-gradient(top, rgba($background2-color, 1), rgba($background2-color, 0.75))
+    background-image: linear-gradient(top, rgba($background2-color, 1), rgba($background2-color, 0.75))
     background-position: bottom
     background-repeat: no-repeat
     background-size: 100% auto
@@ -187,31 +201,31 @@ $active-button-color: rgba(255, 255, 255, 0.2)
     input
       &[type="submit"], &[type="reset"], &[type="button"]
         box-shadow: inset 0 0 0 2px $border-color
-        color: $main-text-color
+        color: $button2-text-color
     
     button, .button
       box-shadow: inset 0 0 0 2px $border-color
-      color: $main-text-color
+      color: $button2-text-color
     
     input
       &[type="submit"]:hover, &[type="reset"]:hover, &[type="button"]:hover
-        background-color: $light-text-color
+        background-color: $hover-button2-color
       
     button:hover, .button:hover
-      background-color: $light-text-color
+      background-color: $hover-button2-color
     
     input
       &[type="submit"]:active, &[type="reset"]:active, &[type="button"]:active
-        background-color: $active-button-color
+        background-color: $active-button2-color
     
     button:active, .button:active
-      background-color: $active-button-color
+      background-color: $active-button2-color
     
   &.style3
-    background-image: -moz-linear-gradient(top, rgba($bpl-blue-darker, 1), rgba($bpl-blue-darker, 0.75))
-    background-image: -webkit-linear-gradient(top, rgba($bpl-blue-darker, 1), rgba($bpl-blue-darker, 0.75))
-    background-image: -ms-linear-gradient(top, rgba($bpl-blue-darker, 1), rgba($bpl-blue-darker, 0.75))
-    background-image: linear-gradient(top, rgba($bpl-blue-darker, 1), rgba($bpl-blue-darker, 0.75))
+    background-image: -moz-linear-gradient(top, rgba($background3-color, 1), rgba($background3-color, 0.75))
+    background-image: -webkit-linear-gradient(top, rgba($background3-color, 1), rgba($background3-color, 0.75))
+    background-image: -ms-linear-gradient(top, rgba($background3-color, 1), rgba($background3-color, 0.75))
+    background-image: linear-gradient(top, rgba($background3-color, 1), rgba($background3-color, 0.75))
     background-position: bottom
     background-repeat: no-repeat
     background-size: 100% auto
