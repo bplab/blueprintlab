@@ -1,4 +1,15 @@
+$background-color1: rgba(#ffffff,0)
+$background-color2: rgba(#ffffff,0)
+$transition-direction: 97.97deg
+$text-color: #303030
+    
 /* CTA
+
+#cta
+  background-image: -moz-linear-gradient($transition-direction, $background-color1, $background-color2)
+  background-image: -webkit-linear-gradient($transition-direction, $background-color1, $background-color2)
+  background-image: -ms-linear-gradient($transition-direction, $background-color1, $background-color2)
+  background-image: linear-gradient($transition-direction, $background-color1, $background-color2)
 
 #cta .inner
   display: -moz-flex
@@ -14,9 +25,6 @@
     order: 1
     padding-right: 3em
     width: 70%
-
-    p
-      color: inherit
 
   .actions
     -moz-order: 2

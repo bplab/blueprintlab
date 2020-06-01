@@ -3,7 +3,7 @@ $main-background-webp: "../../assets/images/banner.webp"
 $main-text-color: #ffffff
 $code-background-color: rgba(144, 144, 144, 0.25)
 $border-color: #ffffff
-$bpl-blue: #1f8dcc
+$bpl-blue: #0089FC
 $input-box-shadow-color: $bpl-blue
 $input-text-color: $bpl-blue
 $input-background-color: $bpl-blue
@@ -23,14 +23,15 @@ $button-special-hover-background-color: #1fcc6d
 $button-special-hover-text-color: #ffffff
 $button-special-active-background-color: #1fcc6d
 $button-special-active-text-color: $bpl-blue
+$header-height: 2em
 $menu-text-color: #ffffff
 $menu-background-color: $bpl-blue
 $menu-border-color: #ffffff
 $nav-text-color: #ffffff
-$nav-hover-color: #000000
-$nav-alt-color: #000000
+$nav-hover-color: #303030
+$nav-alt-color: #303030
 $nav-alt-hover-color: $bpl-blue
-$header-text-color: #000000
+$header-text-color: #303030
 $header-text-shadow-color: #ffffff
 $footer-hover-color: #ffffff
 
@@ -408,7 +409,7 @@ body
 
   color: $main-text-color
   font-family: "Open Sans", Helvetica, sans-serif
-  font-size: 15pt
+  font-size: 20pt
   font-weight: 400
   letter-spacing: 0.075em
   line-height: 1.65em
@@ -423,7 +424,7 @@ input, select, textarea
 
 @media screen and (max-width: 1680px)
   body, input, select, textarea
-    font-size: 14pt
+    font-size: 16pt
 
 @media screen and (max-width: 1280px)
   body, input, select, textarea
@@ -575,7 +576,7 @@ header
     h2, h3, h4, h5, h6
       border-bottom: solid 2px $border-color
       display: inline-block
-      padding-bottom: 1em
+      padding-bottom: 0.5em
       position: relative
 
     h2::after, h3::after, h4::after, h5::after, h6::after
@@ -1042,7 +1043,7 @@ button
   -ms-transition: opacity 0.5s ease
   transition: opacity 0.5s ease
   opacity: 1
-  padding-top: 3em
+  padding-top: $header-height
 
   &::before
     background: transparent
@@ -1144,9 +1145,9 @@ body.is-menu-visible
   -ms-transition: background-color 0.2s ease
   transition: background-color 0.2s ease
   background: $bpl-blue
-  height: 3em
+  height: $header-height
   left: 0
-  line-height: 3em
+  line-height: $header-height
   position: fixed
   top: 0
   width: 100%
