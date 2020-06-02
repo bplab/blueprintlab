@@ -33,7 +33,12 @@ $nav-alt-color: #303030
 $nav-alt-hover-color: $bpl-blue
 $header-text-color: #303030
 $header-text-shadow-color: #ffffff
-$footer-hover-color: #ffffff
+$footer-background-color1: $bpl-blue
+$footer-background-color2: $bpl-blue
+$footer-background-gradient1: 1
+$footer-background-gradient2: 0.75
+$footer-gradient-direction: top
+$footer-hover-color: #303030
 
 /* Reset
 
@@ -1326,10 +1331,10 @@ body.is-mobile #main > header
 
 #footer
   padding: 2em 0 1em 0
-  background-image: -moz-linear-gradient(top, rgba(29, 36, 42, 1), rgba(29, 36, 42, 0.75))
-  background-image: -webkit-linear-gradient(top, rgba(29, 36, 42, 1), rgba(29, 36, 42, 0.75))
-  background-image: -mos-linear-gradient(top, rgba(29, 36, 42, 1), rgba(29, 36, 42, 0.75))
-  background-image: linear-gradient(top, rgba(29, 36, 42, 1), rgba(29, 36, 42, 0.75))
+  background-image: -moz-linear-gradient($footer-gradient-direction , rgba($footer-background-color1, $footer-background-gradient1), rgba($footer-background-color2, $footer-background-gradient2))
+  background-image: -webkit-linear-gradient($footer-gradient-direction , rgba($footer-background-color1, $footer-background-gradient1), rgba($footer-background-color2, $footer-background-gradient2))
+  background-image: -mos-linear-gradient($footer-gradient-direction , rgba($footer-background-color1, $footer-background-gradient1), rgba($footer-background-color2, $footer-background-gradient2))
+  background-image: linear-gradient($footer-gradient-direction , rgba($footer-background-color1, $footer-background-gradient1), rgba($footer-background-color2, $footer-background-gradient2))
   text-align: center
 
   .icons
