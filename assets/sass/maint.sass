@@ -24,6 +24,7 @@ $button-special-hover-text-color: #ffffff
 $button-special-active-background-color: #1fcc6d
 $button-special-active-text-color: $bpl-blue
 $header-height: 2em
+$header-height-mobile: 3em
 $menu-text-color: #ffffff
 $menu-background-color: $bpl-blue
 $menu-border-color: #ffffff
@@ -1062,6 +1063,10 @@ button
     width: 100%
     z-index: 10001
 
+@media screen and (max-width: 736px)
+  #page-wrapper
+    padding-top: $header-height-mobile
+
 #menu
   -moz-transform: translateX(20em)
   -webkit-transform: translateX(20em)
@@ -1259,14 +1264,16 @@ body.is-menu-visible
     display: none
 
 @media screen and (max-width: 736px)
+  #header
+    height: $header-height-mobile
+    line-height: $header-height-mobile
+  
   #header h1 a
     font-size: 0.8em
 
-@media screen and (max-width: 736px)
   #header nav > ul > li > a.navLinks
     display: none
 
-@media screen and (max-width: 736px)
   #header nav > ul > li > a.menuToggle
     padding: 0 1.5em
     display: block
