@@ -1,0 +1,68 @@
+$background-url: "../../assets/images/backgroundt.jpg"
+$background-url-mobile: "none"
+$text-color: #303030
+$text-shadow: 1px 1px 1px
+$text-shadow-color: #ffffff
+    
+/* About Us
+
+#about-us
+    background-image: url($background-url)
+    background-position: center top
+    background-size: auto
+    height: 100vh
+    
+    .content
+        grid-area: content
+        text-align: left
+
+        h1, p
+            text-transform: uppercase
+            color: $text-color
+            text-shadow: $text-shadow $text-shadow-color
+
+        p
+            padding: 0 20% 0 0
+
+        &.button.fit
+            width: 100%
+
+    .space
+        grid-area: space
+
+    .inner
+        -moz-align-items: center
+        -webkit-align-items: center
+        -ms-align-items: center
+        align-items: center
+        justify-items: center
+        display: grid
+        grid-template-areas: 'content space'
+        grid-template-columns: 75% 25%
+        grid-gap: 10px
+
+@media screen and (max-width: 1680px)
+
+    #about-us
+
+@media screen and (max-width: 1280px)
+
+    #about-us
+    
+@media screen and (max-width: 736px)
+
+    #about-us
+        
+        background-image: url($background-url-mobile)
+        background-position: center top
+        background-size: auto
+
+        .content
+            text-align: center
+
+            p
+                padding: 0
+
+        .inner
+            display: block
+            padding: 10% 0
