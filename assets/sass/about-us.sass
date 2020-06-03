@@ -1,4 +1,5 @@
-$background-url: "../../assets/images/backgroundt.jpg"
+$background-url-jpg: "../../assets/images/about-us.jpg"
+$background-url-webp: "../../assets/images/about-us.webp"
 $background-url-mobile: "none"
 $text-color: #303030
 $text-shadow: 1px 1px 1px
@@ -6,8 +7,13 @@ $text-shadow-color: #ffffff
     
 /* About Us
 
+.no-webp #about-us
+    background-image: url($background-url-jpg)
+    background-position: center top
+    background-size: auto
+
 #about-us
-    background-image: url($background-url)
+    background-image: url($background-url-webp)
     background-position: center top
     background-size: auto
     height: 100vh
