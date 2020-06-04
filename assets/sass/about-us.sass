@@ -11,13 +11,19 @@ $text-shadow-color: #ffffff
 /* About Us
 
 .no-webp #about-us
-    background-image: url($background-url-jpg)
+    background-image: url($background-url-jpg), -moz-linear-gradient($background-gradient-direction, rgba($background-color,$background-transition1), rgba($background-color,$background-transition2))
+    background-image: url($background-url-jpg), -webkit-linear-gradient($background-gradient-direction, rgba($background-color,$background-transition1), rgba($background-color,$background-transition2))
+    background-image: url($background-url-jpg), -ms-linear-gradient($background-gradient-direction, rgba($background-color,$background-transition1), rgba($background-color,$background-transition2))
+    background-image: url($background-url-jpg), linear-gradient($background-gradient-direction, rgba($background-color,$background-transition1), rgba($background-color,$background-transition2))
     background-position: center top
     background-size: auto
 
 #about-us
 
-    background-image: url($background-url-webp)
+    background-image: url($background-url-webp), -moz-linear-gradient($background-gradient-direction, rgba($background-color,$background-transition1), rgba($background-color,$background-transition2))
+    background-image: url($background-url-webp), -webkit-linear-gradient($background-gradient-direction, rgba($background-color,$background-transition1), rgba($background-color,$background-transition2))
+    background-image: url($background-url-webp), -ms-linear-gradient($background-gradient-direction, rgba($background-color,$background-transition1), rgba($background-color,$background-transition2))
+    background-image: url($background-url-webp), linear-gradient($background-gradient-direction, rgba($background-color,$background-transition1), rgba($background-color,$background-transition2))
     background-position: center top
     background-size: auto
     height: 100vh
