@@ -577,7 +577,7 @@ header
     font-size: 0.9em
 
   &.major
-    margin: 0 0 3.5em 0
+    margin: 0 0 0 0
 
     h2, h3, h4, h5, h6
       border-bottom: solid 2px $border-color
@@ -596,7 +596,7 @@ header
 
 @media screen and (max-width: 736px)
   header.major
-    margin: 0 0 2em 0
+    margin: 0 0 0 0
 
 @media screen and (max-width: 980px)
   header br
@@ -663,6 +663,8 @@ header
   img
     border-radius: 3px
     display: block
+    position: relative
+    z-index: 2
 
   &.left
     float: left
@@ -1165,7 +1167,7 @@ body.is-menu-visible
   position: fixed
   top: 0
   width: 100%
-  z-index: 2
+  z-index: 3
 
   h1
     -moz-transition: opacity 0.2s ease
