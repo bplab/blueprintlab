@@ -1,24 +1,5 @@
 /* Capabilities
 
-.title
-  grid-area: title
-  padding: 10% 0 0
-
-.content
-  grid-area: content
-  text-align: left
-  padding: 0 10% 50%
-
-.image
-  grid-area: image
-  margin: none
-
-  &:hover
-    transform: scale(1.02)
-
-.caption
-  grid-area: caption
-
 .capabilities
   -moz-align-items: center
   -webkit-align-items: center
@@ -26,10 +7,29 @@
   align-items: center
   justify-items: center
   display: grid
-  grid-template-areas: 'image title' 'image content' 'caption content'
+  grid-template-areas: 'ci ct' 'ci ccon' 'ccap ccon'
   grid-template-columns: 50% 50%
   grid-gap: 10px
   padding: 10px
+
+  .title
+    grid-area: ct
+    padding: 10% 0 0
+
+  .content
+    grid-area: ccon
+    text-align: left
+    padding: 0 10% 30%
+
+  .image
+    grid-area: ci
+    margin: 5% 0 0
+
+    &:hover
+      transform: scale(1.02)
+
+  .caption
+    grid-area: ccap
 
   h3
     margin-top: 1em
@@ -39,7 +39,7 @@
     max-width: 100%
 
   &:nth-child(2n)
-    grid-template-areas: 'title image' 'content image' 'content caption'
+    grid-template-areas: 'ct ci' 'ccon ci' 'ccon ccap'
     grid-template-columns: 50% 50%
 
 @media screen and (max-width: 980px)
