@@ -1,0 +1,71 @@
+/* Capabilities
+
+.capabilities
+  -moz-align-items: center
+  -webkit-align-items: center
+  -ms-align-items: center
+  align-items: center
+  justify-items: center
+  display: grid
+  grid-template-areas: 'ci ct' 'ci ccon' 'ccap ccon'
+  grid-template-columns: 50% 50%
+  grid-gap: 10px
+  padding: 10px
+
+  .title
+    grid-area: ct
+    padding: 10% 0 0
+
+  .content
+    grid-area: ccon
+    text-align: left
+    padding: 0 10% 30%
+
+  .image
+    grid-area: ci
+    margin: 5% 0 0
+
+    &:hover
+      transform: scale(1.02)
+
+  .caption
+    grid-area: ccap
+
+  h3
+    margin-top: 1em
+
+  .image img
+    border-radius: 14px
+    max-width: 100%
+
+  &:nth-child(2n)
+    grid-template-areas: 'ct ci' 'ccon ci' 'ccon ccap'
+    grid-template-columns: 50% 50%
+
+@media screen and (max-width: 980px)
+  .capabilities
+    display: block
+
+    br
+      display: none
+
+    .title
+      padding: 0
+      margin: 0
+
+    .image
+      width: 100%
+
+    .content
+      padding: 4em 3em 2em 3em
+      max-width: none
+      text-align: center
+      width: 100%
+      padding: 0
+
+    .caption
+      padding: 0
+
+@media screen and (max-width: 736px)
+  .capabilities .content
+    padding: 0

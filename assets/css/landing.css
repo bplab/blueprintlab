@@ -15,10 +15,3 @@ body.landing #banner {
 	background-size: cover;
 	padding-top: 0;
 }
-
-body.landing #footer {
-	background-image: -moz-linear-gradient(top, rgba(29, 36, 42, 1), rgba(29, 36, 42, 0.75));
-	background-image: -webkit-linear-gradient(top, rgba(29, 36, 42, 1), rgba(29, 36, 42, 0.75));
-	background-image: -mos-linear-gradient(top, rgba(29, 36, 42, 1), rgba(29, 36, 42, 0.75));
-	background-image: linear-gradient(top, rgba(29, 36, 42, 1), rgba(29, 36, 42, 0.75));
-}

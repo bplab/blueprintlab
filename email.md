@@ -1,7 +1,7 @@
 ---
 layout: page
-title: contact us
-description: BluePrintLAB Contact Form
+title: email us
+description: BluePrintLAB Email Form
 order: 2
 ---
 
