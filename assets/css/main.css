@@ -360,6 +360,10 @@
 
 /* Basic */
 
+	html {
+		scroll-behavior: smooth;
+	}
+
 	@-ms-viewport {
 		width: device-width;
 	}
