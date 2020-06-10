@@ -1,4 +1,18 @@
+$box-border-color: rgba(173, 173, 173, 0.25)
+$box-border-radius: 10px
+$box-background-color: #ffffff
+$box-background-transition1: 1
+$box-background-transition2: 1
+  
 /* Capabilities
+
+.box
+  box-shadow: 4px 4px 10px $box-border-color
+  border-radius: $box-border-radius
+  background-image: -moz-linear-gradient(top, rgba($box-background-color, $box-background-transition1), rgba($box-background-color, $box-background-transition2))
+  background-image: -webkit-linear-gradient(top, rgba($box-background-color, $box-background-transition1), rgba($box-background-color, $box-background-transition2))
+  background-image: -ms-linear-gradient(top, rgba($box-background-color, $box-background-transition1), rgba($box-background-color, $box-background-transition2))
+  background-image: linear-gradient(top, rgba($box-background-color, $box-background-transition1), rgba($box-background-color, $box-background-transition2))
 
 .capabilities
   -moz-align-items: center
@@ -11,8 +25,6 @@
   grid-template-columns: 50% 50%
   grid-gap: 10px
   padding: 10px
-
-  .box
 
 
   .title
