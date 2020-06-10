@@ -19,39 +19,50 @@ $box-background-transition2: 1
   -webkit-align-items: center
   -ms-align-items: center
   align-items: center
-  justify-items: center
+  text-align: right
   display: grid
-  grid-template-areas: 'ci ct' 'ci ccon' 'ccap ccon'
-  grid-template-columns: 50% 50%
+  grid-template-areas: 'ci cicon' 'ci ct' 'ci ccon' 'ci ccap' 
+  grid-template-columns: 35% 65%
   grid-gap: 10px
-  padding: 10px
+  padding: 2%
 
+  .cicon
+    grid-area: cicon
+    align-self: end
 
   .title
     grid-area: ct
-    padding: 10% 0 0
+    align-self: end
+    padding: 0 2%
 
   .content
     grid-area: ccon
-    text-align: left
-    padding: 0 10% 30%
+    align-self: end
+    font-weight: bold
+    padding: 0 2%
 
   .image
     grid-area: ci
-    margin: 5% 0 0
+    margin: 0 auto 0
 
   .caption
     grid-area: ccap
+    align-self: start
+    padding: 0 2%
 
-  h3
-    margin-top: 1em
+  h3, p
+    margin: 0
 
   .image img
     max-width: 100%
 
   &:nth-child(2n)
-    grid-template-areas: 'ct ci' 'ccon ci' 'ccon ccap'
-    grid-template-columns: 50% 50%
+    grid-template-areas: 'cicon ci' 'ct ci' 'ccon ci' 'ccap ci'
+    grid-template-columns: 65% 35%
+    text-align: left
+
+    .title, .content, .caption
+      padding: 0 2%
 
 @media screen and (max-width: 980px)
   .capabilities
