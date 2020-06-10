@@ -1,6 +1,8 @@
+$bpl-blue: #1f8dcc
 $background-color1: rgba(#ffffff,0)
 $background-color2: rgba(#ffffff,0)
 $transition-direction: 97.97deg
+$header-text-color: $bpl-blue
 $text-color: #303030
     
 /* CTA
@@ -10,28 +12,35 @@ $text-color: #303030
   background-image: -webkit-linear-gradient($transition-direction, $background-color1, $background-color2)
   background-image: -ms-linear-gradient($transition-direction, $background-color1, $background-color2)
   background-image: linear-gradient($transition-direction, $background-color1, $background-color2)
+  height: 75vh
 
 #cta .inner
   display: -moz-flex
   display: -webkit-flex
   display: -ms-flex
   display: flex
+  flex-direction: column
   max-width: 45em
+  padding: 5% 0 0 0
+  text-align: center
 
   header
     -moz-order: 1
     -webkit-order: 1
     -ms-order: 1
-    order: 1
-    padding-right: 3em
-    width: 70%
+    order: 1  
+    width: 100%
+
+    h2
+      text-transform: uppercase
+      color: $header-text-color
 
   .actions
     -moz-order: 2
     -webkit-order: 2
     -ms-order: 2
     order: 2
-    width: 30%
+    width: 100%
 
 @media screen and (max-width: 980px)
   #cta .inner
