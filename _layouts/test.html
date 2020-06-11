@@ -76,17 +76,13 @@
 
                     });
 
-                $('.capabilities').scrollex({
+                $('#capabilities').scrollex({
 
                     // Scroll event: Perform various CSS tweaks based on the user's progress through this element.
                         scroll: function(progress) {
 
                             var $this = $(this),
-                                $icon = $this.find('.cicon'),
-                                $title = $this.find('.title'),
-                                $content = $this.find('.content'),
-                                $image = $this.find('.image'),
-                                $caption = $this.find('.caption'),
+                                $inner = $this.find('.inner'),
                                 x;
 
                             //Content.
@@ -97,13 +93,9 @@
                                     else
                                         x = progress;
 
-                                    x = Math.max(0, Math.min(1, x * 2));
+                                    x = Math.max(0, Math.min(1, x * 9));
 
-                                    $icon.css('opacity', x);
-                                    $title.css('opacity', x);
-                                    $content.css('opacity', x);
-                                    $image.css('opacity', x);
-                                    $caption.css('opacity', x);
+                                    $inner.css('opacity', x);
 
                                 // Scale.
                                     if (progress > 0.5)
@@ -111,37 +103,9 @@
                                     else
                                         x = progress;
 
-                                    x = Math.max(0, Math.min(1, x * 2));
+                                    x = Math.max(0, Math.min(1, x * 9));
 
-                                    $icon
-                                        .css('-moz-transform', 'scale(' + x + ')')
-                                        .css('-webkit-transform', 'scale(' + x + ')')
-                                        .css('-o-transform', 'scale(' + x + ')')
-                                        .css('-ms-transform', 'scale(' + x + ')')
-                                        .css('transform', 'scale(' + x + ')');
-
-                                    $title
-                                        .css('-moz-transform', 'scale(' + x + ')')
-                                        .css('-webkit-transform', 'scale(' + x + ')')
-                                        .css('-o-transform', 'scale(' + x + ')')
-                                        .css('-ms-transform', 'scale(' + x + ')')
-                                        .css('transform', 'scale(' + x + ')');
-
-                                    $content
-                                        .css('-moz-transform', 'scale(' + x + ')')
-                                        .css('-webkit-transform', 'scale(' + x + ')')
-                                        .css('-o-transform', 'scale(' + x + ')')
-                                        .css('-ms-transform', 'scale(' + x + ')')
-                                        .css('transform', 'scale(' + x + ')');
-
-                                    $image
-                                        .css('-moz-transform', 'scale(' + x + ')')
-                                        .css('-webkit-transform', 'scale(' + x + ')')
-                                        .css('-o-transform', 'scale(' + x + ')')
-                                        .css('-ms-transform', 'scale(' + x + ')')
-                                        .css('transform', 'scale(' + x + ')');
-
-                                    $caption
+                                    $inner
                                         .css('-moz-transform', 'scale(' + x + ')')
                                         .css('-webkit-transform', 'scale(' + x + ')')
                                         .css('-o-transform', 'scale(' + x + ')')
@@ -152,16 +116,13 @@
 
                 });
 
-                $('.projects').scrollex({
+                $('#current-works').scrollex({
 
                     // Scroll event: Perform various CSS tweaks based on the user's progress through this element.
                         scroll: function(progress) {
 
                             var $this = $(this),
-                                $title = $this.find('.title'),
-                                $content = $this.find('.content'),
-                                $image = $this.find('.image'),
-                                $caption = $this.find('.caption'),
+                                $inner = $this.find('.inner'),
                                 x;
 
                             //Content.
@@ -172,12 +133,9 @@
                                     else
                                         x = progress;
 
-                                    x = Math.max(0, Math.min(1, x * 2));
+                                    x = Math.max(0, Math.min(1, x * 9));
 
-                                    $title.css('opacity', x);
-                                    $content.css('opacity', x);
-                                    $image.css('opacity', x);
-                                    $caption.css('opacity', x);
+                                    $inner.css('opacity', x);
 
                                 // Scale.
                                     if (progress > 0.5)
@@ -185,30 +143,9 @@
                                     else
                                         x = progress;
 
-                                    x = Math.max(0, Math.min(1, x * 2));
+                                    x = Math.max(0, Math.min(1, x * 9));
 
-                                    $title
-                                        .css('-moz-transform', 'scale(' + x + ')')
-                                        .css('-webkit-transform', 'scale(' + x + ')')
-                                        .css('-o-transform', 'scale(' + x + ')')
-                                        .css('-ms-transform', 'scale(' + x + ')')
-                                        .css('transform', 'scale(' + x + ')');
-
-                                    $content
-                                        .css('-moz-transform', 'scale(' + x + ')')
-                                        .css('-webkit-transform', 'scale(' + x + ')')
-                                        .css('-o-transform', 'scale(' + x + ')')
-                                        .css('-ms-transform', 'scale(' + x + ')')
-                                        .css('transform', 'scale(' + x + ')');
-
-                                    $image
-                                        .css('-moz-transform', 'scale(' + x + ')')
-                                        .css('-webkit-transform', 'scale(' + x + ')')
-                                        .css('-o-transform', 'scale(' + x + ')')
-                                        .css('-ms-transform', 'scale(' + x + ')')
-                                        .css('transform', 'scale(' + x + ')');
-
-                                    $caption
+                                    $inner
                                         .css('-moz-transform', 'scale(' + x + ')')
                                         .css('-webkit-transform', 'scale(' + x + ')')
                                         .css('-o-transform', 'scale(' + x + ')')
