@@ -32,6 +32,236 @@
         {% include current-works.html %}
         {% include ctat.html %}
         {% include footer.html %}
+        <script>
+			$(function() {
+
+                $('#about-us').scrollex({
+
+                    // Scroll event: Perform various CSS tweaks based on the user's progress through this element.
+                        scroll: function(progress) {
+
+                            var $this = $(this),
+                                $inner = $this.find('.inner'),
+                                x;
+
+                            //Content.
+                            
+                                // Opacity.
+                                    if (progress > 0.5)
+                                        x = 1 - progress;
+                                    else
+                                        x = progress;
+
+                                    x = Math.max(0, Math.min(1, x * 2));
+
+                                    $this.css('opacity', x);
+                                    $inner.css('opacity', x);
+
+                                // Scale.
+                                    if (progress > 0.5)
+                                        x = 1 - progress;
+                                    else
+                                        x = progress;
+
+                                    x = Math.max(0, Math.min(1, x * 2));
+
+                                    $inner
+                                        .css('-moz-transform', 'scale(' + x + ')')
+                                        .css('-webkit-transform', 'scale(' + x + ')')
+                                        .css('-o-transform', 'scale(' + x + ')')
+                                        .css('-ms-transform', 'scale(' + x + ')')
+                                        .css('transform', 'scale(' + x + ')');
+
+                        }
+
+                    });
+
+                $('.capabilities').scrollex({
+
+                    // Scroll event: Perform various CSS tweaks based on the user's progress through this element.
+                        scroll: function(progress) {
+
+                            var $this = $(this),
+                                $icon = $this.find('.cicon'),
+                                $title = $this.find('.title'),
+                                $content = $this.find('.content'),
+                                $image = $this.find('.image'),
+                                $caption = $this.find('.caption'),
+                                x;
+
+                            //Content.
+                            
+                                // Opacity.
+                                    if (progress > 0.5)
+                                        x = 1 - progress;
+                                    else
+                                        x = progress;
+
+                                    x = Math.max(0, Math.min(1, x * 2));
+
+                                    $icon.css('opacity', x);
+                                    $title.css('opacity', x);
+                                    $content.css('opacity', x);
+                                    $image.css('opacity', x);
+                                    $caption.css('opacity', x);
+
+                                // Scale.
+                                    if (progress > 0.5)
+                                        x = 1 - progress;
+                                    else
+                                        x = progress;
+
+                                    x = Math.max(0, Math.min(1, x * 2));
+
+                                    $icon
+                                        .css('-moz-transform', 'scale(' + x + ')')
+                                        .css('-webkit-transform', 'scale(' + x + ')')
+                                        .css('-o-transform', 'scale(' + x + ')')
+                                        .css('-ms-transform', 'scale(' + x + ')')
+                                        .css('transform', 'scale(' + x + ')');
+
+                                    $title
+                                        .css('-moz-transform', 'scale(' + x + ')')
+                                        .css('-webkit-transform', 'scale(' + x + ')')
+                                        .css('-o-transform', 'scale(' + x + ')')
+                                        .css('-ms-transform', 'scale(' + x + ')')
+                                        .css('transform', 'scale(' + x + ')');
+
+                                    $content
+                                        .css('-moz-transform', 'scale(' + x + ')')
+                                        .css('-webkit-transform', 'scale(' + x + ')')
+                                        .css('-o-transform', 'scale(' + x + ')')
+                                        .css('-ms-transform', 'scale(' + x + ')')
+                                        .css('transform', 'scale(' + x + ')');
+
+                                    $image
+                                        .css('-moz-transform', 'scale(' + x + ')')
+                                        .css('-webkit-transform', 'scale(' + x + ')')
+                                        .css('-o-transform', 'scale(' + x + ')')
+                                        .css('-ms-transform', 'scale(' + x + ')')
+                                        .css('transform', 'scale(' + x + ')');
+
+                                    $caption
+                                        .css('-moz-transform', 'scale(' + x + ')')
+                                        .css('-webkit-transform', 'scale(' + x + ')')
+                                        .css('-o-transform', 'scale(' + x + ')')
+                                        .css('-ms-transform', 'scale(' + x + ')')
+                                        .css('transform', 'scale(' + x + ')');
+
+                        }
+
+                });
+
+                $('.projects').scrollex({
+
+                    // Scroll event: Perform various CSS tweaks based on the user's progress through this element.
+                        scroll: function(progress) {
+
+                            var $this = $(this),
+                                $title = $this.find('.title'),
+                                $content = $this.find('.content'),
+                                $image = $this.find('.image'),
+                                $caption = $this.find('.caption'),
+                                x;
+
+                            //Content.
+                            
+                                // Opacity.
+                                    if (progress > 0.5)
+                                        x = 1 - progress;
+                                    else
+                                        x = progress;
+
+                                    x = Math.max(0, Math.min(1, x * 2));
+
+                                    $title.css('opacity', x);
+                                    $content.css('opacity', x);
+                                    $image.css('opacity', x);
+                                    $caption.css('opacity', x);
+
+                                // Scale.
+                                    if (progress > 0.5)
+                                        x = 1 - progress;
+                                    else
+                                        x = progress;
+
+                                    x = Math.max(0, Math.min(1, x * 2));
+
+                                    $title
+                                        .css('-moz-transform', 'scale(' + x + ')')
+                                        .css('-webkit-transform', 'scale(' + x + ')')
+                                        .css('-o-transform', 'scale(' + x + ')')
+                                        .css('-ms-transform', 'scale(' + x + ')')
+                                        .css('transform', 'scale(' + x + ')');
+
+                                    $content
+                                        .css('-moz-transform', 'scale(' + x + ')')
+                                        .css('-webkit-transform', 'scale(' + x + ')')
+                                        .css('-o-transform', 'scale(' + x + ')')
+                                        .css('-ms-transform', 'scale(' + x + ')')
+                                        .css('transform', 'scale(' + x + ')');
+
+                                    $image
+                                        .css('-moz-transform', 'scale(' + x + ')')
+                                        .css('-webkit-transform', 'scale(' + x + ')')
+                                        .css('-o-transform', 'scale(' + x + ')')
+                                        .css('-ms-transform', 'scale(' + x + ')')
+                                        .css('transform', 'scale(' + x + ')');
+
+                                    $caption
+                                        .css('-moz-transform', 'scale(' + x + ')')
+                                        .css('-webkit-transform', 'scale(' + x + ')')
+                                        .css('-o-transform', 'scale(' + x + ')')
+                                        .css('-ms-transform', 'scale(' + x + ')')
+                                        .css('transform', 'scale(' + x + ')');
+
+                        }
+
+                });
+
+                $('#cta').scrollex({
+
+                    // Scroll event: Perform various CSS tweaks based on the user's progress through this element.
+                        scroll: function(progress) {
+
+                            var $this = $(this),
+                                $inner = $this.find('.inner'),
+                                x;
+
+                            //Content.
+                            
+                                // Opacity.
+                                    if (progress > 0.8)
+                                        x = 1 - progress;
+                                    else
+                                        x = progress;
+
+                                    x = Math.max(0, Math.min(1, x * 2));
+
+                                    $this.css('opacity', x);
+                                    $inner.css('opacity', x);
+
+                                // Scale.
+                                    if (progress > 0.8)
+                                        x = 1 - progress;
+                                    else
+                                        x = progress;
+
+                                    x = Math.max(0, Math.min(1, x * 2));
+
+                                    $inner
+                                        .css('-moz-transform', 'scale(' + x + ')')
+                                        .css('-webkit-transform', 'scale(' + x + ')')
+                                        .css('-o-transform', 'scale(' + x + ')')
+                                        .css('-ms-transform', 'scale(' + x + ')')
+                                        .css('transform', 'scale(' + x + ')');
+
+                        }
+
+                });
+
+            });
+        </script>
         </div>
     </body>
 </html>
