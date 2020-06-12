@@ -954,7 +954,6 @@ input
 
 button.special, .button.special
   background-color: $button-special-background-color
-  box-shadow: none !important
   color: $button-special-text-color !important
 
 input
@@ -1425,3 +1424,17 @@ body.is-mobile #main > header
 @media screen and (min-width: 736px)
   .mobile-only
     display: none
+
+/* Mobile-float
+
+.mobile-float
+  position: fixed
+  bottom: 2%
+  left: 0
+  right: 0
+  width: 60%
+  padding: 0
+  margin: 0 auto 0 auto
+  opacity: 0
+  z-index: 0
+  box-shadow: 3px 10px 10px gray !important

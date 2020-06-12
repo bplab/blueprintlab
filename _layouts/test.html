@@ -38,39 +38,37 @@
                 $('#about-us').scrollex({
 
                     // Scroll event: Perform various CSS tweaks based on the user's progress through this element.
-                        scroll: function(progress) {
+                    scroll: function(progress) {
 
-                            var $this = $(this),
-                                $inner = $this.find('.inner'),
-                                x;
+                        var $this = $(this),
+                            $inner = $this.find('.inner'),
+                            x;
+                        
+                            // Opacity.
+                            if (progress > 0.5)
+                                x = 1 - progress;
+                            else
+                                x = progress;
 
-                            //Content.
-                            
-                                // Opacity.
-                                    if (progress > 0.5)
-                                        x = 1 - progress;
-                                    else
-                                        x = progress;
+                            x = Math.max(0, Math.min(1, x * 2));
 
-                                    x = Math.max(0, Math.min(1, x * 2));
+                            $this.css('opacity', x);
+                            $inner.css('opacity', x);
 
-                                    $this.css('opacity', x);
-                                    $inner.css('opacity', x);
+                            // Scale.
+                            if (progress > 0.5)
+                                x = 1 - progress;
+                            else
+                                x = progress;
 
-                                // Scale.
-                                    if (progress > 0.5)
-                                        x = 1 - progress;
-                                    else
-                                        x = progress;
+                            x = Math.max(0, Math.min(1, x * 2));
 
-                                    x = Math.max(0, Math.min(1, x * 2));
-
-                                    $inner
-                                        .css('-moz-transform', 'scale(' + x + ')')
-                                        .css('-webkit-transform', 'scale(' + x + ')')
-                                        .css('-o-transform', 'scale(' + x + ')')
-                                        .css('-ms-transform', 'scale(' + x + ')')
-                                        .css('transform', 'scale(' + x + ')');
+                            $inner
+                                .css('-moz-transform', 'scale(' + x + ')')
+                                .css('-webkit-transform', 'scale(' + x + ')')
+                                .css('-o-transform', 'scale(' + x + ')')
+                                .css('-ms-transform', 'scale(' + x + ')')
+                                .css('transform', 'scale(' + x + ')');
 
                         }
 
@@ -79,38 +77,57 @@
                 $('#capabilities').scrollex({
 
                     // Scroll event: Perform various CSS tweaks based on the user's progress through this element.
-                        scroll: function(progress) {
+                    scroll: function(progress) {
 
-                            var $this = $(this),
-                                $inner = $this.find('.inner'),
-                                x;
+                        var $this = $(this),
+                            $inner = $this.find('.inner'),
+                            $button = $this.find('.mobile-float'),
+                            x;
+                        
+                            // Opacity.
+                            if (progress > 0.5)
+                                x = 1 - progress;
+                            else
+                                x = progress;
 
-                            //Content.
+                            x = Math.max(0, Math.min(1, x * 9));
+
+                            $inner.css('opacity', x);
+                            $button.css('opacity', x);
+                            $button.css('z-index', 3);
+
+                            // Scale.
+                            if (progress > 0.5)
+                                x = 1 - progress;
+                            else
+                                x = progress;
+
+                            x = Math.max(0, Math.min(1, x * 9));
+
+                            $inner
+                                .css('-moz-transform', 'scale(' + x + ')')
+                                .css('-webkit-transform', 'scale(' + x + ')')
+                                .css('-o-transform', 'scale(' + x + ')')
+                                .css('-ms-transform', 'scale(' + x + ')')
+                                .css('transform', 'scale(' + x + ')');
+
                             
-                                // Opacity.
-                                    if (progress > 0.5)
-                                        x = 1 - progress;
-                                    else
-                                        x = progress;
+                            $button
+                                .css('-moz-transform', 'scale(' + x + ')')
+                                .css('-webkit-transform', 'scale(' + x + ')')
+                                .css('-o-transform', 'scale(' + x + ')')
+                                .css('-ms-transform', 'scale(' + x + ')')
+                                .css('transform', 'scale(' + x + ')');
 
-                                    x = Math.max(0, Math.min(1, x * 9));
+                            // Z-index.
+                            if (progress > 0.5)
+                                x = 1 - progress;
+                            else
+                                x = progress;
 
-                                    $inner.css('opacity', x);
+                            x = Math.max(0, Math.min(3, x * 2));
 
-                                // Scale.
-                                    if (progress > 0.5)
-                                        x = 1 - progress;
-                                    else
-                                        x = progress;
-
-                                    x = Math.max(0, Math.min(1, x * 9));
-
-                                    $inner
-                                        .css('-moz-transform', 'scale(' + x + ')')
-                                        .css('-webkit-transform', 'scale(' + x + ')')
-                                        .css('-o-transform', 'scale(' + x + ')')
-                                        .css('-ms-transform', 'scale(' + x + ')')
-                                        .css('transform', 'scale(' + x + ')');
+                            $button.css('z-index', x);
 
                         }
 
@@ -119,38 +136,55 @@
                 $('#current-works').scrollex({
 
                     // Scroll event: Perform various CSS tweaks based on the user's progress through this element.
-                        scroll: function(progress) {
+                    scroll: function(progress) {
 
-                            var $this = $(this),
-                                $inner = $this.find('.inner'),
-                                x;
+                        var $this = $(this),
+                            $inner = $this.find('.inner'),
+                            $button = $this.find('.mobile-float'),
+                            x;
 
-                            //Content.
-                            
-                                // Opacity.
-                                    if (progress > 0.5)
-                                        x = 1 - progress;
-                                    else
-                                        x = progress;
+                            // Opacity.
+                            if (progress > 0.5)
+                                x = 1 - progress;
+                            else
+                                x = progress;
 
-                                    x = Math.max(0, Math.min(1, x * 9));
+                            x = Math.max(0, Math.min(1, x * 9));
 
-                                    $inner.css('opacity', x);
+                            $inner.css('opacity', x);
+                            $button.css('opacity', x);
 
-                                // Scale.
-                                    if (progress > 0.5)
-                                        x = 1 - progress;
-                                    else
-                                        x = progress;
+                            // Scale.
+                            if (progress > 0.5)
+                                x = 1 - progress;
+                            else
+                                x = progress;
 
-                                    x = Math.max(0, Math.min(1, x * 9));
+                            x = Math.max(0, Math.min(1, x * 9));
 
-                                    $inner
-                                        .css('-moz-transform', 'scale(' + x + ')')
-                                        .css('-webkit-transform', 'scale(' + x + ')')
-                                        .css('-o-transform', 'scale(' + x + ')')
-                                        .css('-ms-transform', 'scale(' + x + ')')
-                                        .css('transform', 'scale(' + x + ')');
+                            $inner
+                                .css('-moz-transform', 'scale(' + x + ')')
+                                .css('-webkit-transform', 'scale(' + x + ')')
+                                .css('-o-transform', 'scale(' + x + ')')
+                                .css('-ms-transform', 'scale(' + x + ')')
+                                .css('transform', 'scale(' + x + ')');
+
+                            $button
+                                .css('-moz-transform', 'scale(' + x + ')')
+                                .css('-webkit-transform', 'scale(' + x + ')')
+                                .css('-o-transform', 'scale(' + x + ')')
+                                .css('-ms-transform', 'scale(' + x + ')')
+                                .css('transform', 'scale(' + x + ')');
+
+                            // Z-index.
+                            if (progress > 0.5)
+                                x = 1 - progress;
+                            else
+                                x = progress;
+
+                            x = Math.max(0, Math.min(3, x * 2));
+
+                            $button.css('z-index', x);
 
                         }
 
@@ -159,39 +193,37 @@
                 $('#cta').scrollex({
 
                     // Scroll event: Perform various CSS tweaks based on the user's progress through this element.
-                        scroll: function(progress) {
+                    scroll: function(progress) {
 
-                            var $this = $(this),
-                                $inner = $this.find('.inner'),
-                                x;
+                        var $this = $(this),
+                            $inner = $this.find('.inner'),
+                            x;
+                        
+                            // Opacity.
+                            if (progress > 0.8)
+                                x = 1 - progress;
+                            else
+                                x = progress;
 
-                            //Content.
-                            
-                                // Opacity.
-                                    if (progress > 0.8)
-                                        x = 1 - progress;
-                                    else
-                                        x = progress;
+                            x = Math.max(0, Math.min(1, x * 2));
 
-                                    x = Math.max(0, Math.min(1, x * 2));
+                            $this.css('opacity', x);
+                            $inner.css('opacity', x);
 
-                                    $this.css('opacity', x);
-                                    $inner.css('opacity', x);
+                            // Scale.
+                            if (progress > 0.8)
+                                x = 1 - progress;
+                            else
+                                x = progress;
 
-                                // Scale.
-                                    if (progress > 0.8)
-                                        x = 1 - progress;
-                                    else
-                                        x = progress;
+                            x = Math.max(0, Math.min(1, x * 2));
 
-                                    x = Math.max(0, Math.min(1, x * 2));
-
-                                    $inner
-                                        .css('-moz-transform', 'scale(' + x + ')')
-                                        .css('-webkit-transform', 'scale(' + x + ')')
-                                        .css('-o-transform', 'scale(' + x + ')')
-                                        .css('-ms-transform', 'scale(' + x + ')')
-                                        .css('transform', 'scale(' + x + ')');
+                            $inner
+                                .css('-moz-transform', 'scale(' + x + ')')
+                                .css('-webkit-transform', 'scale(' + x + ')')
+                                .css('-o-transform', 'scale(' + x + ')')
+                                .css('-ms-transform', 'scale(' + x + ')')
+                                .css('transform', 'scale(' + x + ')');
 
                         }
 
