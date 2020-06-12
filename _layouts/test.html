@@ -44,24 +44,20 @@
                             $inner = $this.find('.inner'),
                             x;
                         
-                            // Opacity.
+                            // Math for Scale & Opacity.
                             if (progress > 0.5)
                                 x = 1 - progress;
                             else
                                 x = progress;
 
                             x = Math.max(0, Math.min(1, x * 2));
+
+                            // Opacity.
 
                             $this.css('opacity', x);
                             $inner.css('opacity', x);
 
                             // Scale.
-                            if (progress > 0.5)
-                                x = 1 - progress;
-                            else
-                                x = progress;
-
-                            x = Math.max(0, Math.min(1, x * 2));
 
                             $inner
                                 .css('-moz-transform', 'scale(' + x + ')')
@@ -82,9 +78,10 @@
                         var $this = $(this),
                             $inner = $this.find('.inner'),
                             $button = $this.find('.mobile-float'),
-                            x;
+                            x,
+                            z;
                         
-                            // Opacity.
+                            // Math for Scale & Opacity.
                             if (progress > 0.5)
                                 x = 1 - progress;
                             else
@@ -92,17 +89,12 @@
 
                             x = Math.max(0, Math.min(1, x * 9));
 
-                            $inner.css('opacity', x);
+                            // Opacity.
+
+                            $this.css('opacity', x);
                             $button.css('opacity', x);
-                            $button.css('z-index', 3);
 
                             // Scale.
-                            if (progress > 0.5)
-                                x = 1 - progress;
-                            else
-                                x = progress;
-
-                            x = Math.max(0, Math.min(1, x * 9));
 
                             $inner
                                 .css('-moz-transform', 'scale(' + x + ')')
@@ -118,16 +110,18 @@
                                 .css('-o-transform', 'scale(' + x + ')')
                                 .css('-ms-transform', 'scale(' + x + ')')
                                 .css('transform', 'scale(' + x + ')');
+                            
+                            // Math for Z-index.
+                            if (progress > 0.5)
+                                z = 1 - progress;
+                            else
+                                z = progress;
+
+                            z = Math.max(0, Math.min(3, x * 9));
 
                             // Z-index.
-                            if (progress > 0.5)
-                                x = 1 - progress;
-                            else
-                                x = progress;
 
-                            x = Math.max(0, Math.min(3, x * 2));
-
-                            $button.css('z-index', x);
+                            $button.css('z-index', z);
 
                         }
 
@@ -141,26 +135,23 @@
                         var $this = $(this),
                             $inner = $this.find('.inner'),
                             $button = $this.find('.mobile-float'),
-                            x;
+                            x,
+                            z;
 
-                            // Opacity.
+                            // Math for Scale & Opacity.
                             if (progress > 0.5)
                                 x = 1 - progress;
                             else
                                 x = progress;
 
                             x = Math.max(0, Math.min(1, x * 9));
+
+                            // Opacity.
 
                             $inner.css('opacity', x);
                             $button.css('opacity', x);
 
                             // Scale.
-                            if (progress > 0.5)
-                                x = 1 - progress;
-                            else
-                                x = progress;
-
-                            x = Math.max(0, Math.min(1, x * 9));
 
                             $inner
                                 .css('-moz-transform', 'scale(' + x + ')')
@@ -176,15 +167,17 @@
                                 .css('-ms-transform', 'scale(' + x + ')')
                                 .css('transform', 'scale(' + x + ')');
 
-                            // Z-index.
+                            // Math for Z-index.
                             if (progress > 0.5)
-                                x = 1 - progress;
+                                z = 1 - progress;
                             else
-                                x = progress;
+                                z = progress;
 
-                            x = Math.max(0, Math.min(3, x * 2));
+                            z = Math.max(0, Math.min(3, x * 9));
 
-                            $button.css('z-index', x);
+                            // Z-index.
+
+                            $button.css('z-index', z);
 
                         }
 
@@ -199,25 +192,21 @@
                             $inner = $this.find('.inner'),
                             x;
                         
-                            // Opacity.
+                            // Math for Scale & Opacity.
                             if (progress > 0.8)
                                 x = 1 - progress;
                             else
                                 x = progress;
 
                             x = Math.max(0, Math.min(1, x * 2));
+
+                            // Opacity.
 
                             $this.css('opacity', x);
                             $inner.css('opacity', x);
 
                             // Scale.
-                            if (progress > 0.8)
-                                x = 1 - progress;
-                            else
-                                x = progress;
-
-                            x = Math.max(0, Math.min(1, x * 2));
-
+                            
                             $inner
                                 .css('-moz-transform', 'scale(' + x + ')')
                                 .css('-webkit-transform', 'scale(' + x + ')')
