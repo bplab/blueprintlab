@@ -44,12 +44,13 @@
                             $inner = $this.find('.inner'),
                             x;
                         
-                            // Math for Scale & Opacity.
+                            // Progress decreases after half-point
                             if (progress > 0.5)
                                 x = 1 - progress;
                             else
                                 x = progress;
-
+                            
+                            // Increase last multiplier for longer sections
                             x = Math.max(0, Math.min(1, x * 2));
 
                             // Opacity.
@@ -80,12 +81,13 @@
                             $button = $this.find('.mobile-float'),
                             x;
                         
-                            // Math for Scale & Opacity.
+                            // Progress decreases after half-point
                             if (progress > 0.5)
                                 x = 1 - progress;
                             else
                                 x = progress;
 
+                            // Increase last multiplier for longer sections
                             x = Math.max(0, Math.min(1, x * 7));
 
                             // Opacity.
@@ -110,7 +112,7 @@
                                 .css('-ms-transform', 'scale(' + x + ')')
                                 .css('transform', 'scale(' + x + ')');
                             
-                            // Z-index.
+                            // Change z-index multiplier if you want higher than 1
                             $button.css('z-index', x * 3);
 
                         }
@@ -127,12 +129,13 @@
                             $button = $this.find('.mobile-float'),
                             x;
 
-                            // Math for Scale & Opacity.
+                            // Progress decreases after half-point
                             if (progress > 0.5)
                                 x = 1 - progress;
                             else
                                 x = progress;
 
+                            // Increase last multiplier for longer sections
                             x = Math.max(0, Math.min(1, x * 8));
 
                             // Opacity.
@@ -156,7 +159,7 @@
                                 .css('-ms-transform', 'scale(' + x + ')')
                                 .css('transform', 'scale(' + x + ')');
 
-                            // Z-index.
+                            // Change z-index multiplier if you want higher than 1
                             $button.css('z-index', x * 3);
 
                         }
