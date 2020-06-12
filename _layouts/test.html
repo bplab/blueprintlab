@@ -78,8 +78,7 @@
                         var $this = $(this),
                             $inner = $this.find('.inner'),
                             $button = $this.find('.mobile-float'),
-                            x,
-                            z;
+                            x;
                         
                             // Math for Scale & Opacity.
                             if (progress > 0.5)
@@ -87,7 +86,7 @@
                             else
                                 x = progress;
 
-                            x = Math.max(0, Math.min(1, x * 9));
+                            x = Math.max(0, Math.min(1, x * 7));
 
                             // Opacity.
 
@@ -111,11 +110,8 @@
                                 .css('-ms-transform', 'scale(' + x + ')')
                                 .css('transform', 'scale(' + x + ')');
                             
-                            // Math for Z-index.
-                            z = Math.max(0, Math.min(3, x * 9));
-
                             // Z-index.
-                            $button.css('z-index', z);
+                            $button.css('z-index', x * 3);
 
                         }
 
@@ -129,8 +125,7 @@
                         var $this = $(this),
                             $inner = $this.find('.inner'),
                             $button = $this.find('.mobile-float'),
-                            x,
-                            z;
+                            x;
 
                             // Math for Scale & Opacity.
                             if (progress > 0.5)
@@ -138,7 +133,7 @@
                             else
                                 x = progress;
 
-                            x = Math.max(0, Math.min(1, x * 9));
+                            x = Math.max(0, Math.min(1, x * 8));
 
                             // Opacity.
 
@@ -161,11 +156,8 @@
                                 .css('-ms-transform', 'scale(' + x + ')')
                                 .css('transform', 'scale(' + x + ')');
 
-                            // Math for Z-index.
-                            z = Math.max(0, Math.min(3, x * 9));
-
                             // Z-index.
-                            $button.css('z-index', z);
+                            $button.css('z-index', x * 3);
 
                         }
 
