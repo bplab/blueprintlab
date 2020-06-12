@@ -50,8 +50,8 @@
                             else
                                 x = progress;
                             
-                            // Increase last multiplier for longer sections
-                            x = Math.max(0, Math.min(1, x * 2));
+                            // Responsive height adjustment
+                            x = Math.max(0, Math.min(1, x * ($this.height() / window.innerHeight * 3.2)));
 
                             // Opacity.
 
@@ -87,8 +87,8 @@
                             else
                                 x = progress;
 
-                            // Increase last multiplier for longer sections
-                            x = Math.max(0, Math.min(1, x * 7));
+                            // Responsive height adjustment
+                            x = Math.max(0, Math.min(1, x * ($this.height() / window.innerHeight * 3.2)));
 
                             // Opacity.
 
@@ -135,8 +135,8 @@
                             else
                                 x = progress;
 
-                            // Increase last multiplier for longer sections
-                            x = Math.max(0, Math.min(1, x * 8));
+                            // Responsive height adjustment
+                            x = Math.max(0, Math.min(1, x * ($this.height() / window.innerHeight * 3.2)));
 
                             // Opacity.
 
@@ -181,7 +181,8 @@
                             else
                                 x = progress;
 
-                            x = Math.max(0, Math.min(1, x * 2));
+                            // Responsive height adjustment
+                            x = Math.max(0, Math.min(1, x * ($this.height() / window.innerHeight * 3.2)));
 
                             // Opacity.
 
