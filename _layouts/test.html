@@ -35,7 +35,7 @@
         <script>
 			$(function() {
 
-                $('.scroll-effect').scrollex({
+                $('.scroll-effect1').scrollex({
 
                     // Scroll event: Perform various CSS tweaks based on the user's progress through this element.
                     scroll: function(progress) {
@@ -52,7 +52,7 @@
                                 x = progress;
                             
                             // Responsive height adjustment
-                            x = Math.max(0, Math.min(1, x * ($this.height() / window.innerHeight * 3.2)));
+                            x = Math.max(0, Math.min(1, x * ($this.height() / window.innerHeight * 2.8)));
 
                             // Opacity.
 
@@ -82,7 +82,7 @@
 
                 });
 
-                $('#cta').scrollex({
+                $('.scroll-effect2').scrollex({
 
                     // Scroll event: Perform various CSS tweaks based on the user's progress through this element.
                     scroll: function(progress) {
