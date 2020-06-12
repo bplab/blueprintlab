@@ -112,15 +112,9 @@
                                 .css('transform', 'scale(' + x + ')');
                             
                             // Math for Z-index.
-                            if (progress > 0.5)
-                                z = 1 - progress;
-                            else
-                                z = progress;
-
                             z = Math.max(0, Math.min(3, x * 9));
 
                             // Z-index.
-
                             $button.css('z-index', z);
 
                         }
@@ -168,15 +162,9 @@
                                 .css('transform', 'scale(' + x + ')');
 
                             // Math for Z-index.
-                            if (progress > 0.5)
-                                z = 1 - progress;
-                            else
-                                z = progress;
-
                             z = Math.max(0, Math.min(3, x * 9));
 
                             // Z-index.
-
                             $button.css('z-index', z);
 
                         }
