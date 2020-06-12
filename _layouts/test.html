@@ -35,43 +35,7 @@
         <script>
 			$(function() {
 
-                $('#about-us').scrollex({
-
-                    // Scroll event: Perform various CSS tweaks based on the user's progress through this element.
-                    scroll: function(progress) {
-
-                        var $this = $(this),
-                            $inner = $this.find('.inner'),
-                            x;
-                        
-                            // Progress decreases after half-point
-                            if (progress > 0.5)
-                                x = 1 - progress;
-                            else
-                                x = progress;
-                            
-                            // Responsive height adjustment
-                            x = Math.max(0, Math.min(1, x * ($this.height() / window.innerHeight * 3.2)));
-
-                            // Opacity.
-
-                            $this.css('opacity', x);
-                            $inner.css('opacity', x);
-
-                            // Scale.
-
-                            $inner
-                                .css('-moz-transform', 'scale(' + x + ')')
-                                .css('-webkit-transform', 'scale(' + x + ')')
-                                .css('-o-transform', 'scale(' + x + ')')
-                                .css('-ms-transform', 'scale(' + x + ')')
-                                .css('transform', 'scale(' + x + ')');
-
-                        }
-
-                    });
-
-                $('#capabilities').scrollex({
+                $('.scroll-effect').scrollex({
 
                     // Scroll event: Perform various CSS tweaks based on the user's progress through this element.
                     scroll: function(progress) {
@@ -86,61 +50,13 @@
                                 x = 1 - progress;
                             else
                                 x = progress;
-
+                            
                             // Responsive height adjustment
                             x = Math.max(0, Math.min(1, x * ($this.height() / window.innerHeight * 3.2)));
 
                             // Opacity.
 
                             $this.css('opacity', x);
-                            $button.css('opacity', x);
-
-                            // Scale.
-
-                            $inner
-                                .css('-moz-transform', 'scale(' + x + ')')
-                                .css('-webkit-transform', 'scale(' + x + ')')
-                                .css('-o-transform', 'scale(' + x + ')')
-                                .css('-ms-transform', 'scale(' + x + ')')
-                                .css('transform', 'scale(' + x + ')');
-
-                            
-                            $button
-                                .css('-moz-transform', 'scale(' + x + ')')
-                                .css('-webkit-transform', 'scale(' + x + ')')
-                                .css('-o-transform', 'scale(' + x + ')')
-                                .css('-ms-transform', 'scale(' + x + ')')
-                                .css('transform', 'scale(' + x + ')');
-                            
-                            // Change z-index multiplier if you want higher than 1
-                            $button.css('z-index', x * 3);
-
-                        }
-
-                });
-
-                $('#current-works').scrollex({
-
-                    // Scroll event: Perform various CSS tweaks based on the user's progress through this element.
-                    scroll: function(progress) {
-
-                        var $this = $(this),
-                            $inner = $this.find('.inner'),
-                            $button = $this.find('.mobile-float'),
-                            x;
-
-                            // Progress decreases after half-point
-                            if (progress > 0.5)
-                                x = 1 - progress;
-                            else
-                                x = progress;
-
-                            // Responsive height adjustment
-                            x = Math.max(0, Math.min(1, x * ($this.height() / window.innerHeight * 3.2)));
-
-                            // Opacity.
-
-                            $inner.css('opacity', x);
                             $button.css('opacity', x);
 
                             // Scale.
@@ -175,11 +91,8 @@
                             $inner = $this.find('.inner'),
                             x;
                         
-                            // Math for Scale & Opacity.
-                            if (progress > 0.8)
-                                x = 1 - progress;
-                            else
-                                x = progress;
+                            // No progress decrease
+                            x = progress;
 
                             // Responsive height adjustment
                             x = Math.max(0, Math.min(1, x * ($this.height() / window.innerHeight * 3.2)));
@@ -187,7 +100,6 @@
                             // Opacity.
 
                             $this.css('opacity', x);
-                            $inner.css('opacity', x);
 
                             // Scale.
                             
