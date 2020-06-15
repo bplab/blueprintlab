@@ -641,9 +641,6 @@ header
 .icon
   border-radius: $icon-border-radius
 
-@media screen and (max-width: 736px)
-  .icon
-
 /* Image
 
 .image
@@ -781,9 +778,6 @@ ul
         max-width: 30em
         width: 100%
 
-        &.icon::before
-          margin-left: -1em
-
     &.small li
       padding: 0.5em 0 0 0
 
@@ -867,13 +861,6 @@ input
 
 button:active, .button:active
   background-color: $button-active-color
-
-input
-  &[type="submit"].icon::before, &[type="reset"].icon::before, &[type="button"].icon::before
-    margin-right: 0.5em
-
-button.icon::before, .button.icon::before
-  margin-right: 0.5em
 
 input
   &[type="submit"].fit, &[type="reset"].fit, &[type="button"].fit
