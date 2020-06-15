@@ -2,8 +2,11 @@
 $scroll-behavior: smooth
 $main-background-jpg: "../../assets/images/backgroundt.jpg"
 $main-background-webp: "../../assets/images/backgroundt.webp"
-$main-text-color: $white
 $code-background-color: rgba(144, 144, 144, 0.25)
+$main-text-color: $white
+$letter-spacing: 0.01em
+$header-letter-spacing: 0.01em
+$mobile-letter-spacing: 0.01em
 $border-color: $white
 $border-radius: 5px
 $hr-color: $bpl-gray
@@ -33,6 +36,8 @@ $button-special-hover-background-color: $green
 $button-special-hover-text-color: $white
 $button-special-active-background-color: $green
 $button-special-active-text-color: $bpl-blue
+$button-height: 2.5em
+$button-padding: 2.5em
 
 /* Header variables
 $header-text-color: $black
@@ -446,7 +451,7 @@ body
   font-family: "NanumSquare", Helvetica, sans-serif
   font-size: 20pt
   font-weight: 400
-  letter-spacing: 0.075em
+  letter-spacing: $letter-spacing
   line-height: 1.65em
 
 input, select, textarea
@@ -454,7 +459,6 @@ input, select, textarea
   font-family: "NanumSquare", Helvetica, sans-serif
   font-size: 15pt
   font-weight: 400
-  letter-spacing: 0.075em
   line-height: 1.65em
 
 @media screen and (max-width: 1680px)
@@ -468,7 +472,7 @@ input, select, textarea
 @media screen and (max-width: 736px)
   body, input, select, textarea
     font-size: 13pt
-    letter-spacing: 0.0375em
+    letter-spacing: $mobile-letter-spacing
 
 a
   -moz-transition: color 0.2s ease, border-bottom-color 0.2s ease
@@ -495,7 +499,7 @@ p
 h1, h2, h3, h4, h5, h6
   color: $main-text-color
   font-weight: 800
-  letter-spacing: 0.1em
+  letter-spacing: $header-letter-spacing
   line-height: 1em
   margin: 0 0 1em 0
   text-transform: capitalize
@@ -875,10 +879,10 @@ input
     display: inline-block
     font-size: 0.8em
     font-weight: 600
-    height: 3.125em
-    letter-spacing: 0.225em
-    line-height: 3.125em
-    padding: 0 2.75em
+    height: $button-height
+    letter-spacing: $letter-spacing
+    line-height: $button-height
+    padding: 0 $button-padding
     text-align: center
     text-decoration: none
     text-transform: uppercase
@@ -904,10 +908,10 @@ button, .button
   display: inline-block
   font-size: 0.8em
   font-weight: 600
-  height: 3.125em
-  letter-spacing: 0.225em
-  line-height: 3.125em
-  padding: 0 2.75em
+  height: $button-height
+  letter-spacing: $letter-spacing
+  line-height: $button-height
+  padding: 0 $button-padding
   text-align: center
   text-decoration: none
   text-transform: uppercase
@@ -1144,7 +1148,7 @@ button
         color: inherit
         display: block
         font-size: 1.5em
-        letter-spacing: 0.225em
+        letter-spacing: $letter-spacing
         outline: 0
         text-decoration: none
         text-transform: uppercase
@@ -1237,7 +1241,7 @@ body.is-menu-visible
           color: $nav-text-color
           display: block
           font-size: 0.8em
-          letter-spacing: 0.225em
+          letter-spacing: $letter-spacing
           padding: 0 1.5em
           text-transform: uppercase
           font-weight: bold
@@ -1338,7 +1342,7 @@ body.is-menu-visible
   p
     color: $header-text-color
     font-weight: bold
-    letter-spacing: 0.225em
+    letter-spacing: $letter-spacing
     text-transform: capitalize
     top: 0
     margin: 0em 1em
@@ -1400,7 +1404,7 @@ body.is-mobile #main > header
   .copyright
     color: $footer-text-color
     font-size: 0.8em
-    letter-spacing: 0.225em
+    letter-spacing: $letter-spacing
     list-style: none
     padding: 0
     text-transform: capitalize
