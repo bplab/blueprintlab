@@ -7,6 +7,8 @@ $code-background-color: rgba(144, 144, 144, 0.25)
 $border-color: $white
 $border-radius: 5px
 $hr-color: $bpl-gray
+
+/* Input variables
 $input-box-shadow-color: $bpl-blue
 $input-text-color: $bpl-blue
 $input-background-color: $bpl-blue
@@ -15,6 +17,8 @@ $input-special-hover-background-color: $green
 $input-special-hover-text-color: $white
 $input-special-active-text-color: $bpl-blue
 $input-special-active-background-color: $green
+
+/* Button variables  
 $button-box-shadow-color: $bpl-blue-bright
 $button-text-color: $bpl-blue-bright
 $button-background-color: $white
@@ -26,10 +30,19 @@ $button-special-hover-background-color: $green
 $button-special-hover-text-color: $white
 $button-special-active-background-color: $green
 $button-special-active-text-color: $bpl-blue
+
+/* Header variables
+$header-text-color: $black
+$header-text-shadow-color: $white
 $header-background-color: $white
-$header-height: 2.5em
-$header-height-mobile: 3em
 $header-box-shadow-color: rgba(235, 235, 235, 0.25)
+$header-height: 3em
+$header-image-height: 2.5em
+$header-image-left: 10%
+$header-nav-right: 10%
+$header-height-mobile: 3em
+$header-image-left-mobile: 1.25em
+$header-nav-right_mobile: 0
 $menu-text-color: $white
 $menu-background-color: $bpl-blue
 $menu-border-color: $white
@@ -37,8 +50,8 @@ $nav-text-color: $bpl-blue
 $nav-hover-color: $black
 $nav-alt-color: $black
 $nav-alt-hover-color: $bpl-blue
-$header-text-color: $black
-$header-text-shadow-color: $white
+
+/* Footer variables
 $footer-background-color1: $white
 $footer-background-color2: $white
 $footer-background-gradient1: 1
@@ -1188,11 +1201,11 @@ body.is-menu-visible
     -webkit-transition: opacity 0.2s ease
     -ms-transition: opacity 0.2s ease
     transition: opacity 0.2s ease
-    height: 2em
-    left: 1.25em
+    height: $header-image-height
     line-height: inherit
     position: absolute
     top: 0
+    left: $header-image-left
     font-size: 100%
     padding: 0
     margin: 0.25em 0 0 0
@@ -1202,7 +1215,7 @@ body.is-menu-visible
     height: inherit
     line-height: inherit
     position: absolute
-    right: 0
+    right: $header-nav-right
     top: 0
 
     > ul
@@ -1285,6 +1298,10 @@ body.is-menu-visible
   #header a img
     height: 2em
     margin: 0.5em 0 0 0
+    left: $header-image-left-mobile
+
+  #header nav
+    right: $header-nav-right-mobile
 
   #header nav > ul > li > a.navLinks
     display: none
