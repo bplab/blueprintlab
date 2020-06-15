@@ -67,10 +67,9 @@ $footer-background-gradient2: 1
 $footer-gradient-direction: top
 $footer-text-color: $bpl-blue-bright
 $footer-hover-color: $black
-$footer-icon-color: $white
-$footer-icon-border-color: $bpl-blue-bright
-$footer-icon-background-color: $bpl-blue-bright
+$footer-icon-background-color: $white
 $footer-icon-width: 1.5em
+$icon-border-radius: 5px
 
 /* Reset
 
@@ -640,52 +639,10 @@ header
 /* Icon
 
 .icon
-  text-decoration: none
-  border-bottom: none
-  position: relative
-
-  &::before
-    -moz-osx-font-smoothing: grayscale
-    -webkit-font-smoothing: antialiased
-    font-family: FontAwesome
-    font-style: normal
-    font-weight: normal
-    text-transform: none !important
-
-  > .label
-    display: none
-
-  &.major
-    -moz-transform: rotate(-45deg)
-    -webkit-transform: rotate(-45deg)
-    -ms-transform: rotate(-45deg)
-    transform: rotate(-45deg)
-    border-radius: $border-radius
-    border: solid 2px $border-color
-    display: inline-block
-    font-size: 1.35em
-    height: calc(3em + 2px)
-    line-height: 3em
-    text-align: center
-    width: calc(3em + 2px)
-
-    &::before
-      -moz-transform: rotate(45deg)
-      -webkit-transform: rotate(45deg)
-      -ms-transform: rotate(45deg)
-      transform: rotate(45deg)
-      display: inline-block
-      font-size: 1.5em
-
-  &.style1
-    color: $main-text-color
-
-  &.style2
-    color: $main-text-color
+  border-radius: $icon-border-radius
 
 @media screen and (max-width: 736px)
-  .icon.major
-    font-size: 1em
+  .icon
 
 /* Image
 
@@ -754,24 +711,6 @@ ul
         border-top: 0
         padding-top: 0
 
-  &.icons
-    cursor: default
-    list-style: none
-    padding-left: 0
-
-    li
-      display: inline-block
-      padding: 0 1em 0 0
-
-      &:last-child
-        padding-right: 0 !important
-
-    &.major
-      padding: 1em 0
-
-      li
-        padding-right: 3.5em
-
   &.actions
     cursor: default
     list-style: none
@@ -825,10 +764,6 @@ ul
 
         li
           padding: 0 0 0 0.75em
-
-@media screen and (max-width: 736px)
-  ul.icons.major li
-    padding: 0 1em !important
 
 @media screen and (max-width: 736px)
   ul.actions
@@ -1385,21 +1320,10 @@ body.is-mobile #main > header
   text-align: center
 
   .icons
-    font-size: 1.25em
     display: flex
-    justify-content: space-around
-    margin: auto auto 2em auto
-    max-width: 1000px
-
-    a
-      color: $footer-icon-color
-      border: 1px solid $footer-icon-border-color
-      border-radius: $border-radius
-      background: $footer-icon-background-color
-      width: $footer-icon-width
-
-      &:hover
-        color: $footer-hover-color
+    justify-content: space-evenly
+    margin: 0 auto
+    max-width: 400px
 
   .copyright
     color: $footer-text-color
