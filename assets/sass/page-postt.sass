@@ -1,9 +1,11 @@
 @import 'colors'
 $main-background-color: rgba(255, 255, 255, 0.5)
 $main-text-color: $bpl-blue-dark
+$letter-spacing: 0.01em
 $horizontal-line-color: $bpl-gray
 $code-background-color: rgba(0, 0, 0, 0.0375)
 $header-text-color: #8E8892
+$header-text-shadow-color: $white
 $header-major-header-text-color: $bpl-gray
 $header-major-text-color: $bpl-blue-dark
 $label-text-color: $bpl-blue-dark
@@ -119,3 +121,58 @@ $button-active-background-color: rgba(0, 0, 0, 0.1)
 
   button:active, .button:active
     background-color: $button-active-background-color
+
+/* Main
+
+#main > header
+  padding: 12em 0 10em 0
+  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.5), rgba(255, 255, 2555, 0.5))
+  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5))
+  background-image: -ms-linear-gradient(top, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5))
+  background-image: linear-gradient(top, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5))
+  background-attachment: fixed
+  background-position: center center
+  background-repeat: no-repeat
+  background-size: cover
+  text-align: center
+
+  h2
+    font-size: 1.75em
+    margin: 0 0 0.5em 0
+    color: $header-text-color
+    text-shadow: 1px 1px 1px $header-text-shadow-color
+
+  p
+    color: $header-text-color
+    font-weight: bold
+    letter-spacing: $letter-spacing
+    text-transform: capitalize
+    top: 0
+    margin: 0em 1em
+    text-shadow: 1px 1px 1px $header-text-shadow-color
+
+    a
+      color: inherit
+
+@media screen and (max-width: 1680px)
+  #main > header
+    padding: 10em 0 8em 0
+
+@media screen and (max-width: 1280px)
+  #main > header
+    padding: 8em 3em 6em 3em
+
+@media screen and (max-width: 980px)
+  #main > header
+    padding: 10em 3em 8em 3em
+
+@media screen and (max-width: 736px)
+  #main > header
+    padding: 5em 3em 3em 3em
+
+    h2
+      font-size: 1.25em
+      margin: 0 0 1em 0
+
+body.is-mobile #main > header
+  background-attachment: scroll

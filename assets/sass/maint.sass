@@ -37,6 +37,7 @@ $button-special-hover-text-color: $white
 $button-special-active-background-color: $green
 $button-special-active-text-color: $bpl-blue
 $button-height: 2.5em
+$button-height-mobile: 3.75em
 $button-padding: 2.5em
 
 /* Header variables
@@ -967,8 +968,8 @@ button
       line-height: 3.75em
 
   button, .button
-    height: 3.75em
-    line-height: 3.75em
+    height: $button-height-mobile
+    line-height: $button-height-mobile
 
 /* Wrapper
 
@@ -1001,7 +1002,7 @@ button
 
 @media screen and (max-width: 736px)
   .wrapper
-    padding: 3em 2em 1em 2em
+    padding: calc(1em + #{$header-height-mobile}) 2em 1em 2em
 
 /* Page Wrapper + Menu
 
@@ -1241,61 +1242,6 @@ body.is-menu-visible
     padding: 0 1.5em
     display: block
 
-
-/* Main
-
-#main > header
-  padding: 12em 0 10em 0
-  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.5), rgba(255, 255, 2555, 0.5))
-  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5))
-  background-image: -ms-linear-gradient(top, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5))
-  background-image: linear-gradient(top, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5))
-  background-attachment: fixed
-  background-position: center center
-  background-repeat: no-repeat
-  background-size: cover
-  text-align: center
-
-  h2
-    font-size: 1.75em
-    margin: 0 0 0.5em 0
-    color: $header-text-color
-    text-shadow: 1px 1px 1px $header-text-shadow-color
-
-  p
-    color: $header-text-color
-    font-weight: bold
-    letter-spacing: $letter-spacing
-    text-transform: capitalize
-    top: 0
-    margin: 0em 1em
-    text-shadow: 1px 1px 1px $header-text-shadow-color
-
-    a
-      color: inherit
-
-@media screen and (max-width: 1680px)
-  #main > header
-    padding: 10em 0 8em 0
-
-@media screen and (max-width: 1280px)
-  #main > header
-    padding: 8em 3em 6em 3em
-
-@media screen and (max-width: 980px)
-  #main > header
-    padding: 10em 3em 8em 3em
-
-@media screen and (max-width: 736px)
-  #main > header
-    padding: 5em 3em 3em 3em
-
-    h2
-      font-size: 1.25em
-      margin: 0 0 1em 0
-
-body.is-mobile #main > header
-  background-attachment: scroll
 
 /* Footer
 
