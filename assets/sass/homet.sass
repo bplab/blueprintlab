@@ -27,8 +27,13 @@ $hover-button2-color: $light-text-color
 
 /* Wrapper 1,2 */
 
-.wrapper
-
+@mixin common-settings
+  
+  background-position: bottom
+  background-repeat: no-repeat
+  background-size: 100% auto
+  color: $main-text-color
+  
   strong, b, h1, h2, h4, h5, h6
     color: $main-text-color
 
@@ -39,7 +44,7 @@ $hover-button2-color: $light-text-color
   h4
     font-size: $h4-font-size
     text-transform: uppercase
-  
+
   blockquote
     border-color: $border-color
   
@@ -125,22 +130,18 @@ $hover-button2-color: $light-text-color
   button:active, .button:active
     background-color: $active-button-color
 
+.wrapper
+  
   &.style1
     background-image: -moz-linear-gradient(top, rgba($background-color, 0), rgba($background-color, 0))
     background-image: -webkit-linear-gradient(top, rgba($background-color, 0), rgba($background-color, 0))
     background-image: -ms-linear-gradient(top, rgba($background-color, 0), rgba($background-color, 0))
     background-image: linear-gradient(top, rgba($background-color, 0), rgba($background-color, 0))
-    background-position: bottom
-    background-repeat: no-repeat
-    background-size: 100% auto
-    color: $main-text-color
-
+    @include common-settings
+  
   &.style2
     background-image: -moz-linear-gradient(top, rgba($background2-color, $background2-transition1), rgba($background2-color, $background2-transition2))
     background-image: -webkit-linear-gradient(top, rgba($background2-color, $background2-transition1), rgba($background2-color, $background2-transition2))
     background-image: -ms-linear-gradient(top, rgba($background2-color, $background2-transition1), rgba($background2-color, $background2-transition2))
     background-image: linear-gradient(top, rgba($background2-color, $background2-transition1), rgba($background2-color, $background2-transition2))
-    background-position: bottom
-    background-repeat: no-repeat
-    background-size: 100% auto
-    color: $main-text-color
+    @include common-settings
