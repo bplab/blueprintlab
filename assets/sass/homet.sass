@@ -8,10 +8,8 @@ $light-text-color: rgba($main-text-color, 0.075)
 $text-color-2: #ccdbec
 $placeholder-color: #000000
 $border-color: $bpl-blue-bright
-$background-color: #ffffff
+$background1-color: #ffffff
 $background2-color: #fafafa
-$background2-transition1: 1
-$background2-transition2: 1
 $checkbox-label-color: $text-color-2
 $checkbox-label-background-color: $light-text-color
 $checkbox-check-color: $bpl-blue
@@ -131,17 +129,11 @@ $hover-button2-color: $light-text-color
     background-color: $active-button-color
 
 .wrapper
-  
+
   &.style1
-    background-image: -moz-linear-gradient(top, rgba($background-color, 0), rgba($background-color, 0))
-    background-image: -webkit-linear-gradient(top, rgba($background-color, 0), rgba($background-color, 0))
-    background-image: -ms-linear-gradient(top, rgba($background-color, 0), rgba($background-color, 0))
-    background-image: linear-gradient(top, rgba($background-color, 0), rgba($background-color, 0))
+    background: $background1-color
     @include common-settings
   
   &.style2
-    background-image: -moz-linear-gradient(top, rgba($background2-color, $background2-transition1), rgba($background2-color, $background2-transition2))
-    background-image: -webkit-linear-gradient(top, rgba($background2-color, $background2-transition1), rgba($background2-color, $background2-transition2))
-    background-image: -ms-linear-gradient(top, rgba($background2-color, $background2-transition1), rgba($background2-color, $background2-transition2))
-    background-image: linear-gradient(top, rgba($background2-color, $background2-transition1), rgba($background2-color, $background2-transition2))
+    background: $background2-color
     @include common-settings
