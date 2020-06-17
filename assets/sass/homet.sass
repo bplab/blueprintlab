@@ -28,6 +28,103 @@ $hover-button2-color: $light-text-color
 /* Wrapper 1,2 */
 
 .wrapper
+
+  strong, b, h1, h2, h4, h5, h6
+    color: $main-text-color
+
+  h3 
+    color: $h3-text-color
+    font-size: $h3-font-size
+
+  h4
+    font-size: $h4-font-size
+    text-transform: uppercase
+  
+  blockquote
+    border-color: $border-color
+  
+  code
+    background: $light-text-color
+
+  header
+    p
+      color: $main-text-color
+    
+    &.major
+      h4, h5, h6
+        border-color: $main-text-color
+
+      h2
+        color: $h2-text-color
+        border-color: $h2-text-color
+      
+      p
+        color: $main-text-color
+  
+  label
+    color: $main-text-color
+  
+  input
+    &[type="text"], &[type="password"], &[type="email"]
+      background: $light-text-color
+
+  select, textarea
+    background: $light-text-color
+  
+  .select-wrapper::before
+    color: $border-color
+  
+  input
+    &[type="checkbox"] + label, &[type="radio"] + label
+      color: $checkbox-label-color
+    
+    &[type="checkbox"] + label::before, &[type="radio"] + label::before
+      background: $checkbox-label-background-color
+    
+    &[type="checkbox"]:checked + label::before, &[type="radio"]:checked + label::before
+      background: $checkbox-check-background-color
+      color: $checkbox-check-color
+  
+  ::-webkit-input-placeholder, :-moz-placeholder, ::-moz-placeholder, :-ms-input-placeholder, .formerize-placeholder
+    color: $placeholder-color !important
+
+  table
+    tbody tr
+      border-color: $border-color
+
+      &:nth-child(2n + 1)
+        background-color: $light-text-color
+
+    th
+      color: $main-text-color
+
+    thead, tfoot, &.alt tbody tr td
+      border-color: $border-color
+    
+  input
+    &[type="submit"], &[type="reset"], &[type="button"]
+      box-shadow: inset 0 0 0 2px $border-color
+      color: $main-text-color
+    
+  button, .button
+    box-shadow: inset 0 0 0 2px $border-color
+    color: $button-text-color
+  
+  input
+    &[type="submit"]:hover, &[type="reset"]:hover, &[type="button"]:hover
+      background-color: $button-color
+  
+  button:hover, .button:hover
+    color: $hover-button-text-color
+    background-color: $hover-button-color
+  
+  input
+    &[type="submit"]:active, &[type="reset"]:active, &[type="button"]:active
+      background-color: $active-button-color
+  
+  button:active, .button:active
+    background-color: $active-button-color
+
   &.style1
     background-image: -moz-linear-gradient(top, rgba($background-color, 0), rgba($background-color, 0))
     background-image: -webkit-linear-gradient(top, rgba($background-color, 0), rgba($background-color, 0))
@@ -38,102 +135,6 @@ $hover-button2-color: $light-text-color
     background-size: 100% auto
     color: $main-text-color
 
-    strong, b, h1, h2, h4, h5, h6
-      color: $main-text-color
-
-    h3 
-      color: $h3-text-color
-      font-size: $h3-font-size
-
-    h4
-      font-size: $h4-font-size
-      text-transform: uppercase
- 
-    blockquote
-      border-color: $border-color
-    
-    code
-      background: $light-text-color
-  
-    header
-      p
-        color: $main-text-color
-      
-      &.major
-        h4, h5, h6
-          border-color: $main-text-color
-
-        h2
-          color: $h2-text-color
-          border-color: $h2-text-color
-        
-        p
-          color: $main-text-color
-    
-    label
-      color: $main-text-color
-    
-    input
-      &[type="text"], &[type="password"], &[type="email"]
-        background: $light-text-color
-  
-    select, textarea
-      background: $light-text-color
-    
-    .select-wrapper::before
-      color: $border-color
-    
-    input
-      &[type="checkbox"] + label, &[type="radio"] + label
-        color: $checkbox-label-color
-      
-      &[type="checkbox"] + label::before, &[type="radio"] + label::before
-        background: $checkbox-label-background-color
-      
-      &[type="checkbox"]:checked + label::before, &[type="radio"]:checked + label::before
-        background: $checkbox-check-background-color
-        color: $checkbox-check-color
-    
-    ::-webkit-input-placeholder, :-moz-placeholder, ::-moz-placeholder, :-ms-input-placeholder, .formerize-placeholder
-      color: $placeholder-color !important
-
-    table
-      tbody tr
-        border-color: $border-color
-
-        &:nth-child(2n + 1)
-          background-color: $light-text-color
-
-      th
-        color: $main-text-color
-
-      thead, tfoot, &.alt tbody tr td
-        border-color: $border-color
-      
-    input
-      &[type="submit"], &[type="reset"], &[type="button"]
-        box-shadow: inset 0 0 0 2px $border-color
-        color: $main-text-color
-      
-    button, .button
-      box-shadow: inset 0 0 0 2px $border-color
-      color: $button-text-color
-    
-    input
-      &[type="submit"]:hover, &[type="reset"]:hover, &[type="button"]:hover
-        background-color: $button-color
-    
-    button:hover, .button:hover
-      color: $hover-button-text-color
-      background-color: $hover-button-color
-    
-    input
-      &[type="submit"]:active, &[type="reset"]:active, &[type="button"]:active
-        background-color: $active-button-color
-    
-    button:active, .button:active
-      background-color: $active-button-color
-  
   &.style2
     background-image: -moz-linear-gradient(top, rgba($background2-color, $background2-transition1), rgba($background2-color, $background2-transition2))
     background-image: -webkit-linear-gradient(top, rgba($background2-color, $background2-transition1), rgba($background2-color, $background2-transition2))
@@ -143,99 +144,3 @@ $hover-button2-color: $light-text-color
     background-repeat: no-repeat
     background-size: 100% auto
     color: $main-text-color
-
-    strong, b, h1, h2, h4, h5, h6
-      color: $main-text-color
-
-    h3 
-      color: $h3-text-color
-      font-size: $h3-font-size
-
-    h4
-      font-size: $h4-font-size
-      text-transform: uppercase
-    
-    blockquote
-      border-color: $border-color
-    
-    code
-      background: $light-text-color
-  
-    header
-      p
-        color: $main-text-color
-      
-      &.major
-        h4, h5, h6
-          border-color: $main-text-color
-
-        h2
-          color: $h2-text-color
-          border-color: $h2-text-color
-        
-        p
-          color: $main-text-color
-    
-    label
-      color: $main-text-color
-    
-    input
-      &[type="text"], &[type="password"], &[type="email"]
-        background: $light-text-color
-  
-    select, textarea
-      background: $light-text-color
-    
-    .select-wrapper::before
-      color: $border-color
-    
-    input
-      &[type="checkbox"] + label, &[type="radio"] + label
-        color: $checkbox-label-color
-      
-      &[type="checkbox"] + label::before, &[type="radio"] + label::before
-        background: $checkbox-label-background-color
-      
-      &[type="checkbox"]:checked + label::before, &[type="radio"]:checked + label::before
-        background: $checkbox-check-background-color
-        color: $checkbox-check-color
-    
-    ::-webkit-input-placeholder, :-moz-placeholder, ::-moz-placeholder, :-ms-input-placeholder, .formerize-placeholder
-      color: $placeholder-color !important
-
-    table
-      tbody tr
-        border-color: $border-color
-
-        &:nth-child(2n + 1)
-          background-color: $light-text-color
-
-      th
-        color: $main-text-color
-
-      thead, tfoot, &.alt tbody tr td
-        border-color: $border-color
-      
-    input
-      &[type="submit"], &[type="reset"], &[type="button"]
-        box-shadow: inset 0 0 0 2px $border-color
-        color: $main-text-color
-      
-    button, .button
-      box-shadow: inset 0 0 0 2px $border-color
-      color: $button-text-color
-    
-    input
-      &[type="submit"]:hover, &[type="reset"]:hover, &[type="button"]:hover
-        background-color: $button-color
-    
-    button:hover, .button:hover
-      color: $hover-button-text-color
-      background-color: $hover-button-color
-    
-    input
-      &[type="submit"]:active, &[type="reset"]:active, &[type="button"]:active
-        background-color: $active-button-color
-    
-    button:active, .button:active
-      background-color: $active-button-color
