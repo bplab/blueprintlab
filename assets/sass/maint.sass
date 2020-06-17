@@ -1,7 +1,5 @@
 @import 'colors'
 $scroll-behavior: smooth
-$main-background-jpg: "../../assets/images/backgroundt.jpg"
-$main-background-webp: "../../assets/images/backgroundt.webp"
 $code-background-color: rgba(144, 144, 144, 0.25)
 $main-text-color: $white
 $letter-spacing: 0.01em
@@ -413,19 +411,7 @@ html
 @-ms-viewport
   width: device-width
 
-.no-webp body
-  background-image: url($main-background-jpg)
-  background-attachment: fixed
-  background-position: center center
-  background-repeat: no-repeat
-  background-size: cover
-
 body
-  background-image: url($main-background-webp)
-  background-attachment: fixed
-  background-position: center center
-  background-repeat: no-repeat
-  background-size: cover
 
   &.is-loading *
     -moz-animation: none !important
