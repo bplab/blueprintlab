@@ -15,12 +15,17 @@
         {% include header.html %}
         <!-- Main -->
         <article id="main">
-            <header{% if page.image %} style="background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url('{{ "" | absolute_url }}/assets/images/{{ page.image }}');"{% endif %}>
+            <header>
                 <h2>{{ page.title }}</h2>
                 <p>{{ page.description }}</p>
             </header>
             <section class="wrapper page-post">
                 <div class="inner">
+                    {% if page.image %}<picture>
+                        <source srcset="{{ "" | absolute_url }}/assets/images/{{ page.webp }}" type="image/webp">
+                        <source srcset="{{ "" | absolute_url }}/assets/images/{{ page.image }}" type="image/jpeg">
+                        <img src="{{ "" | absolute_url }}/assets/images/{{ page.image }}" alt="{{ page.title }}" class="headline-image">
+                    </picture>{% endif %}
                     {{ content }}
                 </div>
             </section>
