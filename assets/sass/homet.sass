@@ -9,6 +9,8 @@ $border-color: $bpl-blue-bright
 $background1-color: #ffffff
 $background2-color: #fafafa
 
+@import 'landing'
+
 /* Wrapper 1,2 */
 
 @mixin common-settings
@@ -59,3 +61,9 @@ $background2-color: #fafafa
   &.style2
     background: $background2-color
     @include common-settings
+
+@import 'banner'
+@import 'about-us'
+@import 'capabilities'
+@import 'current-works'
+@import 'cta'
