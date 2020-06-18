@@ -10,9 +10,9 @@ order: 1
 						<div class="image">
 							{% if post.image %}<a href="{{ post.url | relative_url }}" class="link">
 								<picture>
-									<source data-srcset="{{ "" | absolute_url }}/assets/images/{{ post.webp }}" type="image/webp">
-									<source data-srcset="{{ "" | absolute_url }}/assets/images/{{ post.image }}" type="image/jpeg">
-									<img data-src="{{ "" | absolute_url }}/assets/images/{{ post.image }}" class="lazyload" alt="{{ post.title }}">
+									<source srcset="{{ "" | absolute_url }}/assets/images/{{ post.webp }}" type="image/webp">
+									<source srcset="{{ "" | absolute_url }}/assets/images/{{ post.image }}" type="image/jpeg">
+									<img src="{{ "" | absolute_url }}/assets/images/{{ post.image }}" alt="{{ post.title }}">
 								</picture>
 							</a>{% endif %}
 						</div>
@@ -26,9 +26,9 @@ order: 1
 					<section class="spotlight">
 						<div class="image">
 							{% if page.image %}<a href="{{ post.url | relative_url }}" class="link">
-									<source data-srcset="{{ "" | absolute_url }}/assets/images/{{ post.webp }}" type="image/webp">
-									<source data-srcset="{{ "" | absolute_url }}/assets/images/{{ post.image }}" type="image/jpeg">
-									<img data-src="{{ "" | absolute_url }}/assets/images/{{ post.image }}" class="lazyload" alt="{{ post.title }}">
+									<source srcset="{{ "" | absolute_url }}/assets/images/{{ post.webp }}" type="image/webp">
+									<source srcset="{{ "" | absolute_url }}/assets/images/{{ post.image }}" type="image/jpeg">
+									<img src="{{ "" | absolute_url }}/assets/images/{{ post.image }}" alt="{{ post.title }}">
 							</a>{% endif %}
 						</div>
 						<div class="content">

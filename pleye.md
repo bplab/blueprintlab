@@ -13,9 +13,9 @@ We know many IECPs are struggling with losing sales in their optical business to
 We created an app called Pleye. Pleye helps eye care professionals have their own app to boost customer engagement and increase return visits.
 
 <picture>
-    <source data-srcset="./assets/images/pleye_intro.webp" type="image/webp">
-    <source data-srcset="./assets/images/pleye_intro.jpg" type="image/jpeg">
-    <img style="max-width: 100%" data-src="./assets/images/pleye_intro.jpg" alt="Pleye intro image" class="lazyload">
+    <source srcset="./assets/images/pleye_intro.webp" type="image/webp">
+    <source srcset="./assets/images/pleye_intro.jpg" type="image/jpeg">
+    <img style="max-width: 100%" src="./assets/images/pleye_intro.jpg" alt="Pleye intro image">
 </picture>
 <br />
 
