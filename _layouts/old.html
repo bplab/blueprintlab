@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        {% include heado.html %}
+        <link rel="preload" href="{{ "/assets/css/homeo.css" | relative_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+        <noscript><link rel="stylesheet" href="{{ "/assets/css/homeo.css" | relative_url }}" /></noscript>
+        <link rel="preload" href="{{ "/assets/css/landingo.css" | relative_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+        <noscript><link rel="stylesheet" href="{{ "/assets/css/landingo.css" | relative_url }}" /></noscript>
+        <link rel="preload" href="{{ "/assets/css/bannero.css" | relative_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+        <noscript><link rel="stylesheet" href="{{ "/assets/css/bannero.css" | relative_url }}" /></noscript>
+        <link rel="preload" href="{{ "/assets/css/spotlighto.css" | relative_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+        <noscript><link rel="stylesheet" href="{{ "/assets/css/spotlighto.css" | relative_url }}" /></noscript>
+        <link rel="preload" href="{{ "/assets/css/ctao.css" | relative_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+        <noscript><link rel="stylesheet" href="{{ "/assets/css/ctao.css" | relative_url }}" /></noscript>
+    </head>
+    <body class="landing">
+        <!-- Google Tag Manager (noscript) -->
+        <noscript>
+            <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WJHC5Q4" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        </noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        {% include headero.html %}
+        {% include bannero.html %}
+        {% include section-1.html %}
+        {% include section-2.html %}
+        {% include section-3.html %}
+        {% include section-4.html %}
+        {% include ctao.html %}
+        {% include footero.html %}
+        </div>
+    </body>
+</html>
