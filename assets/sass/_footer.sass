@@ -1,0 +1,58 @@
+#footer
+  padding: 2em 0 1em 0
+  background-image: -moz-linear-gradient($footer-gradient-direction , rgba($footer-background-color1, $footer-background-gradient1), rgba($footer-background-color2, $footer-background-gradient2))
+  background-image: -webkit-linear-gradient($footer-gradient-direction , rgba($footer-background-color1, $footer-background-gradient1), rgba($footer-background-color2, $footer-background-gradient2))
+  background-image: -mos-linear-gradient($footer-gradient-direction , rgba($footer-background-color1, $footer-background-gradient1), rgba($footer-background-color2, $footer-background-gradient2))
+  background-image: linear-gradient($footer-gradient-direction , rgba($footer-background-color1, $footer-background-gradient1), rgba($footer-background-color2, $footer-background-gradient2))
+  text-align: center
+
+  .icons
+    display: flex
+    justify-content: space-evenly
+    margin: 0 auto
+    max-width: 500px
+
+    .icon img
+      max-height: 5vh
+
+  .copyright
+    color: $footer-text-color
+    font-size: 0.8em
+    letter-spacing: $letter-spacing
+    list-style: none
+    padding: 0
+    text-transform: capitalize
+
+    li
+      border-left: solid 1px rgba(255, 255, 255, 0.5)
+      display: inline-block
+      line-height: 1em
+      margin-left: 1em
+      padding-left: 1em
+
+      &:first-child
+        border-left: 0
+        margin-left: 0
+        padding-left: 0
+
+      a
+        color: inherit
+
+        &:hover
+          color: $footer-hover-color
+
+@media screen and (max-width: 480px)
+  #footer .copyright li
+    border: 0
+    display: block
+    line-height: 1.65em
+    margin: 0
+    padding: 0.5em 0
+
+@media screen and (max-width: 980px)
+  #footer
+    padding: 4em 3em 2em 3em
+
+@media screen and (max-width: 736px)
+  #footer
+    padding: 3em 2em 1em 2em

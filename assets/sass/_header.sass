@@ -1,0 +1,126 @@
+#header
+  -moz-transition: background-color 0.2s ease
+  -webkit-transition: background-color 0.2s ease
+  -ms-transition: background-color 0.2s ease
+  transition: background-color 0.2s ease
+  background: $header-background-color
+  position: fixed
+  left: 0
+  top: 0
+  height: $header-height
+  line-height: $header-height
+  width: 100%
+  z-index: 3
+  box-shadow: 0px 8px 8px $header-box-shadow-color
+
+  a img
+    -moz-transition: opacity 0.2s ease
+    -webkit-transition: opacity 0.2s ease
+    -ms-transition: opacity 0.2s ease
+    transition: opacity 0.2s ease
+    height: $header-image-height
+    line-height: inherit
+    position: absolute
+    left: $header-image-left
+    font-size: 100%
+    padding: 0
+    margin: 0.25em 0 0 0
+    display: block
+
+  nav
+    height: inherit
+    line-height: inherit
+    position: absolute
+    right: $header-nav-right
+
+    > ul
+      list-style: none
+      margin: 0
+      padding: 0
+      white-space: nowrap
+
+      > li
+        display: inline-block
+        padding: 0
+
+        > a
+          border: 0
+          color: $nav-text-color
+          display: block
+          font-size: 0.8em
+          letter-spacing: $letter-spacing
+          padding: 0 1.5em
+          text-transform: uppercase
+          font-weight: bold
+
+          &.navLinks
+            
+            &:active
+              text-decoration: underline
+
+            &:focus
+              text-decoration: underline
+
+            &:hover
+              color: $nav-hover-color
+
+          &.menuToggle
+            outline: 0
+            position: relative
+
+            &::after
+              background-image: url("images/bluebars.svg")
+              background-position: right center
+              background-repeat: no-repeat
+              content: ''
+              display: inline-block
+              height: 3.75em
+              vertical-align: top
+              width: 2em
+
+        &:first-child
+          margin-left: 0
+
+  &.alt
+    -moz-pointer-events: none
+    -webkit-pointer-events: none
+    -ms-pointer-events: none
+    pointer-events: none
+    opacity: 0
+
+    nav > ul > li > a
+      color: $nav-alt-color
+
+      &.navLinks
+      
+        &:hover
+          color: $nav-alt-hover-color
+
+      &.menuToggle::after
+        background-image: url("images/blackbars.svg")
+
+@media screen and (min-width: 737px)
+  #header nav > ul > li > a.menuToggle
+    display: none
+
+@media screen and (max-width: 736px)
+  #header
+    height: $header-height-mobile
+    line-height: $header-height-mobile
+    top: 0
+    width: 100%
+  
+  #header a img
+    height: 2em
+    margin: 0.5em 0 0 0
+    left: $header-image-left-mobile
+
+  #header nav
+    right: $header-nav-right-mobile
+
+  #header nav > ul > li > a.navLinks
+    display: none
+
+  #header nav > ul > li > a.menuToggle
+    padding: 0 1.5em
+    display: block
