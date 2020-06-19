@@ -1,16 +1,26 @@
 @import 'grid'
 $placeholder-color: $bpl-blue
 $textarea-color: $bpl-blue
+$textarea-border: 1px solid #d5d5d5
 $textarea-focus-border: 1px solid $bpl-blue-bright !important
 $option-color: $bpl-blue
 $option-background-color: $white
 $option-border-color: $bpl-blue-bright
+$input-text-color: #303030
+$input-border: 1px solid #d5d5d5
+$input-background-color: $white
+$input-select-arrow-color: $bpl-gray
+$input-checked-background-color: $bpl-blue
+$input-checked-color: $white
 
 .inner
     .email
         max-width: 900px
         margin: 0 auto
         color: $bpl-blue-bright
+
+        label
+          color: $black
 
 /* Form
 
@@ -24,14 +34,13 @@ label
   font-weight: 600
   margin: 0 0 1em 0
 
+.select-wrapper::before
+
 input
   &[type="text"], &[type="password"], &[type="email"]
-    -moz-appearance: none
-    -webkit-appearance: none
-    -ms-appearance: none
-    appearance: none
+    background: $input-background-color
+    border: $input-border
     border-radius: $border-radius
-    border: none
     color: $bpl-blue
     font-weight: bold
     display: block
@@ -42,12 +51,14 @@ input
     resize: none
 
 select, textarea
+  background: $input-background-color
+  border: $input-border
   -moz-appearance: none
   -webkit-appearance: none
   -ms-appearance: none
   appearance: none
   border-radius: $border-radius
-  border: none
+  border: $textarea-border
   color: $textarea-color
   font-weight: bold
   display: block
@@ -83,6 +94,7 @@ select:focus, textarea:focus
   position: relative
 
   &::before
+    color: $input-select-arrow-color
     -moz-osx-font-smoothing: grayscale
     -webkit-font-smoothing: antialiased
     font-family: FontAwesome
@@ -93,7 +105,6 @@ select:focus, textarea:focus
     -webkit-pointer-events: none
     -ms-pointer-events: none
     pointer-events: none
-    color: $white
     content: '\f078'
     display: block
     height: 2.75em
@@ -162,9 +173,16 @@ input
     top: 0
     width: 1.65em
 
+  &[type="checkbox"] + label, &[type="radio"] + label
+    color: $input-text-color
+
+  &[type="checkbox"] + label::before, &[type="radio"] + label::before
+    background: $input-background-color
+    border: $input-border
+
   &[type="checkbox"]:checked + label::before, &[type="radio"]:checked + label::before
-    background: $bpl-blue-dark
-    color: $white
+    background: $input-checked-background-color
+    color: $input-checked-color
     content: '\f00c'
 
   &[type="checkbox"]:focus + label::before, &[type="radio"]:focus + label::before

@@ -10,20 +10,7 @@ $header-major-header-text-color: $bpl-gray
 $header-major-text-color: $bpl-blue-dark
 $subtitle-text-color: $black
 $label-text-color: $bpl-blue-dark
-$input-background-color: $white
-$input-border: 1px solid #d5d5d5
-$input-select-before-color: $bpl-gray
-$input-text-color: #303030
-$input-checked-before-background-color: $bpl-blue
-$input-checked-before-text-color: $white
-$input-button-text-color: $bpl-blue-dark
-$input-hover-background-color: rgba(0, 0, 0, 0.0375)
-$input-active-background-color: rgba(0, 0, 0, 0.1)
 $icon-list-border-color: $bpl-gray
-$table-border-color: $bpl-gray
-$table-2nd-background-color: rgba(0, 0, 0, 0.0375)
-$table-header-text-color: $bpl-blue-dark
-$table-alt-border-color: $bpl-gray
 $button-box-shadow-color: $bpl-gray
 $button-text-color: $bpl-blue-dark
 $button-hover-background-color: rgba(0, 0, 0, 0.0375)
@@ -121,45 +108,8 @@ body.is-mobile #main > header
   label
     color: $label-text-color
 
-  input
-    &[type="text"], &[type="password"], &[type="email"]
-      background: $input-background-color
-      border: $input-border
-
-  select, textarea
-    background: $input-background-color
-    border: $input-border
-
-  .select-wrapper::before
-    color: $input-select-before-color
-
-  input
-    &[type="checkbox"] + label, &[type="radio"] + label
-      color: $input-text-color
-
-    &[type="checkbox"] + label::before, &[type="radio"] + label::before
-      background: $input-background-color
-      border: $input-border
-
-    &[type="checkbox"]:checked + label::before, &[type="radio"]:checked + label::before
-      background: $input-checked-before-background-color
-      color: $input-checked-before-text-color
-
   ul.alt li
     border-color: $icon-list-border-color
-
-  table
-    tbody tr
-      border-color: $table-border-color
-
-      &:nth-child(2n + 1)
-        background-color: $table-2nd-background-color
-
-    th
-      color: $table-header-text-color
-
-    thead, tfoot, &.alt tbody tr td
-      border-color: $table-alt-border-color
 
 .post-end
   display: block
