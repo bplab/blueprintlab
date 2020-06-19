@@ -19,7 +19,6 @@ $input-checked-before-text-color: $white
 $input-button-text-color: $bpl-blue-dark
 $input-hover-background-color: rgba(0, 0, 0, 0.0375)
 $input-active-background-color: rgba(0, 0, 0, 0.1)
-$placeholder-text-color: $bpl-blue-bright
 $icon-list-border-color: $bpl-gray
 $table-border-color: $bpl-gray
 $table-2nd-background-color: rgba(0, 0, 0, 0.0375)
@@ -145,10 +144,6 @@ body.is-mobile #main > header
     &[type="checkbox"]:checked + label::before, &[type="radio"]:checked + label::before
       background: $input-checked-before-background-color
       color: $input-checked-before-text-color
-
-  \::-webkit-input-placeholder, :-moz-placeholder, ::-moz-placeholder, :-ms-input-placeholder, .formerize-placeholder
-    color: $placeholder-text-color !important
-    font-weight: bold
 
   ul.alt li
     border-color: $icon-list-border-color
