@@ -1,10 +1,16 @@
 @import 'grid'
+$placeholder-color: $bpl-blue
+$textarea-color: $bpl-blue
 $textarea-focus-border: 1px solid $bpl-blue-bright !important
+$option-color: $bpl-blue
+$option-background-color: $white
+$option-border-color: $bpl-blue-bright
 
 .inner
     .email
         max-width: 900px
         margin: 0 auto
+        color: $bpl-blue-bright
 
 /* Form
 
@@ -42,7 +48,7 @@ select, textarea
   appearance: none
   border-radius: $border-radius
   border: none
-  color: $bpl-blue-bright
+  color: $textarea-color
   font-weight: bold
   display: block
   outline: 0
@@ -50,6 +56,12 @@ select, textarea
   text-decoration: none
   width: 100%
   resize: none
+
+  option
+    color: $option-color
+    background-color: $option-background-color
+    font-weight: bold
+
 
 input
   &[type="text"]:invalid, &[type="password"]:invalid, &[type="email"]:invalid
@@ -164,6 +176,6 @@ input
   &[type="radio"] + label::before
     border-radius: 100%
 
-\::-webkit-input-placeholder, :-moz-placeholder, ::-moz-placeholder, :-ms-input-placeholder, .formerize-placeholder
-  color: rgba(255, 255, 255, 0.5) !important
-  opacity: 1.0
+::placeholder
+  color: $placeholder-color !important
+  opacity: 0.5
