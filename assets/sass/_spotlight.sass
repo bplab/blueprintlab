@@ -1,6 +1,7 @@
 /* Spotlight
 
 .spotlight
+  background-color: $white
   -moz-align-items: center
   -webkit-align-items: center
   -ms-align-items: center
@@ -9,29 +10,34 @@
   display: -webkit-flex
   display: -ms-flex
   display: flex
-  box-shadow: 0 1px 2px black, 0 1px 2px black
+  box-shadow: 4px 4px 10px rgba(173, 173, 173, 0.25)
   margin-bottom: 10px
   margin-left: 30px
   margin-right: 30px
   margin-top: 10px
+  border-radius: $border-radius
 
-  &:hover
-    transform: scale(1.02)
+  h2
+    line-spacing: 1em
+    line-height: 1em
+  
+  p
+    color: $black
 
   .image
     -moz-order: 1
     -webkit-order: 1
     -ms-order: 1
     order: 1
-    border-radius: 0
     width: 40%
 
     img
-      border-radius: 0
+      border-radius: $border-radius
       width: 100%
+      padding: 1em
 
   .content
-    padding: 2em 4em 0.1em 4em
+    padding: 1em 1em 1em 1em
     -moz-order: 2
     -webkit-order: 2
     -ms-order: 2
@@ -39,41 +45,22 @@
     max-width: 48em
     width: 60%
 
+    .more
+
+      img
+        height: 0.6em
+
+      picture::after
+        color: $bpl-blue
+        font-size: 1em
+        content: "More"
+
+
   &:nth-child(2n)
     -moz-flex-direction: row-reverse
     -webkit-flex-direction: row-reverse
     -ms-flex-direction: row-reverse
     flex-direction: row-reverse
-
-  &:nth-child(1)
-    background-color: rgba(0, 0, 0, 0.075)
-
-  &:nth-child(2)
-    background-color: rgba(0, 0, 0, 0.15)
-
-  &:nth-child(3)
-    background-color: rgba(0, 0, 0, 0.225)
-
-  &:nth-child(4)
-    background-color: rgba(0, 0, 0, 0.3)
-
-  &:nth-child(5)
-    background-color: rgba(0, 0, 0, 0.375)
-
-  &:nth-child(6)
-    background-color: rgba(0, 0, 0, 0.45)
-
-  &:nth-child(7)
-    background-color: rgba(0, 0, 0, 0.525)
-
-  &:nth-child(8)
-    background-color: rgba(0, 0, 0, 0.6)
-
-  &:nth-child(9)
-    background-color: rgba(0, 0, 0, 0.675)
-
-  &:nth-child(10)
-    background-color: rgba(0, 0, 0, 0.75)
 
 @media screen and (max-width: 1280px)
   .spotlight
