@@ -37,7 +37,8 @@ twitter_url:
 markdown: kramdown
 
 sass:
-style: compressed
+  sass_dir: assets/sass
+  style: compressed
 
 plugins:
   - jekyll-feed
