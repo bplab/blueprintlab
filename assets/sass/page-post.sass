@@ -1,6 +1,7 @@
 @import 'global'
 $main-background-color: $light-gray
-$main-text-color: $bpl-blue-bright
+$wrapper-background-color: $white
+$main-text-color: $black
 $letter-spacing: 0.01em
 $horizontal-line-color: $bpl-gray
 $code-background-color: rgba(0, 0, 0, 0.0375)
@@ -33,6 +34,12 @@ $button-active-background-color: rgba(0, 0, 0, 0.1)
 
 #main
   background: $main-background-color
+
+  img
+    max-width: 100%
+    max-height: 90vh
+    display: block
+    margin: 0 auto
 
 #main > header
   padding: 5em 0 1em 0
@@ -84,8 +91,13 @@ body.is-mobile #main > header
 /* Wrapper Pages and Posts
 
 .wrapper.page-post
+  background-color: $wrapper-background-color
   color: $main-text-color
-  padding: 0 2em 2em
+  padding: 2em
+
+  .post
+    p
+      text-align: justify
 
   strong, b, h2, h3, h4, h5, h6
     color: $main-text-color
@@ -153,3 +165,9 @@ body.is-mobile #main > header
 
     thead, tfoot, &.alt tbody tr td
       border-color: $table-alt-border-color
+
+.post-end
+  display: block
+  margin: 0 auto
+  text-align: center
+  width: 9em
