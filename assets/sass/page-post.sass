@@ -1,24 +1,25 @@
 @import 'global'
-$main-background-color: rgba(255, 255, 255, 0.5)
-$main-text-color: $bpl-blue-dark
+$main-background-color: $light-gray
+$main-text-color: $bpl-blue-bright
 $letter-spacing: 0.01em
 $horizontal-line-color: $bpl-gray
 $code-background-color: rgba(0, 0, 0, 0.0375)
-$header-text-color: #8E8892
-$header-text-shadow-color: $white
+$header-background-color: $light-gray
+$header-text-color: $black
 $header-major-header-text-color: $bpl-gray
 $header-major-text-color: $bpl-blue-dark
+$subtitle-text-color: $black
 $label-text-color: $bpl-blue-dark
-$input-background-color: rgba(144, 144, 144, 0.25)
+$input-background-color: $white
+$input-border: 1px solid #d5d5d5
 $input-select-before-color: $bpl-gray
 $input-text-color: #303030
 $input-checked-before-background-color: $bpl-blue
 $input-checked-before-text-color: $white
-$input-box-shadow-color: $bpl-gray
 $input-button-text-color: $bpl-blue-dark
 $input-hover-background-color: rgba(0, 0, 0, 0.0375)
 $input-active-background-color: rgba(0, 0, 0, 0.1)
-$placeholder-text-color: $bpl-blue
+$placeholder-text-color: $bpl-blue-bright
 $icon-list-border-color: $bpl-gray
 $table-border-color: $bpl-gray
 $table-2nd-background-color: rgba(0, 0, 0, 0.0375)
@@ -29,11 +30,62 @@ $button-text-color: $bpl-blue-dark
 $button-hover-background-color: rgba(0, 0, 0, 0.0375)
 $button-active-background-color: rgba(0, 0, 0, 0.1)
 
+/* Main
+
+#main > header
+  padding: 5em 0 1em 0
+  background: $header-background-color
+  background-attachment: fixed
+  background-position: center center
+  background-repeat: no-repeat
+  background-size: cover
+  text-align: center
+
+  h2
+    font-size: 1.75em
+    margin: 0 0 0.5em 0
+    color: $header-text-color
+
+  p
+    color: $subtitle-text-color
+    font-weight: bold
+    letter-spacing: $letter-spacing
+    text-transform: capitalize
+    top: 0
+    margin: 0em 1em
+
+    a
+      color: inherit
+
+@media screen and (max-width: 1680px)
+  #main > header
+    padding: 5em 0 3em 0
+
+@media screen and (max-width: 1280px)
+  #main > header
+    padding: 5em 3em 3em 3em
+
+@media screen and (max-width: 980px)
+  #main > header
+    padding: 5em 3em 2em 3em
+
+@media screen and (max-width: 736px)
+  #main > header
+    padding: 5em 3em 2em 3em
+
+    h2
+      font-size: 1.25em
+      margin: 0 0 1em 0
+
+body.is-mobile #main > header
+  background-attachment: scroll
+
 /* Wrapper Pages and Posts
 
 .wrapper.page-post
   background-color: $main-background-color
   color: $main-text-color
+  padding: 0 2em 2em
 
   strong, b, h2, h3, h4, h5, h6
     color: $main-text-color
@@ -46,7 +98,7 @@ $button-active-background-color: rgba(0, 0, 0, 0.1)
 
   header
     p
-      color: $header-text-color
+      color: $subtitle-text-color
 
     &.major
       h2, h3, h4, h5, h6
@@ -61,9 +113,11 @@ $button-active-background-color: rgba(0, 0, 0, 0.1)
   input
     &[type="text"], &[type="password"], &[type="email"]
       background: $input-background-color
+      border: $input-border
 
   select, textarea
     background: $input-background-color
+    border: $input-border
 
   .select-wrapper::before
     color: $input-select-before-color
@@ -74,6 +128,7 @@ $button-active-background-color: rgba(0, 0, 0, 0.1)
 
     &[type="checkbox"] + label::before, &[type="radio"] + label::before
       background: $input-background-color
+      border: $input-border
 
     &[type="checkbox"]:checked + label::before, &[type="radio"]:checked + label::before
       background: $input-checked-before-background-color
@@ -98,81 +153,3 @@ $button-active-background-color: rgba(0, 0, 0, 0.1)
 
     thead, tfoot, &.alt tbody tr td
       border-color: $table-alt-border-color
-
-  input
-    &[type="submit"], &[type="reset"], &[type="button"]
-      box-shadow: inset 0 0 0 2px $input-box-shadow-color
-      color: $input-button-text-color
-
-  button, .button
-    box-shadow: inset 0 0 0 2px $button-box-shadow-color
-    color: $button-text-color
-
-  input
-    &[type="submit"]:hover, &[type="reset"]:hover, &[type="button"]:hover
-      background-color: $input-hover-background-color
-
-  button:hover, .button:hover
-    background-color: $button-hover-background-color
-
-  input
-    &[type="submit"]:active, &[type="reset"]:active, &[type="button"]:active
-      background-color: $input-active-background-color
-
-  button:active, .button:active
-    background-color: $button-active-background-color
-
-/* Main
-
-#main > header
-  padding: 12em 0 10em 0
-  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.5), rgba(255, 255, 2555, 0.5))
-  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5))
-  background-image: -ms-linear-gradient(top, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5))
-  background-image: linear-gradient(top, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5))
-  background-attachment: fixed
-  background-position: center center
-  background-repeat: no-repeat
-  background-size: cover
-  text-align: center
-
-  h2
-    font-size: 1.75em
-    margin: 0 0 0.5em 0
-    color: $header-text-color
-    text-shadow: 1px 1px 1px $header-text-shadow-color
-
-  p
-    color: $header-text-color
-    font-weight: bold
-    letter-spacing: $letter-spacing
-    text-transform: capitalize
-    top: 0
-    margin: 0em 1em
-    text-shadow: 1px 1px 1px $header-text-shadow-color
-
-    a
-      color: inherit
-
-@media screen and (max-width: 1680px)
-  #main > header
-    padding: 10em 0 8em 0
-
-@media screen and (max-width: 1280px)
-  #main > header
-    padding: 8em 3em 6em 3em
-
-@media screen and (max-width: 980px)
-  #main > header
-    padding: 10em 3em 8em 3em
-
-@media screen and (max-width: 736px)
-  #main > header
-    padding: 5em 3em 3em 3em
-
-    h2
-      font-size: 1.25em
-      margin: 0 0 1em 0
-
-body.is-mobile #main > header
-  background-attachment: scroll
