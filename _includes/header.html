@@ -2,9 +2,9 @@
 <header id="header" {% if page.layout == 'default' %} class="alt" {% endif %}>
 	<a href="{{ "" | absolute_url }}">
 		<picture>
-			<source srcset="../../../assets/images/logo.webp" type="image/webp">
-			<source srcset="../../../assets/images/logo.jpg" type="image/jpeg">
-			<img src="../../../assets/images/logo.jpg" class="">
+			<source srcset="{{site.baseurl}}/assets/images/logo.webp" type="image/webp">
+			<source srcset="{{site.baseurl}}/assets/images/logo.jpg" type="image/jpeg">
+			<img src="{{site.baseurl}}/assets/images/logo.jpg" class="">
 		</picture>
 	</a>
 	<nav id="nav">
