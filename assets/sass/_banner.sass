@@ -13,10 +13,6 @@ $main-text-color: $black
   -webkit-flex-direction: column
   -ms-flex-direction: column
   flex-direction: column
-  -moz-justify-content: center
-  -webkit-justify-content: center
-  -ms-justify-content: center
-  justify-content: center
   cursor: default
   height: 100vh
   position: relative
@@ -27,7 +23,7 @@ $main-text-color: $black
   grid-template-areas: 'logo video' 'text video' 'actions video'
   grid-template-columns: 50% 50%
   grid-gap: 10px
-  padding: 0 10%
+  padding: 5% 10% 0
 
   .logo
     max-width: 30%
@@ -51,13 +47,10 @@ $main-text-color: $black
   #banner
     height: auto
     min-height: 0
-    padding: 2vh 2vh 0
+    padding: 0 2vh 0
 
     .banner-grid
         display: block
-
-    .logo
-      max-width: 45%
 
     br
       display: none
