@@ -3,6 +3,12 @@ $box-border-radius: 10px
 $box-background-color: $white
 $box-background-transition1: 1
 $box-background-transition2: 1
+$background1-webp: "../../assets/images/half-scan-half-try-on_img.webp"
+$background1-jpg:  "../../assets/images/half-scan-half-try-on_img.jpg"
+$background2-webp: "../../assets/images/face-scan_img.webp"
+$background2-jpg: "../../assets/images/face-scan_img.jpg"
+$background3-webp: "../../assets/images/virtual-try-on_img.webp"
+$background3-jpg: "../../assets/images/virtual-try-on_img.jpg"
   
 /* Capabilities
 
@@ -13,6 +19,17 @@ $box-background-transition2: 1
   background-image: -webkit-linear-gradient(top, rgba($box-background-color, $box-background-transition1), rgba($box-background-color, $box-background-transition2))
   background-image: -ms-linear-gradient(top, rgba($box-background-color, $box-background-transition1), rgba($box-background-color, $box-background-transition2))
   background-image: linear-gradient(top, rgba($box-background-color, $box-background-transition1), rgba($box-background-color, $box-background-transition2))
+  max-width: 1180px
+  margin: 0 auto
+
+.no-webp .capabilities
+  background-image: url($background1-jpg)
+
+  &:nth-child(2)
+    background-image: url($background2-jpg)
+
+  &:nth-child(3)
+    background-image: url($background3-jpg)
 
 .capabilities
   -moz-align-items: center
@@ -25,34 +42,45 @@ $box-background-transition2: 1
   grid-template-columns: 65% 35%
   grid-gap: 10px
   padding: 2% 2% 0 2%
+  background: url($background1-webp) no-repeat right bottom
+  background-size: contain
 
   .cicon
     grid-area: cicon
     align-self: end
     padding: 0 2%
+    margin-top: 2em
+
+    img
+      max-height: 1.6em
 
   .title
     grid-area: ct
     align-self: end
     padding: 0 2%
+    height: 3em
 
     h3
-      font-size: 1.8em
+      font-size: 1.4em
 
   .content
     grid-area: ccon
     align-self: end
     font-weight: bold
     padding: 0 2%
+    margin-bottom: 1em
 
   .image
     grid-area: ci
     margin: 0 auto 0
+    display: none
 
   .caption
     grid-area: ccap
     align-self: start
     padding: 0 2%
+    margin-bottom: 2em
+    font-size: 0.8em
 
   h3, p
     margin: 0
@@ -60,17 +88,29 @@ $box-background-transition2: 1
   .image img
     max-width: 100%
 
+  &:nth-child(2)
+    background-image: url($background2-webp)
+
+  &:nth-child(3)
+    background-image: url($background3-webp)
+
   &:nth-child(2n)
     grid-template-areas: 'ci cicon' 'ci ct' 'ci ccon' 'ci ccap' 
-    grid-template-columns: 35% 65%
+    grid-template-columns: 45% 55%
     text-align: right
+    background-position: inherit
 
-    .title, .content, .caption, .cicon
+    .title, .content, .cicon
       padding: 0 2%
 
 @media screen and (max-width: 980px)
   .capabilities
     display: block
+    text-align: center !important
+    background-image: none !important
+
+    &:nth-child(2n)
+      text-align: center
 
     br
       display: none
@@ -80,7 +120,12 @@ $box-background-transition2: 1
       margin: 0
 
     .image
+      display: block
       width: 100%
+
+      img
+        display: block
+        margin: 0 auto
 
     .content
       padding: 4em 3em 2em 3em
@@ -95,6 +140,7 @@ $box-background-transition2: 1
 @media screen and (max-width: 736px)
   .capabilities
     text-align: center
+    background-image: none !important
 
     &:nth-child(2n)
       text-align: center
@@ -107,3 +153,6 @@ $box-background-transition2: 1
 
     .cicon
       margin-top: 1em
+
+    .image
+      display: block
