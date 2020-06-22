@@ -1,3 +1,6 @@
+$h2-font-size: 1em
+$p-font-size: 0.8em
+  
 /* Spotlight
 
 .spotlight
@@ -21,9 +24,12 @@
     line-spacing: 1em
     line-height: 1em
     color: $bpl-blue-bright !important
+    font-size: $h2-font-size
   
   p
     color: $black
+    font-size: $p-font-size
+    line-height: calc(0.6em + #{$p-font-size})
 
   .image
     -moz-order: 1
@@ -51,12 +57,13 @@
     .more
 
       img
-        height: 0.6em
+        height: 0.55em
         display: inherit !important
 
       picture::after
         color: $bpl-blue
-        font-size: 1em
+        font-size: $p-font-size
+        line-height: calc(0.6em + #{$p-font-size})
         content: "More"
 
 
