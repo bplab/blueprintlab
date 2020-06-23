@@ -10,13 +10,17 @@ $text-shadow-color: #ffffff
     
 /* About Us
 
+@mixin background-specs
+    background-position: center top
+    background-size: auto
+    height: 100vh
+    
 .no-webp #about-us
     background-image: url($background-url-jpg)
     background-image: url($background-url-jpg)
     background-image: url($background-url-jpg)
     background-image: url($background-url-jpg)
-    background-position: center top
-    background-size: auto
+    @include background-specs
 
 #about-us
 
@@ -24,9 +28,7 @@ $text-shadow-color: #ffffff
     background-image: url($background-url-webp)
     background-image: url($background-url-webp)
     background-image: url($background-url-webp)
-    background-position: center top
-    background-size: auto
-    height: 100vh
+    @include background-specs
     
     .content
         grid-area: content
