@@ -41,13 +41,9 @@
         &:hover
           color: $footer-hover-color
 
-@media screen and (max-width: 480px)
-  #footer .copyright li
-    border: 0
-    display: block
-    line-height: 1.65em
-    margin: 0
-    padding: 0.5em 0
+@media screen and (max-width: 1280px)
+  #footer .icons .icon img
+    max-height: 1.8em
 
 @media screen and (max-width: 980px)
   #footer
@@ -56,3 +52,11 @@
 @media screen and (max-width: 736px)
   #footer
     padding: 3em 2em 1em 2em
+    
+@media screen and (max-width: 480px)
+  #footer .copyright li
+    border: 0
+    display: block
+    line-height: 1.65em
+    margin: 0
+    padding: 0.5em 0
