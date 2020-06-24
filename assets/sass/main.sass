@@ -1,109 +1,38 @@
 @import 'global'
-$scroll-behavior: smooth
-$code-background-color: rgba(144, 144, 144, 0.25)
-$main-text-color: $white
-$letter-spacing: 0.01em
-$header-letter-spacing: 0.01em
-$mobile-letter-spacing: 0.01em
-$border-color: $white
-$icon-border-radius: 10px
-$hr-color: $bpl-gray
-$hr-width: 90%
-$inner-hr-width: 50%
-$inner-hr-left: 25%
 
-/* Input variables
-$input-border-color: $bpl-blue-bright
-$input-text-color: $bpl-blue-bright
-$input-background-color: $bpl-blue-bright
-$input-special-text-color: $white
-$input-special-hover-background-color: $bpl-blue-hover
-$input-special-hover-text-color: $white
-$input-special-active-text-color: $bpl-blue
-$input-special-active-background-color: $bpl-blue-hover
-
-/* Button variables  
-$button-border-color: $bpl-blue-bright
-$button-text-color: $bpl-blue-bright
-$button-background-color: $white
-$button-hover-color: $bpl-blue-hover
-$button-active-color: $bpl-blue-hover
-$button-special-text-color: $white
-$button-special-background-color: $bpl-blue-bright
-$button-special-hover-background-color: $bpl-blue-hover
-$button-special-hover-text-color: $white
-$button-special-active-background-color: $bpl-blue-hover
-$button-special-active-text-color: $bpl-blue
-$button-height: 2.5em
-$button-height-mobile: 3.75em
-$button-padding: 2.5em
-
-/* Header variables
-$header-text-color: $black
-$header-text-shadow-color: $white
-$header-background-color: $white
-$header-box-shadow-color: rgba(235, 235, 235, 0.25)
-$header-height: 3em
-$header-image-height: 2.5em
-$header-height-mobile: 3em
-$menu-text-color: $white
-$menu-background-color: $bpl-blue
-$menu-border-color: $white
-$nav-text-color: $bpl-blue
-$nav-hover-color: $black
-$nav-alt-color: $black
-$nav-alt-hover-color: $bpl-blue
-
-/* Footer variables
-$footer-background-color1: $white
-$footer-background-color2: $white
-$footer-background-gradient1: 1
-$footer-background-gradient2: 1
-$footer-gradient-direction: top
-$footer-text-color: $bpl-blue-bright
-$footer-hover-color: $black
-$footer-icon-background-color: $white
-$footer-icon-width: 1.5em
-
-/* Reset
+/* Reset */
 @import 'normalize'
 
-/* Basic
+/* Basic */
 @import 'basic'
 
-/* Icon + Image
+/* Icon + Image */
 @import 'icon-image'
 
-/* List
+/* List */
 @import 'list'
 
-/* Button
+/* Button */
 @import 'button'
 
-/* Wrapper
-@import 'wrapper'
-
-/* Page Wrapper + Menu
-@import 'page-wrapper-menu'
-
-/* Header
+/* Header */
 @import 'header'
 
-/* Footer
-@import 'footer'
+/* Page Wrapper + Menu */
+@import 'page-wrapper-menu'
 
-/* Responsive iFrame
+/* Responsive iFrame */
 @import 'resp-iframe'
 
-/* Responsive iFrame Vertical
+/* Responsive iFrame Vertical */
 @import 'resp-iframev'
 
-/* Mobile-only
+/* Mobile-only */
 @media screen and (min-width: 980px)
   .mobile-only
     display: none
 
-/* Mobile-float
+/* Mobile-float */
 .mobile-float
   position: fixed
   bottom: 2%
@@ -115,3 +44,9 @@ $footer-icon-width: 1.5em
   opacity: 0
   z-index: 0
   box-shadow: 3px 10px 10px gray !important
+
+/* Wrapper */
+@import 'wrapper'
+
+/* Footer */
+@import 'footer'

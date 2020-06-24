@@ -1,7 +1,6 @@
-$h2-font-size: 1em
-$p-font-size: 0.8em
-  
-/* Spotlight
+/* Spotlight Variables */
+$spotlight-h2-font-size: 1em
+$spotlight-p-font-size: 0.8em
 
 #news
 
@@ -26,12 +25,12 @@ $p-font-size: 0.8em
       line-spacing: 1em
       line-height: 1em
       color: $bpl-blue-bright
-      font-size: $h2-font-size
+      font-size: $spotlight-h2-font-size
     
     p
       color: $black
-      font-size: $p-font-size
-      line-height: calc(0.6em + #{$p-font-size})
+      font-size: $spotlight-p-font-size
+      line-height: calc(0.6em + #{$spotlight-p-font-size})
 
     .image
       -moz-order: 1
@@ -64,8 +63,8 @@ $p-font-size: 0.8em
 
         picture::after
           color: $bpl-blue
-          font-size: $p-font-size
-          line-height: calc(0.6em + #{$p-font-size})
+          font-size: $spotlight-p-font-size
+          line-height: calc(0.6em + #{$spotlight-p-font-size})
           content: "More"
 
     &:nth-child(2n)

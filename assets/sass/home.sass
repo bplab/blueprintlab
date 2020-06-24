@@ -1,13 +1,15 @@
 @import 'global'
-$main-text-color: $black
-$h2-text-color: $black
-$h3-text-color: $bpl-blue-bright
-$h3-font-size: 1.4em
-$h4-font-size: 1.2em
-$light-text-color: rgba($main-text-color, 0.075)
-$border-color: $bpl-blue-bright
-$background1-color: #ffffff
-$background2-color: #fafafa
+  
+/* Home Variables */
+$home-main-text-color: $black
+$home-h2-text-color: $black
+$home-h3-text-color: $bpl-blue-bright
+$home-h3-font-size: 1.4em
+$home-h4-font-size: 1.2em
+$home-light-text-color: rgba($home-main-text-color, 0.075)
+$home-border-color: $bpl-blue-bright
+$home-background1-color: #ffffff
+$home-background2-color: #fafafa
 
 @import 'landing'
 
@@ -18,48 +20,48 @@ $background2-color: #fafafa
   background-position: bottom
   background-repeat: no-repeat
   background-size: 100% auto
-  color: $main-text-color
+  color: $home-main-text-color
   
   strong, b, h1, h2, h4, h5, h6
-    color: $main-text-color
+    color: $home-main-text-color
 
   h3 
-    color: $h3-text-color
-    font-size: $h3-font-size
+    color: $home-h3-text-color
+    font-size: $home-h3-font-size
 
   h4
-    font-size: $h4-font-size
+    font-size: $home-h4-font-size
     text-transform: uppercase
 
   blockquote
-    border-color: $border-color
+    border-color: $home-border-color
   
   code
-    background: $light-text-color
+    background: $home-light-text-color
 
   header
     p
-      color: $main-text-color
+      color: $home-main-text-color
     
     &.major
       h4, h5, h6
-        border-color: $main-text-color
+        border-color: $home-main-text-color
 
       h2
-        color: $h2-text-color
-        border-color: $h2-text-color
+        color: $home-h2-text-color
+        border-color: $home-h2-text-color
       
       p
-        color: $main-text-color
+        color: $home-main-text-color
 
 .wrapper
 
   &.style1
-    background: $background1-color
+    background: $home-background1-color
     @include common-settings
   
   &.style2
-    background: $background2-color
+    background: $home-background2-color
     @include common-settings
 
 @import 'banner'

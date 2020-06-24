@@ -1,25 +1,16 @@
 @import 'global'
-$main-background-color: $light-gray
-$wrapper-background-color: $white
-$main-text-color: $black
-$letter-spacing: 0.01em
-$horizontal-line-color: $bpl-gray
-$code-background-color: rgba(0, 0, 0, 0.0375)
-$header-text-color: $black
-$header-major-header-text-color: $bpl-gray
-$header-major-text-color: $bpl-blue-dark
-$subtitle-text-color: $black
-$label-text-color: $bpl-blue-dark
-$icon-list-border-color: $bpl-gray
-$button-box-shadow-color: $bpl-gray
-$button-text-color: $bpl-blue-dark
-$button-hover-background-color: rgba(0, 0, 0, 0.0375)
-$button-active-background-color: rgba(0, 0, 0, 0.1)
+/* Page-Post Variables */
+$page-post-main-background-color: $light-gray
+$page-post-wrapper-background-color: $white
+$page-post-main-text-color: $black
+$page-post-subtitle-text-color: $black
+$page-post-label-text-color: $bpl-blue-dark
+$page-post-icon-list-border-color: $bpl-gray
 
-/* Main
+/* Main */
 
 #main
-  background: $main-background-color
+  background: $page-post-main-background-color
 
   img
     max-width: 100%
@@ -44,7 +35,7 @@ $button-active-background-color: rgba(0, 0, 0, 0.1)
     color: $header-text-color
 
   p
-    color: $subtitle-text-color
+    color: $page-post-subtitle-text-color
     font-weight: bold
     letter-spacing: $letter-spacing
     text-transform: capitalize
@@ -77,11 +68,11 @@ $button-active-background-color: rgba(0, 0, 0, 0.1)
 body.is-mobile #main > header
   background-attachment: scroll
 
-/* Wrapper Pages and Posts
+/* Wrapper Pages and Posts */
 
 .wrapper.page-post
-  background-color: $wrapper-background-color
-  color: $main-text-color
+  background-color: $page-post-wrapper-background-color
+  color: $page-post-main-text-color
   padding: 2em
 
   .post
@@ -89,17 +80,17 @@ body.is-mobile #main > header
       text-align: justify
 
   strong, b, h2, h3, h4, h5, h6
-    color: $main-text-color
+    color: $page-post-main-text-color
 
   hr, blockquote
-    border-color: $horizontal-line-color
+    border-color: $hr-color
 
   code
     background: $code-background-color
 
   header
     p
-      color: $subtitle-text-color
+      color: $page-post-subtitle-text-color
 
     &.major
       h2, h3, h4, h5, h6
@@ -109,10 +100,10 @@ body.is-mobile #main > header
         color: $header-major-text-color
 
   label
-    color: $label-text-color
+    color: $page-post-label-text-color
 
   ul.alt li
-    border-color: $icon-list-border-color
+    border-color: $page-post-icon-list-border-color
 
 .post-end
   display: block

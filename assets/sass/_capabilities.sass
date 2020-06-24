@@ -1,19 +1,19 @@
+/* Capabilities Variables */
 $box-border-color: rgba(173, 173, 173, 0.25)
+$box-box-shadow: 4px 4px 10px $box-border-color
 $box-border-radius: 10px
 $box-background-color: $white
 $box-background-transition1: 1
 $box-background-transition2: 1
-$background1-webp: "../../assets/images/half-scan-half-try-on_img.webp"
-$background1-jpg:  "../../assets/images/half-scan-half-try-on_img.jpg"
-$background2-webp: "../../assets/images/face-scan_img.webp"
-$background2-jpg: "../../assets/images/face-scan_img.jpg"
-$background3-webp: "../../assets/images/virtual-try-on_img.webp"
-$background3-jpg: "../../assets/images/virtual-try-on_img.jpg"
+$capabilities-background1-webp: "../../assets/images/half-scan-half-try-on_img.webp"
+$capabilities-background1-jpg:  "../../assets/images/half-scan-half-try-on_img.jpg"
+$capabilities-background2-webp: "../../assets/images/face-scan_img.webp"
+$capabilities-background2-jpg: "../../assets/images/face-scan_img.jpg"
+$capabilities-background3-webp: "../../assets/images/virtual-try-on_img.webp"
+$capabilities-background3-jpg: "../../assets/images/virtual-try-on_img.jpg"
   
-/* Capabilities
-
 .box
-  box-shadow: 4px 4px 10px $box-border-color
+  box-shadow: $box-box-shadow
   border-radius: $box-border-radius
   background-image: -moz-linear-gradient(top, rgba($box-background-color, $box-background-transition1), rgba($box-background-color, $box-background-transition2))
   background-image: -webkit-linear-gradient(top, rgba($box-background-color, $box-background-transition1), rgba($box-background-color, $box-background-transition2))
@@ -23,13 +23,13 @@ $background3-jpg: "../../assets/images/virtual-try-on_img.jpg"
   margin: 0 auto
 
 .no-webp .capabilities
-  background-image: url($background1-jpg)
+  background-image: url($capabilities-background1-jpg)
 
   &:nth-child(2)
-    background-image: url($background2-jpg)
+    background-image: url($capabilities-background2-jpg)
 
   &:nth-child(3)
-    background-image: url($background3-jpg)
+    background-image: url($capabilities-background3-jpg)
 
 .capabilities
   -moz-align-items: center
@@ -42,7 +42,7 @@ $background3-jpg: "../../assets/images/virtual-try-on_img.jpg"
   grid-template-columns: 65% 35%
   grid-gap: 10px
   margin: 2% 2% 0 2%
-  background: url($background1-webp) no-repeat right bottom
+  background: url($capabilities-background1-webp) no-repeat right bottom
   background-size: contain
 
   h3, p
@@ -86,10 +86,10 @@ $background3-jpg: "../../assets/images/virtual-try-on_img.jpg"
     font-size: 0.8em
 
   &:nth-child(2)
-    background-image: url($background2-webp)
+    background-image: url($capabilities-background2-webp)
 
   &:nth-child(3)
-    background-image: url($background3-webp)
+    background-image: url($capabilities-background3-webp)
 
   &:nth-child(2n)
     grid-template-areas: 'ci cicon' 'ci ct' 'ci ccon' 'ci ccap' 
