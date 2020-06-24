@@ -100,14 +100,23 @@ $background3-jpg: "../../assets/images/virtual-try-on_img.jpg"
     .title, .content
       padding: 0 2%
 
+@mixin block-capabilities
+  display: block
+  text-align: center
+  background-image: none
+
+  &:nth-child(2)
+    background-image: none
+
+  &:nth-child(3)
+    background-image: none
+
+  &:nth-child(2n)
+    text-align: center
+
 @media screen and (max-width: 980px)
   .capabilities
-    display: block
-    text-align: center !important
-    background-image: none !important
-
-    &:nth-child(2n)
-      text-align: center
+    @include block-capabilities
 
     br
       display: none
@@ -131,16 +140,15 @@ $background3-jpg: "../../assets/images/virtual-try-on_img.jpg"
       width: 100%
       padding: 0
 
+    .cicon
+      padding-top: 1em
+
     .caption
       padding: 0
 
 @media screen and (max-width: 736px)
   .capabilities
-    text-align: center
-    background-image: none !important
-
-    &:nth-child(2n)
-      text-align: center
+    @include block-capabilities
     
     h3, p
       margin: 0 0 1em 0
