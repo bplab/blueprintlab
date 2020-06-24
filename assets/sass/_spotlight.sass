@@ -3,103 +3,109 @@ $p-font-size: 0.8em
   
 /* Spotlight
 
-.spotlight
-  background-color: $white
-  -moz-align-items: center
-  -webkit-align-items: center
-  -ms-align-items: center
-  align-items: center
-  display: -moz-flex
-  display: -webkit-flex
-  display: -ms-flex
-  display: flex
-  box-shadow: 4px 4px 10px rgba(173, 173, 173, 0.25)
-  margin-bottom: 10px
-  margin-left: 30px
-  margin-right: 30px
-  margin-top: 10px
-  border-radius: $border-radius
+#news
 
-  h2
-    line-spacing: 1em
-    line-height: 1em
-    color: $bpl-blue-bright !important
-    font-size: $h2-font-size
-  
-  p
-    color: $black
-    font-size: $p-font-size
-    line-height: calc(0.6em + #{$p-font-size})
+  .spotlight
+    background-color: $white
+    -moz-align-items: center
+    -webkit-align-items: center
+    -ms-align-items: center
+    align-items: center
+    display: -moz-flex
+    display: -webkit-flex
+    display: -ms-flex
+    display: flex
+    box-shadow: 4px 4px 10px rgba(173, 173, 173, 0.25)
+    margin-bottom: 10px
+    margin-left: 30px
+    margin-right: 30px
+    margin-top: 10px
+    border-radius: $border-radius
 
-  .image
-    -moz-order: 1
-    -webkit-order: 1
-    -ms-order: 1
-    order: 1
-    width: 40%
+    h2
+      line-spacing: 1em
+      line-height: 1em
+      color: $bpl-blue-bright !important
+      font-size: $h2-font-size
+    
+    p
+      color: $black
+      font-size: $p-font-size
+      line-height: calc(0.6em + #{$p-font-size})
 
-    img
-      border-radius: $border-radius
-      max-width: 100%
-      max-height: 90vh
-      padding: 1em
-
-  .content
-    padding: 1em 1em 1em 1em
-    -moz-order: 2
-    -webkit-order: 2
-    -ms-order: 2
-    order: 2
-    max-width: 48em
-    width: 60%
-    text-align: right
-
-    .more
+    .image
+      -moz-order: 1
+      -webkit-order: 1
+      -ms-order: 1
+      order: 1
+      width: 40%
 
       img
-        height: 0.55em
-        display: inherit !important
-
-      picture::after
-        color: $bpl-blue
-        font-size: $p-font-size
-        line-height: calc(0.6em + #{$p-font-size})
-        content: "More"
-
-
-  &:nth-child(2n)
-    -moz-flex-direction: row-reverse
-    -webkit-flex-direction: row-reverse
-    -ms-flex-direction: row-reverse
-    flex-direction: row-reverse
+        border-radius: $border-radius
+        max-width: 100%
+        max-height: 90vh
+        padding: 1em
 
     .content
-      text-align: left
+      padding: 1em 1em 1em 1em
+      -moz-order: 2
+      -webkit-order: 2
+      -ms-order: 2
+      order: 2
+      max-width: 48em
+      width: 60%
+      text-align: right
+
+      .more
+
+        img
+          height: 0.55em
+          display: inherit
+
+        picture::after
+          color: $bpl-blue
+          font-size: $p-font-size
+          line-height: calc(0.6em + #{$p-font-size})
+          content: "More"
+
+    &:nth-child(2n)
+      -moz-flex-direction: row-reverse
+      -webkit-flex-direction: row-reverse
+      -ms-flex-direction: row-reverse
+      flex-direction: row-reverse
+
+      .content
+        text-align: left
 
 @media screen and (max-width: 1280px)
-  .spotlight
-    .image
-      width: 45%
+  #news
 
-    .content
-      width: 55%
+    .spotlight
+
+      .image
+        width: 45%
+
+      .content
+        width: 55%
 
 @media screen and (max-width: 980px)
-  .spotlight
-    display: block
+  #news
+    .spotlight
+      display: block
 
-    br
-      display: none
+      br
+        display: none
 
-    .image
-      width: 100%
+      .image
+        width: 100%
 
-    .content
-      padding: 4em 3em 2em 3em
-      max-width: none
-      text-align: center
-      width: 100%
+      .content
+        max-width: none
+        text-align: center
+        width: 100%
 
-@media screen and (max-width: 736px)
-  .spotlight .content
-    padding: 3em 2em 1em 2em
+      &:nth-child(2n)
+        display:block
+        
+        .content
+          text-align: center
