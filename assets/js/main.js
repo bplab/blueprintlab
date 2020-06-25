@@ -79,7 +79,6 @@
 					enter:		function() { $header.addClass('alt'); },
 					leave:		function() { $header.removeClass('alt'); }
 				});
-
 			}
 
 		//Scroll Effect 1.
@@ -93,22 +92,17 @@
 						$button = $this.find('.mobile-float'),
 						x;
 					
-						// Progress decreases after half-point
-						if (progress > 0.5)
-							x = 1 - progress;
-						else
-							x = progress;
+						// No progress decrease
+						x = progress;
 						
 						// Responsive height adjustment
 						x = Math.max(0, Math.min(1, x * ($this.height() / window.innerHeight * 2.8)));
 
 						// Opacity.
-
 						$this.css('opacity', x);
 						$button.css('opacity', x);
 
 						// Scale.
-
 						$inner
 							.css('-moz-transform', 'scale(' + x + ')')
 							.css('-webkit-transform', 'scale(' + x + ')')
@@ -125,9 +119,7 @@
 
 						// Change z-index multiplier if you want higher than 1
 						$button.css('z-index', x * 3);
-
 					}
-
 			});
 
 		//Scroll Effect 2.
@@ -143,24 +135,20 @@
 						// No progress decrease
 						x = progress;
 
-						// Responsive height adjustment
+						// For sections less than 100vh
 						x = Math.max(0, Math.min(1, x * ($this.height() / window.innerHeight * 3.8)));
 
 						// Opacity.
-
 						$this.css('opacity', x);
 
 						// Scale.
-						
 						$inner
 							.css('-moz-transform', 'scale(' + x + ')')
 							.css('-webkit-transform', 'scale(' + x + ')')
 							.css('-o-transform', 'scale(' + x + ')')
 							.css('-ms-transform', 'scale(' + x + ')')
 							.css('transform', 'scale(' + x + ')');
-
 					}
-
 			});
 	});
 
