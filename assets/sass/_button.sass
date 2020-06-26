@@ -4,10 +4,10 @@ input
     -webkit-appearance: none
     -ms-appearance: none
     appearance: none
-    -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out
-    -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out
-    -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out
-    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out
+    -moz-transition: $input-transition
+    -webkit-transition: $input-transition
+    -ms-transition: $input-transition
+    transition: $input-transition
     background-color: $button-background-color
     border-radius: $border-radius
     border: 1px solid $input-border-color
@@ -32,10 +32,10 @@ button, .button
   -webkit-appearance: none
   -ms-appearance: none
   appearance: none
-  -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out
-  -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out
-  -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out
-  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out
+  -moz-transition: $button-transition
+  -webkit-transition: $button-transition
+  -ms-transition: $button-transition
+  transition: $button-transition
   background-color: $button-background-color
   border-radius: $border-radius
   border: 1px solid $button-border-color
@@ -110,14 +110,10 @@ input
   &[type="submit"].special:hover, &[type="reset"].special:hover, &[type="button"].special:hover
     color: $button-special-hover-text-color
     background-color: $button-special-hover-background-color
-    transition: background-color 500ms
-    transition-timing-function: linear
 
 button.special:hover, .button.special:hover
   color: $button-special-hover-text-color
   background-color: $button-special-hover-background-color
-  transition: background-color 500ms
-  transition-timing-function: linear
 
 input
   &[type="submit"].special:active, &[type="reset"].special:active, &[type="button"].special:active
