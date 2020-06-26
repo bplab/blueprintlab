@@ -24,13 +24,8 @@ timezone: Asia/Seoul
 
 # Social settings
 facebook_url: https://www.facebook.com/blueprintlab4u/
-github_url:
-gitlab_url: 
 instagram_url: https://www.instagram.com/blueprintlab3d/
 linkedin_url: https://www.linkedin.com/company/14509122
-pinterest_url:
-slack_url:
-twitter_url: 
 
 # Build settings
 markdown: kramdown
