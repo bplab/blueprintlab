@@ -59,6 +59,8 @@ input
   &[type="submit"]:hover, &[type="reset"]:hover, &[type="button"]:hover
     color: $button-hover-color
     border-color: $button-hover-color
+    -webkit-animation: $hover-animation
+    animation: $hover-animation
 
 button:hover, .button:hover
   color: $button-hover-color
@@ -110,6 +112,8 @@ input
   &[type="submit"].special:hover, &[type="reset"].special:hover, &[type="button"].special:hover
     color: $button-special-hover-text-color
     background-color: $button-special-hover-background-color
+    -webkit-animation: $hover-animation
+    animation: $hover-animation
 
 button.special:hover, .button.special:hover
   color: $button-special-hover-text-color
