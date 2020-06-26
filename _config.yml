@@ -15,6 +15,9 @@ description: BluePrintLAB is a software startup that utilizes 3D scanning, augme
 baseurl: "/blueprintlab" # the subpath of your site, e.g. /blog
 url: "https://bplmarketer.github.io" # the base hostname & protocol for your site
 
+# News tiles	
+tiles-source: posts # accepts "posts" or "pages"
+
 # Misc settings
 future: false
 timezone: Asia/Seoul
