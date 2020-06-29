@@ -29,15 +29,11 @@ p.mobile
 
 .row
   border-bottom: solid 1px transparent
-  -moz-box-sizing: border-box
-  -webkit-box-sizing: border-box
-  box-sizing: border-box
+  @include box-sizing(border-box)
 
   > *
     float: left
-    -moz-box-sizing: border-box
-    -webkit-box-sizing: border-box
-    box-sizing: border-box
+    @include box-sizing(border-box)
 
   &::after, &::before
     content: ''

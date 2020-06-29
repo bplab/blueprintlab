@@ -4,14 +4,8 @@ $banner-before-after-color: $bpl-blue
 $banner-main-text-color: $black
 
 #banner
-  display: -moz-flex
-  display: -webkit-flex
-  display: -ms-flex
-  display: flex
-  -moz-flex-direction: column
-  -webkit-flex-direction: column
-  -ms-flex-direction: column
-  flex-direction: column
+  @include display-flex
+  @include flex-direction(column)
   cursor: default
   height: 100vh
   position: relative

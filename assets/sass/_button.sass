@@ -1,13 +1,7 @@
 input
   &[type="submit"], &[type="reset"], &[type="button"]
-    -moz-appearance: none
-    -webkit-appearance: none
-    -ms-appearance: none
-    appearance: none
-    -moz-transition: $input-transition
-    -webkit-transition: $input-transition
-    -ms-transition: $input-transition
-    transition: $input-transition
+    @include appearance(none)
+    @include transition($input-transition)
     background-color: $button-background-color
     border-radius: $border-radius
     border: 1px solid $input-border-color
@@ -28,14 +22,8 @@ input
     text-overflow: ellipsis
 
 button, .button
-  -moz-appearance: none
-  -webkit-appearance: none
-  -ms-appearance: none
-  appearance: none
-  -moz-transition: $button-transition
-  -webkit-transition: $button-transition
-  -ms-transition: $button-transition
-  transition: $button-transition
+  @include appearance(none)
+  @include transition($button-transition)
   background-color: $button-background-color
   border-radius: $border-radius
   border: 1px solid $button-border-color
@@ -59,8 +47,7 @@ input
   &[type="submit"]:hover, &[type="reset"]:hover, &[type="button"]:hover
     color: $button-hover-color
     border-color: $button-hover-color
-    -webkit-animation: $hover-animation
-    animation: $hover-animation
+    @include animation($hover-animation)
 
 button:hover, .button:hover
   color: $button-hover-color
@@ -112,8 +99,7 @@ input
   &[type="submit"].special:hover, &[type="reset"].special:hover, &[type="button"].special:hover
     color: $button-special-hover-text-color
     background-color: $button-special-hover-background-color
-    -webkit-animation: $hover-animation
-    animation: $hover-animation
+    @include animation($hover-animation)
 
 button.special:hover, .button.special:hover
   color: $button-special-hover-text-color
@@ -131,42 +117,27 @@ button.special:active, .button.special:active
 input
   &[type="submit"]
     &.disabled, &:disabled
-      -moz-pointer-events: none
-      -webkit-pointer-events: none
-      -ms-pointer-events: none
-      pointer-events: none
+      @include pointer-events(none)
       opacity: 0.25
 
   &[type="reset"]
     &.disabled, &:disabled
-      -moz-pointer-events: none
-      -webkit-pointer-events: none
-      -ms-pointer-events: none
-      pointer-events: none
+      @include pointer-events(none)
       opacity: 0.25
 
   &[type="button"]
     &.disabled, &:disabled
-      -moz-pointer-events: none
-      -webkit-pointer-events: none
-      -ms-pointer-events: none
-      pointer-events: none
+      @include pointer-events(none)
       opacity: 0.25
 
 button
   &.disabled, &:disabled
-    -moz-pointer-events: none
-    -webkit-pointer-events: none
-    -ms-pointer-events: none
-    pointer-events: none
+    @include pointer-events(none)
     opacity: 0.25
 
 .button
   &.disabled, &:disabled
-    -moz-pointer-events: none
-    -webkit-pointer-events: none
-    -ms-pointer-events: none
-    pointer-events: none
+    @include pointer-events(none)
     opacity: 0.25
 
 @media screen and (max-width: 736px)

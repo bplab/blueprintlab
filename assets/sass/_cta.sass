@@ -7,20 +7,14 @@ $cta-text-color: $black
   height: 75vh
 
 #cta .inner
-  display: -moz-flex
-  display: -webkit-flex
-  display: -ms-flex
-  display: flex
+  @include display-flex
   flex-direction: column
   max-width: 45em
   padding: 3% 0 0 0
   text-align: center
 
   header
-    -moz-order: 1
-    -webkit-order: 1
-    -ms-order: 1
-    order: 1  
+    @include order(1) 
     width: 100%
 
     h2
@@ -28,10 +22,7 @@ $cta-text-color: $black
       color: $cta-header-text-color
 
   .actions
-    -moz-order: 2
-    -webkit-order: 2
-    -ms-order: 2
-    order: 2
+    @include order(2)
     width: 100%
 
 @media screen and (max-width: 1280px)

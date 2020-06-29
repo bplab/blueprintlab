@@ -1,4 +1,4 @@
-/* Global Variables */
+//* Global Variables *//
     
 /* Colors */
 $bpl-blue: #1f8dcc
@@ -83,6 +83,10 @@ $button-transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out
 /* Icons */
 $icon-border-radius: 10px
 
+/* Loading */
+$loading-animation: none !important
+$loading-transition: none !important
+
 /* Hover Animation */
 $hover-animation: scale-up-center 0.4s ease-in-out both
 
@@ -99,3 +103,74 @@ $hover-animation: scale-up-center 0.4s ease-in-out both
 
   100%
     transform: scale(1.1)
+
+//* Global Mixins *//
+
+@mixin display-flex
+  display: -moz-flex
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+
+@mixin flex-direction($property)
+  -moz-flex-direction: $property
+  -webkit-flex-direction: $property
+  -ms-flex-direction: $property
+  flex-direction: $property
+
+@mixin order($property)
+  -moz-order: $property
+  -webkit-order: $property
+  -ms-order: $property
+  order: $property
+
+@mixin align-items($property)
+  -moz-align-items: $property
+  -webkit-align-items: $property
+  -ms-align-items: $property
+  align-items: $property
+
+@mixin background-image-linear-gradient($property)
+  background-image: -moz-linear-gradient($property)
+  background-image: -webkit-linear-gradient($property)
+  background-image: -ms-linear-gradient($property)
+  background-image: linear-gradient($property)
+
+@mixin animation($property)
+  -webkit-animation: $property
+  animation: $property
+
+@mixin transition($property)
+  -moz-transition: $property
+  -webkit-transition: $property
+  -ms-transition: $property
+  transition: $property
+
+@mixin transform($property)
+  -moz-transform: $property
+  -webkit-transform: $property
+  -ms-transform: $property
+  transform: $property
+
+@mixin pointer-events($property)
+  -moz-pointer-events: $property
+  -webkit-pointer-events: $property
+  -ms-pointer-events: $property
+  pointer-events: $property
+
+@mixin box-sizing($property)
+  -moz-box-sizing: $property
+  -webkit-box-sizing: $property
+  box-sizing: $property
+
+@mixin appearance($property)
+  -moz-appearance: $property
+  -webkit-appearance: $property
+  -ms-appearance: $property
+  appearance: $property
+
+@mixin pointer-events($property)
+  -moz-pointer-events: $property
+  -webkit-pointer-events: $property
+  -ms-pointer-events: $property
+  pointer-events: $property

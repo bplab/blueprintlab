@@ -1,8 +1,10 @@
+/* Page-Wrapper Variables */
+$page-wrapper-transition: opacity 0.5s ease
+$menu-transform: translateX(20em)
+$menu-visible-transform: translateX(0)
+  
 #page-wrapper
-  -moz-transition: opacity 0.5s ease
-  -webkit-transition: opacity 0.5s ease
-  -ms-transition: opacity 0.5s ease
-  transition: opacity 0.5s ease
+  @include transition($page-wrapper-transition)
   opacity: 1
 
   &::before
@@ -23,10 +25,7 @@
     padding-top: 0
 
 #menu
-  -moz-transform: translateX(20em)
-  -webkit-transform: translateX(20em)
-  -ms-transform: translateX(20em)
-  transform: translateX(20em)
+  @include transform($menu-transform)
   -moz-transition: -moz-transform 0.2s ease
   -webkit-transition: -webkit-transform 0.2s ease
   -ms-transition: -ms-transform 0.2s ease
@@ -97,7 +96,4 @@ body.is-menu-visible
       display: block
 
   #menu
-    -moz-transform: translateX(0)
-    -webkit-transform: translateX(0)
-    -ms-transform: translateX(0)
-    transform: translateX(0)
+    @include transform($menu-visible-transform)

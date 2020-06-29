@@ -1,10 +1,7 @@
 /* About Us  Variables*/
 $about-us-background-url-jpg: "../../assets/images/about-us.jpg"
 $about-us-background-url-webp: "../../assets/images/about-us.webp"
-$about-us-background-gradient-direction: top
-$about-us-background-color: #ffffff
-$about-us-background-transition1: 0
-$about-us-background-transition2: 0
+$about-us-mobile-background-image: none
 
 @mixin background-specs
     background-position: center top
@@ -13,16 +10,10 @@ $about-us-background-transition2: 0
     
 .no-webp #about-us
     background-image: url($about-us-background-url-jpg)
-    background-image: url($about-us-background-url-jpg)
-    background-image: url($about-us-background-url-jpg)
-    background-image: url($about-us-background-url-jpg)
     @include background-specs
 
 #about-us
 
-    background-image: url($about-us-background-url-webp)
-    background-image: url($about-us-background-url-webp)
-    background-image: url($about-us-background-url-webp)
     background-image: url($about-us-background-url-webp)
     @include background-specs
     
@@ -44,10 +35,7 @@ $about-us-background-transition2: 0
         grid-area: space
 
     .inner
-        -moz-align-items: center
-        -webkit-align-items: center
-        -ms-align-items: center
-        align-items: center
+        @include align-items(center)
         justify-items: center
         display: grid
         grid-template-areas: 'content space'
@@ -58,10 +46,7 @@ $about-us-background-transition2: 0
 
     #about-us
         
-        background-image: -moz-linear-gradient($about-us-background-gradient-direction, rgba($about-us-background-color, $about-us-background-transition1), rgba($about-us-background-color, $about-us-background-transition2))
-        background-image: -webkit-linear-gradient($about-us-background-gradient-direction, rgba($about-us-background-color, $about-us-background-transition1), rgba($about-us-background-color, $about-us-background-transition2))
-        background-image: -ms-linear-gradient($about-us-background-gradient-direction, rgba($about-us-background-color, $about-us-background-transition1), rgba($about-us-background-color, $about-us-background-transition2))
-        background-image: linear-gradient($about-us-background-gradient-direction, rgba($about-us-background-color, $about-us-background-transition1), rgba($about-us-background-color, $about-us-background-transition2))
+        background-image: $about-us-mobile-background-image
         background-position: center top
         background-size: auto
 

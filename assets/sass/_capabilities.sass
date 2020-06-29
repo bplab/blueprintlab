@@ -3,22 +3,32 @@ $box-border-color: rgba(173, 173, 173, 0.25)
 $box-box-shadow: 4px 4px 10px $box-border-color
 $box-border-radius: 10px
 $box-background-color: $white
-$box-background-transition1: 1
-$box-background-transition2: 1
 $capabilities-background1-webp: "../../assets/images/half-scan-half-try-on_img.webp"
 $capabilities-background1-jpg:  "../../assets/images/half-scan-half-try-on_img.jpg"
 $capabilities-background2-webp: "../../assets/images/face-scan_img.webp"
 $capabilities-background2-jpg: "../../assets/images/face-scan_img.jpg"
 $capabilities-background3-webp: "../../assets/images/virtual-try-on_img.webp"
 $capabilities-background3-jpg: "../../assets/images/virtual-try-on_img.jpg"
+
+/* Capabilities Mixins */
+@mixin block-capabilities
+  display: block
+  text-align: center
+  background-image: none
+
+  &:nth-child(2)
+    background-image: none
+
+  &:nth-child(3)
+    background-image: none
+
+  &:nth-child(2n)
+    text-align: center
   
 .box
   box-shadow: $box-box-shadow
   border-radius: $box-border-radius
-  background-image: -moz-linear-gradient(top, rgba($box-background-color, $box-background-transition1), rgba($box-background-color, $box-background-transition2))
-  background-image: -webkit-linear-gradient(top, rgba($box-background-color, $box-background-transition1), rgba($box-background-color, $box-background-transition2))
-  background-image: -ms-linear-gradient(top, rgba($box-background-color, $box-background-transition1), rgba($box-background-color, $box-background-transition2))
-  background-image: linear-gradient(top, rgba($box-background-color, $box-background-transition1), rgba($box-background-color, $box-background-transition2))
+  background-image: $box-background-color
   max-width: 1172px
   margin: 0 auto
 
@@ -32,10 +42,7 @@ $capabilities-background3-jpg: "../../assets/images/virtual-try-on_img.jpg"
     background-image: url($capabilities-background3-jpg)
 
 .capabilities
-  -moz-align-items: center
-  -webkit-align-items: center
-  -ms-align-items: center
-  align-items: center
+  @include align-items(center)
   text-align: left
   display: grid
   grid-template-areas: 'cicon ci' 'ct ci' 'ccon ci' 'ccap ci'
@@ -99,20 +106,6 @@ $capabilities-background3-jpg: "../../assets/images/virtual-try-on_img.jpg"
 
     .title, .content
       padding: 0 2%
-
-@mixin block-capabilities
-  display: block
-  text-align: center
-  background-image: none
-
-  &:nth-child(2)
-    background-image: none
-
-  &:nth-child(3)
-    background-image: none
-
-  &:nth-child(2n)
-    text-align: center
 
 @media screen and (max-width: 980px)
   .capabilities

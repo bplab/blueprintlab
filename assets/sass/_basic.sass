@@ -7,24 +7,12 @@ html
 body
 
   &.is-loading *
-    -moz-animation: none !important
-    -webkit-animation: none !important
-    -ms-animation: none !important
-    animation: none !important
-    -moz-transition: none !important
-    -webkit-transition: none !important
-    -ms-transition: none !important
-    transition: none !important
+    @include animation($loading-animation)
+    @include transition($loading-transition)
 
     &::before, &::after
-      -moz-animation: none !important
-      -webkit-animation: none !important
-      -ms-animation: none !important
-      animation: none !important
-      -moz-transition: none !important
-      -webkit-transition: none !important
-      -ms-transition: none !important
-      transition: none !important
+      @include animation($loading-animation)
+      @include transition($loading-transition)
 
   color: $main-text-color
   font-family: "NanumSquare", Helvetica, sans-serif
@@ -58,8 +46,7 @@ a
   text-decoration: none
 
   &:hover
-    -webkit-animation: $hover-animation
-    animation: $hover-animation
+    @include animation($hover-animation)
 
 strong, b
   color: $main-text-color

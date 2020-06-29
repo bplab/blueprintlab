@@ -3,10 +3,7 @@
   max-width: 1172px
 
 .projects
-  -moz-align-items: center
-  -webkit-align-items: center
-  -ms-align-items: center
-  align-items: center
+  @include align-items(center)
   justify-items: center
   display: grid
   grid-template-areas: 'pt' 'pcap' 'pi' 'pco'

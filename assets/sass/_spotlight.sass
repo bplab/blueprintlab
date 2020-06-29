@@ -7,14 +7,8 @@ $spotlight-more-hover: 1px solid $bpl-blue
 
   .spotlight
     background-color: $white
-    -moz-align-items: center
-    -webkit-align-items: center
-    -ms-align-items: center
-    align-items: center
-    display: -moz-flex
-    display: -webkit-flex
-    display: -ms-flex
-    display: flex
+    @include align-items(center)
+    @include display-flex
     box-shadow: 4px 4px 10px rgba(173, 173, 173, 0.25)
     margin-bottom: 10px
     margin-left: 30px
@@ -34,10 +28,7 @@ $spotlight-more-hover: 1px solid $bpl-blue
       line-height: calc(0.6em + #{$spotlight-p-font-size})
 
     .image
-      -moz-order: 1
-      -webkit-order: 1
-      -ms-order: 1
-      order: 1
+      @include order(1)
       width: 40%
 
       img
@@ -48,10 +39,7 @@ $spotlight-more-hover: 1px solid $bpl-blue
 
     .content
       padding: 1em 1em 1em 1em
-      -moz-order: 2
-      -webkit-order: 2
-      -ms-order: 2
-      order: 2
+      @include order(2)
       max-width: 48em
       width: 60%
       text-align: right
@@ -72,10 +60,7 @@ $spotlight-more-hover: 1px solid $bpl-blue
           content: "More"
 
     &:nth-child(2n)
-      -moz-flex-direction: row-reverse
-      -webkit-flex-direction: row-reverse
-      -ms-flex-direction: row-reverse
-      flex-direction: row-reverse
+      @include flex-direction(row-reverse)
 
       .content
         text-align: left
