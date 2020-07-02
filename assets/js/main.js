@@ -90,17 +90,24 @@
 					var $this = $(this),
 						$inner = $this.find('.inner'),
 						$button = $this.find('.mobile-float'),
-						x;
+						x, y;
 					
 						// No progress decrease
 						x = progress;
+
+						// Progress decrease after half-point
+						if (progress > 0.5)
+							y = 1 - progress;
+						else
+							y = progress;
 						
 						// Responsive height adjustment
 						x = Math.max(0, Math.min(1, x * ($this.height() / window.innerHeight * 2.8)));
+						y = Math.max(0, Math.min(1, y * ($this.height() / window.innerHeight * 2.8)));
 
 						// Opacity.
 						$this.css('opacity', x);
-						$button.css('opacity', x);
+						$button.css('opacity', y);
 
 						// Scale.
 						$inner
@@ -118,7 +125,7 @@
 							.css('transform', 'scale(' + x + ')');
 
 						// Change z-index multiplier if you want higher than 1
-						$button.css('z-index', x * 3);
+						$button.css('z-index', y * 3);
 					}
 			});
 
