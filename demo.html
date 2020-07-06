@@ -1,11 +1,13 @@
 <html>
     <head>
-        <style>
-        body {text-align:center;}
-        </style>
     </head>
-    <body>
-        <video width=auto height=100% controls autoplay loop muted playsinline>
+    <body style="text-align:center; width:0;">
+        <picture>
+            <source srcset="./assets/images/iphone-frame.webp" type="image/webp">
+            <source srcset="./assets/images/iphone-frame.png" type="image/png">
+            <img src="./assets/images/iphone-frame.png" style="z-index:2; position:absolute; top: 0; left:0; right:0; margin: 0 auto; height:100%;">
+        </picture>
+        <video style="z-index:1; position:absolute; top:2.2%; left:0; right:0; margin: 0 auto; border:0; border-radius:20px; height:95%" width=auto height=100% controls autoplay loop muted playsinline>
             <source src=./assets/videos/demo.mp4 type=video/mp4>
             Your browser does not support the video tag.
         </video>

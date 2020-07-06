@@ -1,0 +1,196 @@
+html
+  scroll-behavior: $scroll-behavior
+
+@-ms-viewport
+  width: device-width
+
+body
+
+  &.is-loading *
+    @include animation($loading-animation)
+    @include transition($loading-transition)
+
+    &::before, &::after
+      @include animation($loading-animation)
+      @include transition($loading-transition)
+
+  color: $main-text-color
+  font-family: "NanumSquare", Helvetica, sans-serif
+  font-size: 20pt
+  font-weight: 400
+  letter-spacing: $letter-spacing
+  line-height: 1.65em
+
+input, select, textarea
+  color: $main-text-color
+  font-family: "NanumSquare", Helvetica, sans-serif
+  font-size: 15pt
+  font-weight: 400
+  line-height: 1.65em
+
+@media screen and (max-width: 1680px)
+  body, input, select, textarea
+    font-size: 16pt
+
+@media screen and (max-width: 1280px)
+  body, input, select, textarea
+    font-size: 13pt
+
+@media screen and (max-width: 736px)
+  body, input, select, textarea
+    font-size: 13pt
+    letter-spacing: $mobile-letter-spacing
+
+a
+  color: inherit
+  text-decoration: none
+
+  &:hover
+    @include animation($hover-animation)
+
+strong, b
+  color: $main-text-color
+  font-weight: 800
+
+em, i
+  font-style: italic
+
+p
+  margin: 0 0 1em 0
+
+h1, h2, h3, h4, h5, h6
+  color: $main-text-color
+  font-weight: 800
+  letter-spacing: $header-letter-spacing
+  line-height: 1em
+  margin: 0 0 1em 0
+  text-transform: capitalize
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a
+  color: inherit
+  text-decoration: none
+
+h2
+  font-size: 1.5em
+  line-height: 1.75em
+  text-transform: uppercase
+
+@media screen and (max-width: 736px)
+  h2
+    font-size: 1.4em
+    line-height: 1.65em
+
+h3
+  font-size: 1.15em
+  line-height: 1.75em
+
+@media screen and (max-width: 736px)
+  h3
+    font-size: 1em
+    line-height: 1.65em
+
+h4
+  font-size: 1em
+  line-height: 1.5em
+
+h5
+  font-size: 0.8em
+  line-height: 1.5em
+
+h6
+  font-size: 0.7em
+  line-height: 1.5em
+
+sub
+  font-size: 0.8em
+  position: relative
+  top: 0.5em
+
+sup
+  font-size: 0.8em
+  position: relative
+  top: -0.5em
+
+hr
+  border: 0
+  border-bottom: solid 2px $hr-color
+  width: $hr-width
+  margin: auto
+
+  &.major
+    margin: 4.5em 0
+
+blockquote
+  border-left: solid 4px $border-color
+  font-style: italic
+  margin: 0 0 2em 0
+  padding: 0.5em 0 0.5em 2em
+
+code
+  background: $code-background-color
+  border-radius: $border-radius
+  font-family: $code-font-family
+  font-size: $code-font-size
+  letter-spacing: $code-letter-spacing
+  margin: 0 0.25em
+  padding: 0.25em 0.65em
+
+pre
+  -webkit-overflow-scrolling: touch
+  font-family: $code-font-family
+  font-size: $code-font-size
+  margin: 0 0 2em 0
+
+  code
+    display: block
+    line-height: 1.75em
+    padding: 1em 1.5em
+    overflow-x: auto
+
+.align-left
+  text-align: left
+
+.align-center
+  text-align: center
+
+.align-right
+  text-align: right
+
+/* Section/Article */
+
+section.special, article.special
+  text-align: center
+
+header
+  p
+    color: rgba($main-text-color, 0.5)
+    position: relative
+    top: -0.25em
+
+  h3 + p
+    font-size: 1.1em
+
+  h4 + p, h5 + p, h6 + p
+    font-size: 0.9em
+
+  &.major
+    margin: 0 0 0 0
+
+    h2, h3, h4, h5, h6
+      border-bottom: solid 2px $border-color
+      display: inline-block
+      padding-bottom: 0.5em
+      position: relative
+
+    h2::after, h3::after, h4::after, h5::after, h6::after
+      content: ''
+      display: block
+      height: 1px
+
+    p
+      color: $main-text-color
+      top: 0
+
+@media screen and (max-width: 736px)
+  header.major
+    margin: 0 0 0 0

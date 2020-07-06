@@ -4,14 +4,6 @@
         {% include head.html %}
         <link rel="preload" href="{{ "/assets/css/home.css" | relative_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'" />
         <noscript><link rel="stylesheet" href="{{ "/assets/css/home.css" | relative_url }}" /></noscript>
-        <link rel="preload" href="{{ "/assets/css/landing.css" | relative_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-        <noscript><link rel="stylesheet" href="{{ "/assets/css/landing.css" | relative_url }}" /></noscript>
-        <link rel="preload" href="{{ "/assets/css/banner.css" | relative_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-        <noscript><link rel="stylesheet" href="{{ "/assets/css/banner.css" | relative_url }}" /></noscript>
-        <link rel="preload" href="{{ "/assets/css/spotlight.css" | relative_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-        <noscript><link rel="stylesheet" href="{{ "/assets/css/spotlight.css" | relative_url }}" /></noscript>
-        <link rel="preload" href="{{ "/assets/css/cta.css" | relative_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-        <noscript><link rel="stylesheet" href="{{ "/assets/css/cta.css" | relative_url }}" /></noscript>
     </head>
     <body class="landing">
         <!-- Google Tag Manager (noscript) -->
@@ -20,13 +12,15 @@
         </noscript>
         <!-- End Google Tag Manager (noscript) -->
         {% include header.html %}
+        <!-- Page Wrapper -->
+        <main id="page-wrapper">
         {% include banner.html %}
-        {% include section-1.html %}
-        {% include section-2.html %}
-        {% include section-3.html %}
-        {% include section-4.html %}
+        {% include about-us.html %}
+        {% include capabilities.html %}
+        {% include current-works.html %}
         {% include cta.html %}
         {% include footer.html %}
-        </div>
+        </main>
+        <!-- End Page Wrapper -->
     </body>
 </html>

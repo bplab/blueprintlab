@@ -18,7 +18,7 @@ AI algorithms also match and recommend eyewear that fits the user’s face shame
 <picture>
     <source data-srcset="{{ "./assets/images/process.webp" | relative_url }}" type="image/webp">
     <source data-srcset="{{ "./assets/images/process.png" | relative_url }}" type="image/png">
-    <img style="max-width: 100%" data-src="{{ "./assets/images/process.png" | relative_url }}" alt="V2 Virtual Try On Process" class="lazyload">
+    <img style="max-width: 100%; max-height: 90vh;" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1352 167'%3E%3C/svg%3E" data-src="{{ "./assets/images/process.png" | relative_url }}" alt="V2 Virtual Try On Process" class="lazyload">
 </picture><br />
 <br />
 V2 is not just a virtual try on experience, it enhances the full eyewear buying process. Pupillary distance is measured during the face scan process for prescription lenses. Parts and colors of the frame can be customized. It is also possible to create a fully bespoke 3D printed frame only for the user’s face. The only thing it does not do is give an eye exam.

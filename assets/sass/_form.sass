@@ -1,0 +1,170 @@
+@import 'grid'
+
+form
+  margin: 0 0 2em 0
+
+label
+  color: $black
+  display: block
+  font-size: 0.9em
+  font-weight: 600
+  margin: 0 0 1em 0
+
+.select-wrapper::before
+
+input
+  &[type="text"], &[type="password"], &[type="email"]
+    background: $input-background-color
+    border: $input-border
+    border-radius: $border-radius
+    color: $bpl-blue
+    font-weight: bold
+    display: block
+    outline: 0
+    padding: 0 1em
+    text-decoration: none
+    width: 100%
+    resize: none
+
+select, textarea
+  background: $input-background-color
+  border: $input-border
+  @include appearance(none)
+  border-radius: $border-radius
+  border: $textarea-border
+  color: $textarea-color
+  font-weight: bold
+  display: block
+  outline: 0
+  padding: 0 1em
+  text-decoration: none
+  width: 100%
+  resize: none
+
+  option
+    color: $option-color
+    background-color: $option-background-color
+    font-weight: bold
+
+
+input
+  &[type="text"]:invalid, &[type="password"]:invalid, &[type="email"]:invalid
+    box-shadow: none
+
+select:invalid, textarea:invalid
+  box-shadow: none
+
+input
+  &[type="text"]:focus, &[type="password"]:focus, &[type="email"]:focus
+    border: $textarea-focus-border
+
+select:focus, textarea:focus
+  border: $textarea-focus-border
+
+.select-wrapper
+  text-decoration: none
+  display: block
+  position: relative
+
+  &::before
+    color: $input-select-arrow-color
+    -moz-osx-font-smoothing: grayscale
+    -webkit-font-smoothing: antialiased
+    font-family: FontAwesome
+    font-style: normal
+    font-weight: normal
+    text-transform: none
+    @include pointer-events(none)
+    content: '\f078'
+    display: block
+    height: 2.75em
+    line-height: 2em
+    position: absolute
+    right: 0
+    text-align: center
+    top: 0
+    width: 2.75em
+
+  select::-ms-expand
+    display: none
+
+input
+  &[type="text"], &[type="password"], &[type="email"]
+    height: 2.75em
+
+select
+  height: 2.75em
+
+textarea
+  padding: 0.75em 1em
+
+input
+  &[type="checkbox"], &[type="radio"]
+    @include appearance(none)
+    display: block
+    float: left
+    margin-right: -2em
+    opacity: 0
+    width: 1em
+    z-index: -1
+
+  &[type="checkbox"] + label, &[type="radio"] + label
+    text-decoration: none
+    color: $white
+    cursor: pointer
+    display: inline-block
+    font-size: 1em
+    font-weight: 400
+    padding-left: 2.4em
+    padding-right: 0.75em
+    position: relative
+
+  &[type="checkbox"] + label::before, &[type="radio"] + label::before
+    -moz-osx-font-smoothing: grayscale
+    -webkit-font-smoothing: antialiased
+    font-family: FontAwesome
+    font-style: normal
+    font-weight: normal
+    text-transform: none
+
+  &[type="checkbox"] + label::before, &[type="radio"] + label::before
+    background: rgba(144, 144, 144, 0.25)
+    border-radius: $border-radius
+    content: ''
+    display: inline-block
+    height: 1.65em
+    left: 0
+    line-height: 1.58125em
+    position: absolute
+    text-align: center
+    top: 0
+    width: 1.65em
+
+  &[type="checkbox"] + label, &[type="radio"] + label
+    color: $input-text-color
+
+  &[type="checkbox"] + label::before, &[type="radio"] + label::before
+    background: $input-background-color
+    border: $input-border
+
+  &[type="checkbox"]:checked + label::before, &[type="radio"]:checked + label::before
+    background: $input-checked-background-color
+    color: $input-checked-color
+    content: '\f00c'
+
+  &[type="checkbox"]:focus + label::before, &[type="radio"]:focus + label::before
+    border: $textarea-focus-border
+
+  &[type="checkbox"] + label::before
+    border-radius: $border-radius
+
+  &[type="radio"] + label::before
+    border-radius: 100%
+
+::placeholder
+  color: $placeholder-color
+  opacity: 0.5
+
+@media screen and (max-width: 1280px)
+  .select-wrapper::before
+    line-height: 2.75em

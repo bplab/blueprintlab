@@ -1,0 +1,70 @@
+@import 'global'
+/* Home Variables */
+$home-main-text-color: $black
+$home-h2-text-color: $black
+$home-h3-text-color: $bpl-blue-bright
+$home-h3-font-size: 1.4em
+$home-h4-font-size: 1.2em
+$home-light-text-color: rgba($home-main-text-color, 0.075)
+$home-border-color: $bpl-blue-bright
+$home-background1-color: $white
+$home-background2-color: $light-gray
+
+/* Landing */
+@import 'landing'
+
+/* Wrapper 1,2 */
+@mixin common-settings
+  
+  background-position: bottom
+  background-repeat: no-repeat
+  background-size: 100% auto
+  color: $home-main-text-color
+  
+  strong, b, h1, h2, h4, h5, h6
+    color: $home-main-text-color
+
+  h3 
+    color: $home-h3-text-color
+    font-size: $home-h3-font-size
+
+  h4
+    font-size: $home-h4-font-size
+    text-transform: uppercase
+
+  blockquote
+    border-color: $home-border-color
+  
+  code
+    background: $home-light-text-color
+
+  header
+    p
+      color: $home-main-text-color
+    
+    &.major
+      h4, h5, h6
+        border-color: $home-main-text-color
+
+      h2
+        color: $home-h2-text-color
+        border-color: $home-h2-text-color
+      
+      p
+        color: $home-main-text-color
+
+.wrapper
+
+  &.style1
+    background: $home-background1-color
+    @include common-settings
+  
+  &.style2
+    background: $home-background2-color
+    @include common-settings
+
+@import 'banner'
+@import 'about-us'
+@import 'capabilities'
+@import 'current-works'
+@import 'cta'

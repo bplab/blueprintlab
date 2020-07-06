@@ -1,0 +1,176 @@
+//* Global Variables *//
+    
+/* Colors */
+$bpl-blue: #1f8dcc
+$bpl-blue-bright: #3e74ee
+$bpl-blue-dark: #115c87
+$bpl-blue-hover: #0096dc
+$bpl-gray: #e8e8e8
+$white: #ffffff
+$black: #303030
+$gray: #d5d5d5
+$light-gray: #fafafa
+
+/* Scroll Behavior */
+$scroll-behavior: smooth
+
+/* Borders */
+$border-radius: 5px
+$border-color: $white
+
+/* Text */
+$main-text-color: $white
+$letter-spacing: 0.01em
+$mobile-letter-spacing: 0.01em
+$header-text-color: $black
+$header-letter-spacing: 0.01em
+$header-major-header-text-color: $bpl-gray
+$header-major-text-color: $bpl-blue-dark
+
+/* Code */
+$code-font-family: "Courier New", monospace
+$code-font-size: 0.9em
+$code-letter-spacing: 0
+$code-background-color: $gray
+
+/* Horizontal Lines */
+$hr-color: $bpl-gray
+$hr-width: 90%
+$inner-hr-width: 50%
+$inner-hr-left: 25%
+
+/* Input */
+$placeholder-color: $bpl-blue
+$input-border-color: $gray
+$input-border: 1px solid $gray
+$input-text-color: $black
+$input-background-color: $white
+$input-select-arrow-color: $bpl-gray
+$input-checked-background-color: $bpl-blue
+$input-checked-color: $white
+$input-special-text-color: $white
+$input-special-hover-background-color: $bpl-blue-hover
+$input-special-hover-text-color: $white
+$input-special-active-text-color: $bpl-blue
+$input-special-active-background-color: $bpl-blue-hover
+$input-transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out
+$textarea-color: $bpl-blue
+$textarea-border: 1px solid $gray
+$textarea-focus-border: 1px solid $bpl-blue-bright
+
+/* Select */
+$option-color: $bpl-blue
+$option-background-color: $white
+$option-border-color: $bpl-blue-bright
+
+/* Button */
+$button-border-color: $bpl-blue-bright
+$button-text-color: $bpl-blue-bright
+$button-background-color: $white
+$button-hover-color: $bpl-blue-hover
+$button-active-color: $bpl-blue-hover
+$button-special-text-color: $white
+$button-special-background-color: $bpl-blue-bright
+$button-special-hover-background-color: $bpl-blue-hover
+$button-special-hover-text-color: $white
+$button-special-active-background-color: $bpl-blue-hover
+$button-special-active-text-color: $bpl-blue
+$button-height: 2.5em
+$button-height-mobile: 3.75em
+$button-padding: 2.5em
+$button-transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out
+
+/* Icons */
+$icon-border-radius: 10px
+
+/* Loading */
+$loading-animation: none !important
+$loading-transition: none !important
+
+/* Hover Animation */
+$hover-animation: scale-up-center 0.4s ease-in-out both
+
+@-webkit-keyframes scale-up-center
+  0%
+    -webkit-transform: scale(1)
+
+  100%
+    -webkit-transform: scale(1.1)
+
+@keyframes scale-up-center
+  0%
+    transform: scale(1)
+
+  100%
+    transform: scale(1.1)
+
+//* Global Mixins *//
+
+@mixin display-flex
+  display: -moz-flex
+  display: -webkit-flex
+  display: -ms-flex
+  display: flex
+
+@mixin flex-direction($property)
+  -moz-flex-direction: $property
+  -webkit-flex-direction: $property
+  -ms-flex-direction: $property
+  flex-direction: $property
+
+@mixin order($property)
+  -moz-order: $property
+  -webkit-order: $property
+  -ms-order: $property
+  order: $property
+
+@mixin align-items($property)
+  -moz-align-items: $property
+  -webkit-align-items: $property
+  -ms-align-items: $property
+  align-items: $property
+
+@mixin background-image-linear-gradient($property)
+  background-image: -moz-linear-gradient($property)
+  background-image: -webkit-linear-gradient($property)
+  background-image: -ms-linear-gradient($property)
+  background-image: linear-gradient($property)
+
+@mixin animation($property)
+  -webkit-animation: $property
+  animation: $property
+
+@mixin transition($property)
+  -moz-transition: $property
+  -webkit-transition: $property
+  -ms-transition: $property
+  transition: $property
+
+@mixin transform($property)
+  -moz-transform: $property
+  -webkit-transform: $property
+  -ms-transform: $property
+  transform: $property
+
+@mixin pointer-events($property)
+  -moz-pointer-events: $property
+  -webkit-pointer-events: $property
+  -ms-pointer-events: $property
+  pointer-events: $property
+
+@mixin box-sizing($property)
+  -moz-box-sizing: $property
+  -webkit-box-sizing: $property
+  box-sizing: $property
+
+@mixin appearance($property)
+  -moz-appearance: $property
+  -webkit-appearance: $property
+  -ms-appearance: $property
+  appearance: $property
+
+@mixin pointer-events($property)
+  -moz-pointer-events: $property
+  -webkit-pointer-events: $property
+  -ms-pointer-events: $property
+  pointer-events: $property

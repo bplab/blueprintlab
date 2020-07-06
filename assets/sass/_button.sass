@@ -1,0 +1,151 @@
+input
+  &[type="submit"], &[type="reset"], &[type="button"]
+    @include appearance(none)
+    @include transition($input-transition)
+    background-color: $button-background-color
+    border-radius: $border-radius
+    border: 1px solid $input-border-color
+    color: $input-text-color
+    cursor: pointer
+    display: inline-block
+    font-size: 0.8em
+    font-weight: 600
+    height: $button-height
+    letter-spacing: $letter-spacing
+    line-height: $button-height
+    padding: 0 $button-padding
+    text-align: center
+    text-decoration: none
+    text-transform: uppercase
+    white-space: nowrap
+    overflow: hidden
+    text-overflow: ellipsis
+
+button, .button
+  @include appearance(none)
+  @include transition($button-transition)
+  background-color: $button-background-color
+  border-radius: $border-radius
+  border: 1px solid $button-border-color
+  color: $button-text-color
+  cursor: pointer
+  display: inline-block
+  font-size: 0.8em
+  font-weight: 600
+  height: $button-height
+  letter-spacing: $letter-spacing
+  line-height: $button-height
+  padding: 0 $button-padding
+  text-align: center
+  text-decoration: none
+  text-transform: uppercase
+  white-space: nowrap
+  overflow: hidden
+  text-overflow: ellipsis
+
+input
+  &[type="submit"]:hover, &[type="reset"]:hover, &[type="button"]:hover
+    color: $button-hover-color
+    border-color: $button-hover-color
+    @include animation($hover-animation)
+
+button:hover, .button:hover
+  color: $button-hover-color
+  border-color: $button-hover-color
+
+input
+  &[type="submit"]:active, &[type="reset"]:active, &[type="button"]:active
+    color: $button-active-color
+
+button:active, .button:active
+  color: $button-active-color
+
+input
+  &[type="submit"].fit, &[type="reset"].fit, &[type="button"].fit
+    display: block
+    margin: 0 0 1em 0
+    width: 100%
+
+button.fit, .button.fit
+  display: block
+  margin: 0 0 1em 0
+  width: 100%
+
+input
+  &[type="submit"].small, &[type="reset"].small, &[type="button"].small
+    font-size: 0.8em
+
+button.small, .button.small
+  font-size: 0.8em
+
+input
+  &[type="submit"].big, &[type="reset"].big, &[type="button"].big
+    font-size: 1.35em
+
+button.big, .button.big
+  font-size: 1.35em
+
+input
+  &[type="submit"].special, &[type="reset"].special, &[type="button"].special
+    background-color: $button-special-background-color
+    box-shadow: none
+    color: $button-special-text-color
+
+button.special, .button.special
+  background-color: $button-special-background-color
+  color: $button-special-text-color
+
+input
+  &[type="submit"].special:hover, &[type="reset"].special:hover, &[type="button"].special:hover
+    color: $button-special-hover-text-color
+    background-color: $button-special-hover-background-color
+    @include animation($hover-animation)
+
+button.special:hover, .button.special:hover
+  color: $button-special-hover-text-color
+  background-color: $button-special-hover-background-color
+
+input
+  &[type="submit"].special:active, &[type="reset"].special:active, &[type="button"].special:active
+    color: $button-special-active-text-color
+    background-color: $button-special-active-background-color
+
+button.special:active, .button.special:active
+  color: $button-special-active-text-color
+  background-color: $button-special-active-background-color
+
+input
+  &[type="submit"]
+    &.disabled, &:disabled
+      @include pointer-events(none)
+      opacity: 0.25
+
+  &[type="reset"]
+    &.disabled, &:disabled
+      @include pointer-events(none)
+      opacity: 0.25
+
+  &[type="button"]
+    &.disabled, &:disabled
+      @include pointer-events(none)
+      opacity: 0.25
+
+button
+  &.disabled, &:disabled
+    @include pointer-events(none)
+    opacity: 0.25
+
+.button
+  &.disabled, &:disabled
+    @include pointer-events(none)
+    opacity: 0.25
+
+@media screen and (max-width: 736px)
+  input
+    &[type="submit"], &[type="reset"], &[type="button"]
+      height: 3.75em
+      line-height: 3.75em
+
+  button, .button
+    height: $button-height-mobile
+    line-height: $button-height-mobile

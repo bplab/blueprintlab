@@ -1,0 +1,21 @@
+/* Landing Variables */
+$landing-background-color1: $white
+$landing-background-color2: $white
+$landing-background-gradient1: 1
+$landing-background-gradient2: 0
+$landing-gradient-direction: top
+
+body.landing
+  
+  #banner
+    background-image: -moz-linear-gradient($landing-gradient-direction, rgba($landing-background-color1, $landing-background-gradient1), rgba($landing-background-color2, $landing-background-gradient2))
+    background-image: -webkit-linear-gradient($landing-gradient-direction, rgba($landing-background-color1, $landing-background-gradient1), rgba($landing-background-color2, $landing-background-gradient2))
+    background-image: -mos-linear-gradient($landing-gradient-direction, rgba($landing-background-color1, $landing-background-gradient1), rgba($landing-background-color2, $landing-background-gradient2))
+    background-image: linear-gradient($landing-gradient-direction, rgba($landing-background-color1, $landing-background-gradient1), rgba($landing-background-color2, $landing-background-gradient2))
+    background-attachment: fixed
+    background-position: center center
+    background-repeat: no-repeat
+    background-size: cover
+
+  #page-wrapper
+    background: none
