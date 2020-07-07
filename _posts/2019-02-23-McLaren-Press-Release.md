@@ -35,6 +35,7 @@ True to the McLaren brand, this pioneering experience is centered around high-pe
 L’AMY will be demonstrating an early version of the app at the 2019 MIDO Eyewear Show in Milan February 23-25, 2019. Roll out of the app to select opticians will begin in late March of 2019.
 
 ***
+<br />
 BluePrintLAB utilizes 3D technologies, artificial intelligence (AI), and augmented reality to create innovative software. Specializing in realistic 3D model rendering and advanced AI algorithms, BluePrintLAB designs solutions to expand your view of the world. Headquartered in Seoul, BluePrintLAB is an international team from different backgrounds working together to improve user experience.
 
 Jinston Chung<br />
