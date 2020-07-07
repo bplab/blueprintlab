@@ -1,0 +1,61 @@
+/* About Us  Variables*/
+$about-us-background-url-jpg: "../../assets/images/about-us.jpg"
+$about-us-background-url-webp: "../../assets/images/about-us.webp"
+$about-us-mobile-background-image: none
+
+@mixin background-specs
+    background-position: center top
+    background-size: auto
+    height: 100vh
+    
+.no-webp #about-us
+    background-image: url($about-us-background-url-jpg)
+    @include background-specs
+
+#about-us
+
+    background-image: url($about-us-background-url-webp)
+    @include background-specs
+    
+    .content
+        grid-area: content
+        text-align: left
+
+        h1, p
+            text-transform: uppercase
+            color: $header-text-color
+
+        p
+            padding: 0 20% 0 0
+
+        &.button.fit
+            width: 100%
+
+    .space
+        grid-area: space
+
+    .inner
+        @include align-items(center)
+        justify-items: center
+        display: grid
+        grid-template-areas: 'content space'
+        grid-template-columns: 70% 30%
+        grid-gap: 10px
+
+@media screen and (max-width: 1280px)
+
+    #about-us
+        
+        background-image: $about-us-mobile-background-image
+        background-position: center top
+        background-size: auto
+
+        .content
+            text-align: center
+
+            p
+                padding: 0
+
+        .inner
+            display: block
+            padding: 10% 0

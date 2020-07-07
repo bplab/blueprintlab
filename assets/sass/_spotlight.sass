@@ -1,0 +1,99 @@
+/* Spotlight Variables */
+$spotlight-h2-font-size: 1em
+$spotlight-p-font-size: 0.8em
+$spotlight-more-hover: 1px solid $bpl-blue
+
+#news
+
+  .spotlight
+    background-color: $white
+    @include align-items(center)
+    @include display-flex
+    box-shadow: 4px 4px 10px rgba(173, 173, 173, 0.25)
+    margin-bottom: 10px
+    margin-left: 30px
+    margin-right: 30px
+    margin-top: 10px
+    border-radius: $border-radius
+
+    h2
+      line-spacing: 1em
+      line-height: 1em
+      color: $bpl-blue-bright
+      font-size: $spotlight-h2-font-size
+    
+    p
+      color: $black
+      font-size: $spotlight-p-font-size
+      line-height: calc(0.6em + #{$spotlight-p-font-size})
+
+    .image
+      @include order(1)
+      width: 40%
+
+      img
+        border-radius: $border-radius
+        max-width: 100%
+        max-height: 90vh
+        padding: 1em
+
+    .content
+      padding: 1em 1em 1em 1em
+      @include order(2)
+      max-width: 48em
+      width: 60%
+      text-align: right
+
+      .more
+
+        &:hover
+          border-bottom: $spotlight-more-hover
+
+        img
+          height: 0.55em
+          display: inherit
+
+        picture::after
+          color: $bpl-blue
+          font-size: $spotlight-p-font-size
+          line-height: calc(0.6em + #{$spotlight-p-font-size})
+          content: "More"
+
+    &:nth-child(2n)
+      @include flex-direction(row-reverse)
+
+      .content
+        text-align: left
+
+@media screen and (max-width: 1280px)
+  #news
+
+    .spotlight
+
+      .image
+        width: 45%
+
+      .content
+        width: 55%
+
+@media screen and (max-width: 980px)
+  #news
+    .spotlight
+      display: block
+
+      br
+        display: none
+
+      .image
+        width: 100%
+
+      .content
+        max-width: none
+        text-align: center
+        width: 100%
+
+      &:nth-child(2n)
+        display:block
+        
+        .content
+          text-align: center

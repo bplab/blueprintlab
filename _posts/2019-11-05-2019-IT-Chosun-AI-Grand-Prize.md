@@ -11,7 +11,7 @@ BluePrintLAB was recognized as one of the top AI startups of 2019 in Korea. On N
 <picture>
     <source data-srcset="{{ "./assets/images/2019itchosunsm.webp" | relative_url }}" type="image/webp">
     <source data-srcset="{{ "./assets/images/2019itchosunsm.jpg" | relative_url }}" type="image/jpeg">
-    <img style="max-width: 100%" data-src="{{ "./assets/images/2019itchosunsm.jpg" | relative_url }}" alt="BluePrintLAB's Sangmo accepting award" class="lazyload">
+    <img style="max-width: 100%; max-height: 90vh;" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1439 1080'%3E%3C/svg%3E" data-src="{{ "./assets/images/2019itchosunsm.jpg" | relative_url }}" alt="BluePrintLAB's Sangmo accepting award" class="lazyload">
 </picture><br />
 
 The [AI Grand Prize of Korea](http://it.chosun.com/site/data/html_dir/2019/11/05/2019110501895.html) was created by IT Chosun and [Micro Software](https://www.imaso.co.kr/) to promote the development of the Korean AI industry and help secure global competitiveness through it.

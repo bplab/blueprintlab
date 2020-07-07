@@ -1,0 +1,63 @@
+/* Banner Variables */
+$banner-header-color: $bpl-blue
+$banner-before-after-color: $bpl-blue
+$banner-main-text-color: $black
+
+#banner
+  @include display-flex
+  @include flex-direction(column)
+  cursor: default
+  height: 100vh
+  position: relative
+  text-align: center
+  justify-content: center
+
+.banner-grid
+  display: grid
+  grid-template-areas: 'logo video' 'text video' 'actions video'
+  grid-template-columns: 50% 50%
+  grid-gap: 10px
+  padding: 0 20% 0
+
+  .logo
+    max-width: 30%
+
+  p
+    letter-spacing: 0.1em
+    text-transform: uppercase
+    color: $banner-main-text-color
+    font-weight: bold
+    font-size: 2vw
+    line-height: 1.65em
+    grid-area: text
+
+  .resp-containerv
+    grid-area: video
+
+  .actions
+    grid-area: actions
+
+@media screen and (max-width: 1280px)
+  #banner .banner-grid
+    padding: 0 10%
+
+
+@media screen and (max-width: 736px)
+  #banner
+    height: auto
+    min-height: 0
+    padding: 0 2vh 0
+
+    .banner-grid
+      display: block
+      padding: 5% 15% 0
+
+      br
+        display: none
+
+      p
+        font-size: 1.9vh
+
+      img
+        display: block
+        margin: 0 auto

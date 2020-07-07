@@ -1,5 +1,5 @@
 ---
 layout: default
 title: Home
-description: BluePrintLAB specializes in designing software solutions that utilize 3D scanning, 3D printing, and artificial intelligence (AI).
+description: BluePrintLAB is a software startup specializing in 3D facial scanning, AI, and virtual try on
 ---

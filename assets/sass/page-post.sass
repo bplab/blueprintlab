@@ -1,0 +1,105 @@
+@import 'global'
+/* Page-Post Variables */
+$page-post-main-background-color: $light-gray
+$page-post-wrapper-background-color: $white
+$page-post-main-text-color: $black
+$page-post-subtitle-text-color: $black
+$page-post-icon-list-border-color: $bpl-gray
+
+/* Main */
+
+#main
+  background: $page-post-main-background-color
+
+  img
+    max-width: 100%
+    max-height: 90vh
+    display: block
+    margin: 0 auto
+
+#main > header
+  padding: 5em 0 1em 0
+  background-attachment: fixed
+  background-position: center center
+  background-repeat: no-repeat
+  background-size: cover
+  text-align: center
+  max-width: 1172px
+  display: block
+  margin: 0 auto
+
+  h2
+    font-size: 1.75em
+    margin: 0 0 0.5em 0
+    color: $header-text-color
+
+  p
+    color: $page-post-subtitle-text-color
+    font-weight: bold
+    letter-spacing: $letter-spacing
+    text-transform: capitalize
+    top: 0
+    margin: 0 10%
+
+    a
+      color: inherit
+
+@media screen and (max-width: 1680px)
+  #main > header
+    padding: 5em 0 3em 0
+
+@media screen and (max-width: 1280px)
+  #main > header
+    padding: 5em 3em 3em 3em
+
+@media screen and (max-width: 980px)
+  #main > header
+    padding: 5em 3em 2em 3em
+
+@media screen and (max-width: 736px)
+  #main > header
+    padding: 5em 3em 2em 3em
+
+    h2
+      font-size: 1.25em
+      margin: 0 0 1em 0
+
+body.is-mobile #main > header
+  background-attachment: scroll
+
+/* Wrapper Pages and Posts */
+
+.wrapper.page-post
+  background-color: $page-post-wrapper-background-color
+  color: $page-post-main-text-color
+  padding: 2em
+
+  .post
+    p
+      text-align: justify
+
+  strong, b, h2, h3, h4, h5, h6
+    color: $page-post-main-text-color
+
+  hr, blockquote
+    border-color: $hr-color
+
+  header
+    p
+      color: $page-post-subtitle-text-color
+
+    &.major
+      h2, h3, h4, h5, h6
+        border-color: $header-major-header-text-color
+
+      p
+        color: $header-major-text-color
+
+  ul.alt li
+    border-color: $page-post-icon-list-border-color
+
+.post-end
+  display: block
+  margin: 0 auto
+  text-align: center
+  width: 9em

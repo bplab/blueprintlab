@@ -1,0 +1,55 @@
+/* CTA  Variables*/
+$cta-transition-direction: 97.97deg
+$cta-header-text-color: $black
+$cta-text-color: $black
+
+#cta
+  height: 75vh
+
+#cta .inner
+  @include display-flex
+  flex-direction: column
+  max-width: 45em
+  padding: 3% 0 0 0
+  text-align: center
+
+  header
+    @include order(1) 
+    width: 100%
+
+    h2
+      text-transform: uppercase
+      color: $cta-header-text-color
+
+  .actions
+    @include order(2)
+    width: 100%
+
+@media screen and (max-width: 1280px)
+  #cta
+    height: 87vh
+
+@media screen and (max-width: 980px)
+  #cta
+    height: 76vh
+
+    .inner
+      display: block
+      text-align: center
+
+      header
+        padding-right: 0
+        width: 100%
+
+      .actions
+        margin-left: auto
+        margin-right: auto
+        max-width: 20em
+        width: 100%
+
+@media screen and (max-width: 736px)
+  #cta
+    height: 75vh
+
+    .inner .actions
+      max-width: none

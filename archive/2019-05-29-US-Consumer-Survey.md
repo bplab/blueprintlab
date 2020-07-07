@@ -5,7 +5,6 @@ description: Are you in the US? Do you wear glasses or sunglasses? Please take a
 image: curious_cat.jpg
 ---
 
-<link rel="stylesheet" href="{{ "/assets/css/resp-iframe.css" | relative_url }}" />
 <div style="position: relative; overflow: hidden; padding-top: 100%">
 	<iframe class="resp-iframe" title="US Consumer Survey" src="https://docs.google.com/forms/d/e/1FAIpQLScSLDam9oRajpe1LrSIzibdStPJGmubUtVDG93pg_Izs9bSew/viewform?embedded=true"  frameborder="0" marginheight="0" marginwidth="0"></iframe>
 </div>

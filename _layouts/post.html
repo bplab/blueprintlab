@@ -7,19 +7,29 @@
     </head>
     <body>
         {% include header.html %}
-        <!-- Main -->
-        <article id="main">
-            <header{% if page.image %} style="background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url('{{ "" | absolute_url }}/assets/images/{{ page.image }}');"{% endif %}>
-                <h2>{{ page.title }}</h2>
-                <p>{{ page.description }}</p>
-            </header>
-            <section class="wrapper page-post">
-                <div class="inner">
-                    {{ content }}
-                </div>
-            </section>
-        </article>
+        <!-- Page Wrapper -->
+        <main id="page-wrapper">
+            <!-- Main -->
+            <article id="main">
+                <header>
+                    <h2>{{ page.title }}</h2>
+                    <p>{{ page.description }}</p>
+                    {% if page.image %}<br />
+                    <picture>
+                        <source srcset="{{ "" | absolute_url }}/assets/images/{{ page.webp }}" type="image/webp">
+                        <source srcset="{{ "" | absolute_url }}/assets/images/{{ page.image }}" type="image/jpeg">
+                        <img src="{{ "" | absolute_url }}/assets/images/{{ page.image }}" alt="{{ page.title }}" class="headline-image">
+                    </picture>{% endif %}
+                </header>
+                <section class="wrapper page-post">
+                    <div class="inner post">
+                        {{ content }}
+                    </div>
+                </section>
+            </article>
+            <a href="{{site.baseurl}}/news" class="button special small post-end">News</a>
         {% include footer.html %}
-        </div>
+        </main>
+        <!-- End Page Wrapper -->
     </body>
 </html>

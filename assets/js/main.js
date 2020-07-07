@@ -79,9 +79,84 @@
 					enter:		function() { $header.addClass('alt'); },
 					leave:		function() { $header.removeClass('alt'); }
 				});
-
 			}
 
+		//Scroll Effect 1.
+			$('.scroll-effect1').scrollex({
+
+				// Scroll event: Perform various CSS tweaks based on the user's progress through this element.
+				scroll: function(progress) {
+
+					var $this = $(this),
+						$inner = $this.find('.inner'),
+						$button = $this.find('.mobile-float'),
+						x, y;
+					
+						// No progress decrease
+						x = progress;
+
+						// Progress decrease after half-point
+						if (progress > 0.5)
+							y = 1 - progress;
+						else
+							y = progress;
+						
+						// Responsive height adjustment
+						x = Math.max(0, Math.min(1, x * ($this.height() / window.innerHeight * 2.8)));
+						y = Math.max(0, Math.min(1, y * ($this.height() / window.innerHeight * 2.8)));
+
+						// Opacity.
+						$this.css('opacity', x);
+						$button.css('opacity', y);
+
+						// Scale.
+						$inner
+							.css('-moz-transform', 'scale(' + x + ')')
+							.css('-webkit-transform', 'scale(' + x + ')')
+							.css('-o-transform', 'scale(' + x + ')')
+							.css('-ms-transform', 'scale(' + x + ')')
+							.css('transform', 'scale(' + x + ')');
+
+						$button
+							.css('-moz-transform', 'scale(' + x + ')')
+							.css('-webkit-transform', 'scale(' + x + ')')
+							.css('-o-transform', 'scale(' + x + ')')
+							.css('-ms-transform', 'scale(' + x + ')')
+							.css('transform', 'scale(' + x + ')');
+
+						// Change z-index multiplier if you want higher than 1
+						$button.css('z-index', y * 3);
+					}
+			});
+
+		//Scroll Effect 2.
+			$('.scroll-effect2').scrollex({
+
+				// Scroll event: Perform various CSS tweaks based on the user's progress through this element.
+				scroll: function(progress) {
+
+					var $this = $(this),
+						$inner = $this.find('.inner'),
+						x;
+					
+						// No progress decrease
+						x = progress;
+
+						// For sections less than 100vh
+						x = Math.max(0, Math.min(1, x * ($this.height() / window.innerHeight * 3.8)));
+
+						// Opacity.
+						$this.css('opacity', x);
+
+						// Scale.
+						$inner
+							.css('-moz-transform', 'scale(' + x + ')')
+							.css('-webkit-transform', 'scale(' + x + ')')
+							.css('-o-transform', 'scale(' + x + ')')
+							.css('-ms-transform', 'scale(' + x + ')')
+							.css('transform', 'scale(' + x + ')');
+					}
+			});
 	});
 
 })(jQuery);
