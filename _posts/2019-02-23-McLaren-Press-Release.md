@@ -6,7 +6,7 @@ image: ipadcustom2.jpg
 webp: ipadcustom2.webp
 ---
 
-**SEOUL, February 23, 2019** - Software developer BluePrintLAB, design studio JAW-Studio, and eyewear manufacturer L’AMY announced today a partnership to develop an app that allows consumers to create a bespoke pair of [award-winning](https://en.silmoparis.com/Silmo-d-Or-Awards/2018-SILMO-d-Or-Laureates) McLaren Ultimate Vision eyewear with the new iPad Pro. Customers can visit a McLaren eyewear dealer to easily select, customize, try on, and order eyewear in less than 5 minutes using an iPad, taking the hassle out of the buying process and increasing customer satisfaction. The app is expected to roll out to select opticians in late March 2019.
+**SEOUL, February 23, 2019** - Software developer BluePrintLAB, design studio [JAW-Studio](https://jaw-studio.fr/), and eyewear manufacturer [L’AMY](https://en.lamygroup.com/) announced today a partnership to develop an app that allows consumers to create a bespoke pair of [award-winning](https://en.silmoparis.com/Silmo-d-Or-Awards/2018-SILMO-d-Or-Laureates) McLaren Ultimate Vision eyewear with the new iPad Pro. Customers can visit a McLaren eyewear dealer to easily select, customize, try on, and order eyewear in less than 5 minutes using an iPad, taking the hassle out of the buying process and increasing customer satisfaction. The app is expected to roll out to select opticians in late March 2019.
 
 <picture>
     <source data-srcset="{{ "./assets/images/ipadscan.webp" | relative_url }}" type="image/webp">
