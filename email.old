@@ -8,15 +8,15 @@ order: 2
 <section class="email">
 	<form method="post" action="https://getsimpleform.com/messages?form_api_token=af201f2a2487815fb1d745822af038bc" onsubmit="return myFunction(sent)">
 		<div class="row uniform" style="font-weight: bold">
-			<div class="6u 12u$(xsmall)">
+			<div>
 				Name<br />
 				<input type="text" name="name" id="body" value="" placeholder="Name" required />
 			</div>
-			<div class="6u$ 12u$(xsmall)">
+			<div>
 				Email<br />
 				<input type="email" name="email" id="body" value="" placeholder="Email" required />
 			</div>
-			<div class="12u$">
+			<div>
 				Subject<br />
 				<div class="select-wrapper">
 					<select name="subject" id="subject">
@@ -27,16 +27,16 @@ order: 2
 					</select>
 				</div>
 			</div>
-			<div class="12u$">
+			<div>
 				Message<br />
 				<textarea name="body" id="body" placeholder="Enter your message" rows="6"></textarea>
 			</div>
-			<div class="6u$ 12u$(small)">
+			<div>
 				<input type="hidden" name="human" value="no" />
 				<input type="checkbox" id="human" name="human" value="yes" />
 				<label for="human" style="font-weight: bold">I am not a robot</label>
 			</div>
-			<div class="12u$">
+			<div>
 				<ul class="actions">
 					<li><input type="submit" value="Send" class="special" /></li>
 					<div id="sent">Message sent! Thank you.</div>
