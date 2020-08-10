@@ -1,7 +1,7 @@
 /* About Us  Variables*/
 $about-us-background-url-jpg: "../../assets/images/about-us.jpg"
 $about-us-background-url-webp: "../../assets/images/about-us.webp"
-$about-us-mobile-background-image: none
+$about-us-mobile-background: $home-background2-color
 
 @mixin background-specs
     background-position: center top
@@ -28,8 +28,10 @@ $about-us-mobile-background-image: none
         p
             padding: 0 20% 0 0
 
-        &.button.fit
-            width: 100%
+        .actions
+
+            .button
+                width: 100%
 
     .space
         grid-area: space
@@ -44,9 +46,12 @@ $about-us-mobile-background-image: none
 
 @media screen and (max-width: 1280px)
 
+    .no-webp #about-us
+        background: $about-us-mobile-background
+
     #about-us
         
-        background-image: $about-us-mobile-background-image
+        background: $about-us-mobile-background
         background-position: center top
         background-size: auto
 
