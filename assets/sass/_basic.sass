@@ -7,12 +7,12 @@ html
 body
 
   &.is-loading *
-    @include animation($loading-animation)
-    @include transition($loading-transition)
+    @include animation($loading-animation, true)
+    @include transition($loading-transition, true)
 
     &::before, &::after
-      @include animation($loading-animation)
-      @include transition($loading-transition)
+      @include animation($loading-animation, true)
+      @include transition($loading-transition, true)
 
   color: $main-text-color
   font-family: "NanumSquare", Helvetica, sans-serif
